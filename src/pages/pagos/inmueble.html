@@ -1,0 +1,44 @@
+<ion-list *ngFor="let inmueble of detalle.inmueble">
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="ionitron" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Dirección</h3>
+        <h2>{{inmueble.direccion}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="construct" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Estructura</h3>
+        <h2>{{inmueble.estructura}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="bus" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Uso Inmueble</h3>
+        <h2>{{inmueble.usoInmueble}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="paw" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Año</h3>
+        <h2>{{inmueble.anio}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="key" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Número de Pisos</h3>
+        <h2>{{inmueble.numPisos}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Número de Sotanos</h3>
+        <h2>{{inmueble.numSotanos}}</h2>
+    </ion-item>    
+</ion-list>

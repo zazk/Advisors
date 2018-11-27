@@ -1,0 +1,137 @@
+<!--
+  Generated template for the CotizadorSoat page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content padding center>
+  <ion-navbar>
+    <ion-title>Cotizador</ion-title>
+  </ion-navbar>
+  <ion-list no-lines>
+    <ion-list-header>
+      Tu Vehículo
+    </ion-list-header>           
+    <ion-item>
+      <ion-label stacked>Unidad</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Placa</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Marca</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Año</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Modelo</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Motor</ion-label>
+      <ion-select></ion-select> 
+    </ion-item>
+    <ion-item>
+      <ion-label>Tipo de vehículo</ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option>Automovil</ion-option>
+        <ion-option>Camioneta rural</ion-option>
+        <ion-option>Camioneta Pick Up</ion-option>
+        <ion-option>Motocicleta</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Marca</ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option>Audi</ion-option>
+        <ion-option>BMW</ion-option>
+        <ion-option>Toyota</ion-option>
+        <ion-option>Volvo</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Modelo</ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option>Modelo 1</ion-option>
+        <ion-option>Modelo 2</ion-option>
+        <ion-option>Modelo 3</ion-option>
+        <ion-option>Modelo 4</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Año: {{anio}}</ion-label>
+      <ion-range min="1950" max="2017" [(ngModel)]="anio">
+        <ion-label range-left>1950</ion-label>
+        <ion-label range-right>2017</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Valor En Mercado: ${{valor}}</ion-label>
+      <ion-range min="1000" max="20000" [(ngModel)]="valor">
+        <ion-label range-left>1000</ion-label>
+        <ion-label range-right>20000</ion-label>
+      </ion-range>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ubicacion</ion-label>
+      <ion-select interface="action-sheet">
+        <ion-option>Arequipa</ion-option>
+        <ion-option>Lima</ion-option>
+        <ion-option>Tacna</ion-option>
+        <ion-option>Moquegua</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <ion-row>
+    <button ion-button (click)="cotizar()" full>Cotizar</button>
+  </ion-row>
+  <ion-row>
+    <ng-container *ngIf="showProducts">
+      <ion-list no-lines class="inline">
+        <ion-list-header>
+          Elige tu Seguro Vehicular
+        </ion-list-header>
+        <ion-card text-wrap>
+          <ion-thumbnail item-left>
+            <img src="https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAgYAAAAJGM2M2MzNDVmLTc0NDItNDE1Zi1iZjIxLTBlMWM2YWRhOTUyZQ.png">
+          </ion-thumbnail>
+          <ion-label>S/. 85.00</ion-label>
+          <p>Delivery gratuito</p>
+          <p>Central de emergencias las 24 horas del día</p>
+          <button ion-button (click)=solicitar()>Solicitar</button>
+        </ion-card>
+        <ion-card text-wrap>
+          <ion-thumbnail item-left>
+            <img src="http://www.suortopedista.com/_Media/seguros-mapfre_med_hr.jpeg">
+          </ion-thumbnail>
+          <ion-label>S/. 95.00</ion-label>
+          <p>Recibe un diagnóstico vehicular</p>
+          <p>Central de emergencias las 24 horas del día</p>
+          <button ion-button (click)=solicitar()>Solicitar</button>
+        </ion-card>
+        <ion-card text-wrap>
+          <ion-thumbnail item-left>
+            <img src="https://7c1096715b08106e45d9-86066560621c8d09273ccd7d125f633d.ssl.cf5.rackcdn.com/r/logos/79555/o-pacifico-logo.png">
+          </ion-thumbnail>
+          <ion-label>S/. 95.00</ion-label>
+          <p>Asistencia vehicular gratis</p>
+          <p>Delivery a tu domicilio</p>
+          <p>Central de emergencias las 24 horas del día</p>
+          <button ion-button (click)=solicitar()>Solicitar</button>
+        </ion-card>
+      </ion-list>
+    </ng-container>
+  </ion-row>
+</ion-content>

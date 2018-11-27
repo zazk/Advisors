@@ -1,14 +1,61 @@
+<!--
+  pinkxel: Aquí inicia el código estandar para la cabecera de las páginas post-logeo, comprende 'ion-header' y el inicio de 'ion-content'.
+-->
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+  <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+  <button ion-button menuToggle end>
+    <ion-icon name="menu"></ion-icon>
+  </button>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding center>
+  <ion-navbar>
+    <ion-title text-wrap>Bienvenido Jhon</ion-title>
+  </ion-navbar>
+  <!-- pinkxel: Aquí termina el código estandar para la cabecera de las páginas post-logeo, -->
+  <div class="home-list">
+    <ion-row>
+      <ion-col>
+        <button class="button-main" (click)="goSeguros('Mis Seguros',0)">
+          <ion-icon name="ios-albums">
+          </ion-icon><label>Mis Seguros</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="button-main" (click)="goPuntoVentaSOAT()">
+          <ion-icon name="md-car">
+          </ion-icon>
+          <label>Punto de Venta SOAT</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      
+      <ion-col>
+        <button class="button-main" (click)="goModulo(AvisoSiniestroPage)">
+          <ion-icon name="md-alert">
+          </ion-icon>
+          <label>Siniestro</label>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="button-main" (click)="goFormadePago()">
+          <ion-icon name="md-car">
+          </ion-icon>
+          <label>Fomas de Pago</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      
+      <ion-col>
+        <button class="button-main" (click)="goContacto()">
+          <ion-icon name="md-chatbubbles">
+          </ion-icon>
+          <label>Contacto Consejeros</label>
+        </button>
+      </ion-col>
+    </ion-row>
+    
+  </div>
 </ion-content>

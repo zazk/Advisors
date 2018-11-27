@@ -1,0 +1,96 @@
+<!--
+  Generated template for the Seguros page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+  <button ion-button menuToggle end>
+    <ion-icon name="menu"></ion-icon>
+  </button>
+</ion-header>
+
+<!--
+  pinkxel: se pasó itemRies.nomRiesgo dento de la iteración itemRies.polizas para que aparesca
+  en cada cuadro.
+
+-->
+
+
+<ion-content padding>
+  <ion-navbar>
+    <ion-title>{{titulo}}</ion-title>
+    <ion-buttons end>
+      <a ion-button>
+        <ion-icon name="md-time"></ion-icon>Pendientes</a>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-list class="services-list" full>
+    <ion-row *ngFor="let itemComp of companias">
+      <ion-list class="company-list" no-lines full>
+        <ion-list-header class="company-header">
+          <button ion-button (click)="openData(itemComp)">
+            <ion-icon name="md-add"></ion-icon>
+            <img class="companyLogo" [src]="itemComp.url" />
+          </button>
+        </ion-list-header>
+        <ng-container *ngIf="itemComp.displayIt">
+          <!--<ion-list *ngFor="let itemRies of itemComp.riesgos" full
+                no-lines>-->
+          <div class="service-wrapper" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
+            <ion-row class="head-info">
+              <ion-col>
+                <ion-list-header text-wrap>{{itemPol.nomRiesgo}}</ion-list-header>
+                #{{itemPol.numPoliza}}
+              </ion-col>
+              <ion-col end>
+                <ion-label stacked>Vigencia</ion-label>
+                <p>del {{itemPol.fecInicio | date: 'dd/MM/yyyy'}}</p>
+                <p>al {{itemPol.fecFin | date: 'dd/MM/yyyy'}}</p>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col relative>
+                <ion-item class="status">
+                  <ion-icon name='md-checkmark-circle-outline'></ion-icon>{{itemPol.estado}}</ion-item>
+              </ion-col>
+              <!-- pinkxel: Se sugiere evaluar la necesidad del 'Actualizado al', en un sistema se debería poder asumir que la info siempre está actualizada al momento de la consulta. -->
+              <!-- <ion-item>Actualizado al: {{itemPol.actualizado | date: 'dd/MM/yyyy'}}</ion-item>-->
+              <ion-col end>
+                <!-- pinkxel: Función cambió de 'openPagar' a 'openMore' Se agregó $event para detener el evento click del padre -->
+                <ng-container *ngIf="itemPol.clienteDirecto">
+                  <button class="button-more" ion-button ion-stop-event="click" (click)="openMore(itemPol, $event)">Ver más
+                    <ion-icon name='ios-arrow-down'></ion-icon>
+                  </button>
+                </ng-container>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ng-container *ngIf="itemPol.displayPAyment">
+                <div class="infograph">
+                  <!-- pinkxel: Los años a la izquierda y derecha de la línea de tiempo se rellenan a traves de :before y :after en el CSS de '.timeline' -->
+                  <div class="timeline"></div>
+                  <ion-row>
+                    <ion-col class="period">May</ion-col>
+                    <ion-col class="period">Jun</ion-col>
+                    <ion-col class="period alert">Jul</ion-col>
+                  </ion-row>
+                </div>
+              </ng-container>
+            </ion-row>
+            <ion-row>
+              <ng-container *ngIf="itemPol.displayCuotas">
+                <ion-row class="row-coutas">
+                  <div></div>
+                </ion-row>
+              </ng-container>
+            </ion-row>
+          </div>
+          <!-- </ion-list>-->
+        </ng-container>
+      </ion-list>
+    </ion-row>
+  </ion-list>
+  
+</ion-content>

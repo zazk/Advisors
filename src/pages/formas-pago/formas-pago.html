@@ -1,0 +1,23 @@
+<!--
+  Generated template for the FormasPago page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content padding>
+  <ion-navbar>
+  <ion-title>{{titulo}}</ion-title>
+  </ion-navbar>
+  <ion-list no-lines center>
+    <ion-list-header>¿Dónde pagar?</ion-list-header>      
+    <a  [target]="cargaTipoSO" ion-item (click)="irPagos(itemPago)"
+    *ngFor="let itemPago of formasPagoArray">{{itemPago.compania}}</a>        
+  </ion-list>
+</ion-content>

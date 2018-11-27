@@ -1,3 +1,50 @@
 page-home {
 
+	.scroll-content {
+		background-color: $color-lila;
+		color: $color-blanco;
+	}
+
+	.home-list {
+		margin-top: 24px;
+	}
+
+	.toolbar {
+		background-color: $color-blanco;
+		margin-left: -24px;
+		margin-right: -24px;
+		width: calc(100% + 48px);
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.toolbar .title {
+		padding-left: 24px;
+	}
+
+	.button-main {
+		font-family: 'Facto';
+		background: $color-guindaclaro;
+		color: $color-blanco;
+		border: 0px solid transparent;
+		margin: 0;
+		padding: 0 20px;
+		height: calc(50vw - 24px);
+		width: calc(50vw - 24px);
+		text-align: center;
+		border-radius: 0;
+		border: 1px solid $color-lila;
+		font-size: 1.6rem;
+		line-height: 1.4rem;
+	}
+
+	.button-main.atention {
+		background: $color-naranja;
+	}
+
+	.button-main ion-icon {
+		font-size: 6rem;
+		display: block;
+		padding-right: 0;
+	}
 }

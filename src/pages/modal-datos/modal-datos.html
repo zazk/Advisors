@@ -1,0 +1,110 @@
+<!--
+  Generated template for the ModalDatos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!--
+  pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales, comprende 'ion-header' y el inicio de 'ion-content'.
+-->
+<ion-header>
+    <ion-navbar>
+    <ion-title>Actualizar datos</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <span ion-text>Salir</span>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+</ion-header>
+<ion-content padding center>
+<!-- pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales. -->
+  <form (ngSubmit)="updateData()" #registerForm="ngForm">
+    <ion-list no-lines>
+      <ion-list-header>Información personal</ion-list-header>
+      <ion-item no-lines>
+        <ion-label stacked>Tipo de Documento de Identidad:</ion-label>
+        <ion-select okText="Aceptar" cancelText="Cancelar" required disabled="true"
+          [(ngModel)]="data.TipoDocumento" [ngModelOptions]="{standalone: true}" interface="action-sheet">
+          <ion-option *ngFor="let itemDoc of tipDocumento" [value]="itemDoc.codigoTipo" selected="true">{{itemDoc.descripcion}}</ion-option>          
+          </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Núm. de Documento<span>*</span></ion-label>
+        <ion-input type="text" placeholder="" name="num_doc" [(ngModel)]="data.NumDocumento" disabled="true" required>
+        </ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Fecha de Nacimiento<span>*</span></ion-label>
+        <ion-datetime displayFormat="MMM DD YYYY" doneText="Aceptar" cancelText="Cancelar" [(ngModel)]="data.FecNacimiento" [ngModelOptions]="{standalone: true}" disabled="true" required 
+        monthNames="Enero, Febrero, Marzo, Abril, Mayo, Junio, Agosto, Setiembre, Octubre, Noviembre, Diciembre"
+          monthShortNames="Ene, Feb, Mar, Abr, May, Jun, Jul, Ago, Set, Oct, Nov, Dic" dayNames="Domingo, Lunes , Martes, Miercoles, Jueves, Viernes, Sabado"></ion-datetime>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Sexo<span>*</span></ion-label>
+        <ion-select okText="Aceptar" cancelText="Cancelar" required disabled="true"
+          [(ngModel)]="data.Sexo" [ngModelOptions]="{standalone: true}" interface="action-sheet">
+          <ion-option *ngFor="let itemSex of sexo" [value]="itemSex.cod">{{itemSex.desc}}</ion-option>
+          </ion-select>
+      </ion-item>      
+    </ion-list>
+    <ion-list no-lines>
+      <ion-list-header>
+        Datos de contacto
+      </ion-list-header>
+      <ion-item no-lines>
+        <ion-label stacked>Departamento<span>*</span></ion-label>
+        <ion-select interface="action-sheet"
+        [(ngModel)]="selectedDep" [ngModelOptions]="{standalone: true}" 
+        ngModel (ngModelChange)="onChangeDep()" required>
+        </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Provincia<span>*</span></ion-label>
+        <ion-select interface="action-sheet" 
+        [(ngModel)]="selectedProv" [ngModelOptions]="{standalone: true}" 
+        ngModel (ngModelChange)="onChangeProv()" required>
+        </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Distrito<span>*</span></ion-label>
+        <ion-select interface="action-sheet" 
+        [(ngModel)]="data.Ubigeo" [ngModelOptions]="{standalone: true}" required>
+          </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Tipo Dirección<span>*</span></ion-label>
+        <ion-select interface="action-sheet" 
+        [(ngModel)]="data.TipoDireccion" [ngModelOptions]="{standalone: true}" required>
+          <ion-option *ngFor="let itemDir of tipDireccion" [value]="itemDir.codigoTipo">{{itemDir.descripcion}}</ion-option>          
+        </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Dirección<span>*</span></ion-label>
+        <ion-input type="text" placeholder="" name="direccion" [(ngModel)]="data.DetalleDireccion" required>
+        </ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Celular<span>*</span></ion-label>
+        <ion-input type="text" placeholder="" name="celular" [(ngModel)]="data.TelefonoMovil" required>
+        </ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Correo Electrónico<span>*</span></ion-label>
+        <ion-input type="text" placeholder="" name="email" [(ngModel)]="data.Email" required>
+        </ion-input>
+      </ion-item>          
+    </ion-list>
+      <ion-row>
+        <ion-item no-lines>
+          <ion-label>(<span>*</span>) Campos Obligatorios</ion-label>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <button ion-button full type="submit">Actualizar</button>
+        </ion-col>
+      </ion-row>
+  </form>
+</ion-content>

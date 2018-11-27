@@ -1,0 +1,52 @@
+page-inicio {
+  .slide-image {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0px 0;
+    height: 100%;
+  }
+
+  .swiper-pagination {
+    margin-bottom: 50px;
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: auto;
+    max-width: 510px;
+    margin: 8px auto 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    transform: none;
+  }
+
+  .slide-zoom img {
+    height: auto !important;
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: none;
+    max-height: none;
+    display: block;
+    width: 100%;
+  }
+
+  .row-bottom {
+    background-color: #FFF;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .row-bottom .button {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .fixed-content,
+  .scroll-content {
+    margin-top: 0 !important;
+  }
+}

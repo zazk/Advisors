@@ -1,5 +1,4 @@
-// http://ionicframework.com/docs/theming/
-
+// http://ionicframework.com/docs/v2/theming/
 
 // App Global Sass
 // --------------------------------------------------
@@ -14,3 +13,738 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+$color-naranja: #f16528;
+$color-guinda: #601044;
+$color-guindaclaro: #832471;
+$color-grisoscuro: #76787a;
+//$color-grisclaro: #c0c2c4;
+$color-grisclaro: #95989a;
+$color-grisblanco: #eee;
+$color-lila: #a23a8f;
+$color-blanco: #ffffff;
+$list-wp-header-color: $color-grisoscuro;
+
+//
+// pinkxel: Tipografías de marca CCS
+//
+@font-face {
+  font-family: "Facto";
+  src: url("../assets/fonts/Facto.eot");
+  src: url("../assets/fonts/Facto.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Facto.woff") format("woff"),
+    url("../assets/fonts/Facto.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Facto-Light";
+  src: url("../assets/fonts/Facto_Light.eot");
+  src: url("../assets/fonts/Facto_Light.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/Facto_Light.woff") format("woff"),
+    url("../assets/fonts/Facto_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Facto-Medium";
+  src: url("../assets/fonts/Facto_Medium.eot");
+  src: url("../assets/fonts/Facto_Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Facto_Medium.woff") format("woff"),
+    url("../assets/fonts/Facto_Medium.ttf") format("truetype");
+}
+
+ion-content {
+  .button[clear] {
+    color: $color-grisoscuro;
+  }
+
+  .button[clear] ion-icon {
+    color: $color-naranja;
+  }
+
+  .button {
+    border-radius: 4px;
+    font-size: 1.8rem;
+    font-family: "Facto-Medium";
+    letter-spacing: -0.05rem;
+  }
+
+  .button.big {
+    // Ejemplo: Reportar siniestro en seguros.html
+    background-color: transparent;
+    color: $color-naranja;
+    height: 10rem;
+  }
+
+  .button.big .button-inner,
+  .button.big .icon {
+    display: block;
+  }
+
+  .button.big .icon {
+    font-size: 6rem;
+    margin-bottom: 1rem;
+  }
+
+  .item.item-label-stacked .text-input,
+  .item.item-label-stacked .select,
+  .item.item-label-stacked .datetime,
+  .text-input,
+  .select,
+  .datetime {
+    background: $color-grisblanco;
+    margin: 0.5rem 0;
+    border: 0;
+    border-radius: 4px;
+    padding-left: 10px;
+    height: 3.6rem;
+    width: 100%;
+  }
+  ////////////////   INICIO MENU LATERAL MIS SINIESTROS ////////////
+  .grid-siniestros {
+    font-size: 0.6em;
+    //         border: 1px solid;
+    //margin-left: 1px;
+    //margin-right: 1px;
+    margin-top: 10px;
+    text-align: center;
+    //border: 1px solid;
+    //padding-right: 5px;
+    //padding-left: 2px;
+    //width: 100%;
+  }
+
+  .cell-siniestros {
+    border-bottom: 1px solid;
+    padding: 1px;
+    //text-align: center;
+    //width: 25%;
+  }
+
+  .cell-width1 {
+    width: 16%;
+  }
+  .cell-width2 {
+    width: 28%;
+  }
+  ////////////////  FIN MENU LATERAL MIS SINIESTROS /////////////
+  /////////////////////////////////////////////////////////////////
+}
+
+.alert-button:last-child {
+  font-weight: normal !important;
+}
+
+body,
+.content {
+  font-size: 1.6rem;
+  color: $color-grisoscuro;
+}
+
+a:hover,
+a:active,
+a {
+  color: $color-naranja;
+}
+
+h1 {
+  font-size: 4.8rem;
+  letter-spacing: -0.275rem;
+  padding-right: 0.1rem;
+  color: $color-naranja;
+  font-family: "Facto-Medium";
+  margin-bottom: 0;
+  line-height: 4.8rem;
+}
+
+.item p {
+  margin: 1rem 0;
+}
+
+.item p:last-child {
+  margin: 10px 0;
+}
+
+ion-app [padding],
+ion-app [padding] .scroll-content {
+  padding: 0 24px 24px 24px !important;
+}
+
+.fixed-content,
+.scroll-content {
+  margin-top: 80px !important;
+}
+
+.card {
+  padding: 1rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.08);
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
+
+.card ion-thumbnail {
+  margin-bottom: 1rem;
+}
+
+.toolbar-background {
+  background-color: transparent;
+  border-width: 0 !important;
+}
+
+.back-button {
+  padding-left: 0;
+}
+
+.back-button .back-button-icon:before {
+  content: "\f282";
+  transform: scaleX(1.2);
+}
+
+.show-back-button + .toolbar-content ion-title {
+  padding: 0 0 0 32px;
+}
+
+.toolbar-content ion-title {
+  padding: 0;
+}
+
+.toolbar-content ion-title .toolbar-title {
+  text-align: start;
+  font-family: "Facto-Medium";
+  color: $color-guinda;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: -0.12rem;
+}
+
+.item {
+  border-radius: 4px;
+}
+
+.item-block {
+  padding: 0;
+}
+
+.item-block .item-inner {
+  padding-right: 0 !important;
+}
+
+.list.inline .input-wrapper {
+  display: block;
+}
+
+.list.inline .item {
+  min-height: auto;
+  margin: 0;
+}
+
+.label {
+  font-family: "Facto-Medium";
+  color: $color-naranja;
+  letter-spacing: -0.05rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0.8rem 0.6rem 0.6rem 0;
+}
+
+.label p {
+  font-family: "Facto";
+}
+
+.label,
+.label[stacked] {
+  font-size: 1.6rem;
+}
+
+.label[stacked] {
+  display: block;
+  margin-bottom: 0;
+}
+
+ion-label.info {
+  color: $color-grisclaro;
+  font-size: 1.6rem;
+  font-family: "Facto";
+  display: inline-block;
+  /*margin-bottom: .6rem;*/
+  white-space: normal;
+}
+ion-item.item.item-label-stacked .label.info {
+  margin-top: 0.2rem;
+  padding-left: 0;
+}
+
+ion-label.sub-title {
+  margin: 0;
+}
+
+.button-clear {
+  color: $color-naranja;
+}
+
+ion-icon {
+  padding: 0 4px 0 0;
+}
+
+img.logo-img {
+  max-width: 216px;
+}
+
+ion-header .button {
+  float: right;
+  background-color: transparent;
+  color: $color-grisclaro;
+  height: 4rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+ion-header .button ion-icon {
+  padding-left: 0;
+  padding-right: 0;
+  font-size: 4.2rem;
+}
+
+ion-col {
+  padding: 0;
+}
+
+ion-header {
+  background-color: $color-blanco;
+  padding: 18px 18px 8px 24px;
+}
+
+.toolbar {
+  padding: 0;
+}
+
+.toolbar a[ion-button] {
+  font-family: "Facto-Medium";
+  letter-spacing: -0.08rem;
+}
+
+ion-content.menu-default {
+  background-color: $color-guinda;
+  color: #ffffff;
+  font-family: "Facto";
+  background-image: url(../assets/img/iso-css@2x.png);
+  background-repeat: no-repeat;
+  background-position: 30px 75vh;
+  background-size: 90%;
+}
+
+ion-content.menu-default .item {
+  margin: 0;
+}
+
+ion-content.menu-default button {
+  background-color: transparent;
+  color: $color-blanco;
+}
+
+.list {
+  margin-top: 1rem;
+}
+
+.list .item p {
+  margin: 0;
+}
+
+.list .item p b {
+  color: $color-naranja;
+}
+
+.list[center] {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+ion-list a.item,
+ion-list button.item {
+  color: $color-naranja;
+  padding-left: 1rem;
+}
+
+ion-content.menu-default button.item .label {
+  color: $color-blanco;
+}
+
+ion-menu ion-header {
+  padding-bottom: 18px;
+}
+
+ion-list.profile-menu {
+  margin: 0;
+}
+
+ion-list.profile-menu ion-item {
+  border-radius: 0;
+  background-color: $color-naranja;
+  color: $color-blanco;
+  padding: 1rem 0;
+}
+
+ion-list.profile-menu ion-item p {
+  color: $color-blanco;
+}
+
+ion-list.profile-menu ion-item .label,
+ion-content.menu-default button .label {
+  padding-left: 24px;
+}
+
+ion-list.profile-menu ion-item .label .user-name {
+  font-size: 1.8rem;
+}
+
+ion-list.profile-menu ion-icon {
+  font-size: 3rem;
+}
+
+ion-list.profile-menu-list {
+  background-color: $color-naranja;
+  margin: 0;
+}
+
+.companyLogo {
+  height: 16vw;
+  max-height: 100px;
+  width: auto;
+}
+
+#map {
+  margin: 0 -24px;
+  width: 100vw;
+  height: calc(80vh - 80px - 44px);
+}
+
+#mapG {
+  margin: 0 -24px;
+  width: 100vw;
+  height: calc(80vh - 80px - 44px);
+}
+
+.list-header {
+  text-transform: none;
+}
+
+ion-list-header {
+  padding-left: 0 !important;
+}
+
+.list-header .label {
+  font-size: 2rem;
+  color: $color-grisclaro;
+  line-height: 2.4rem;
+}
+
+ion-list-header ion-icon {
+  display: none;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-guinda;
+}
+
+/* service-wrapper */
+.services-list {
+  font-family: "Facto";
+}
+
+.company-list {
+  width: 100%;
+}
+
+.company-header {
+  padding: 0;
+}
+
+.company-header.item ion-label {
+  margin: 0;
+}
+
+.company-header.item button {
+  background: transparent;
+  height: 100%;
+  margin: 1rem auto;
+  display: block;
+}
+
+.company-header.item button ion-icon {
+  color: $color-grisclaro;
+  padding-right: 2rem;
+}
+
+.service-wrapper {
+  background-color: $color-lila;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 0.8rem 0;
+  color: $color-blanco;
+}
+
+.service-wrapper.gray {
+  background-color: $color-grisclaro;
+}
+
+.service-wrapper.alert {
+  background-color: $color-naranja;
+}
+
+.service-wrapper p {
+  margin: 0;
+}
+
+.service-wrapper .list-header .label {
+  color: $color-blanco;
+  font-family: "Facto-Medium";
+  text-transform: inherit;
+}
+
+.service-wrapper .list-header.item .label {
+  font-size: 2.4rem;
+  letter-spacing: -0.1rem;
+}
+
+.list {
+  font-size: 1.2rem;
+}
+
+.item {
+  background-color: transparent;
+  color: $color-grisoscuro;
+  font-size: 1.4rem;
+}
+
+[end],
+[end] .item-block {
+  text-align: end;
+}
+
+.service-wrapper .head-info {
+  margin-bottom: 40px;
+}
+
+.service-wrapper button {
+  background-color: transparent;
+  margin-right: 0;
+  height: auto;
+}
+
+.service-wrapper button.button-more {
+  border-radius: 2rem !important;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  margin: 0;
+  height: 100%;
+}
+
+.service-wrapper button.button-more ion-icon {
+  font-size: 1.6rem;
+  padding: 2px 5px;
+  margin-left: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+.service-wrapper .label {
+  color: $color-blanco;
+}
+
+ion-col[relative] {
+  position: relative;
+}
+
+ion-item[bottom] {
+  position: absolute;
+  bottom: 0;
+}
+
+.infograph {
+  width: 100%;
+  margin: 36px 0;
+  padding: 24px;
+}
+
+.timeline {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 4px;
+  position: relative;
+  top: 15px;
+  width: calc(100% + 64px);
+  margin-left: -32px;
+}
+
+.timeline:before,
+.timeline:after {
+  content: "2017";
+  display: inline-block;
+  position: absolute;
+  margin: 0 12px;
+  top: 8px;
+}
+
+.timeline:after {
+  right: 0;
+}
+
+.period {
+  text-align: center;
+  z-index: 1;
+}
+
+.period:before {
+  content: "\f149";
+  display: block;
+  font-family: "Ionicons";
+  font-size: 2.4rem;
+  line-height: 2rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $color-guindaclaro;
+  margin: 0 auto;
+  border: 4px solid transparent; //rgba(0,0,0,.25);
+}
+
+.status {
+  min-height: auto;
+  padding: 0.5rem;
+}
+
+.status .label {
+  font-size: 1.4rem;
+}
+
+.status.alert {
+}
+
+.period.alert {
+}
+
+.period.alert:before {
+  color: $color-blanco;
+  content: "\f267";
+  background-color: $color-naranja;
+  font-family: "Ionicons";
+  font-size: 2.4rem;
+  line-height: 2rem;
+  border: 4px solid transparent;
+  text-align: center;
+}
+
+.period.noalert:before {
+  color: $color-blanco;
+  content: "";
+  background-color: $color-grisblanco;
+  font-family: "Ionicons";
+  font-size: 2.4rem;
+  line-height: 2rem;
+  border: 4px solid transparent;
+  text-align: center;
+}
+
+.range-ios {
+  padding: 1rem;
+}
+
+.header-md::after,
+.tabs-md[tabsPlacement="top"] > .tabbar::after,
+.footer-md::before,
+.tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  content: none;
+}
+
+.back-button-md {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+.back-button-icon-md {
+  color: $color-naranja;
+  font-size: 3.4rem;
+}
+
+.toolbar-title-md {
+  padding: 0;
+}
+
+.toolbar-content ion-title {
+  position: static;
+}
+
+.item-input .label-md,
+.item-select .label-md,
+.item-datetime .label-md {
+  color: $color-naranja;
+}
+
+page-home .toolbar .title {
+  padding-left: 0 !important;
+}
+
+.toolbar-title {
+  text-overflow: initial;
+  white-space: normal;
+  line-height: 1em;
+}
+
+.toolbar-md {
+  min-height: 44px;
+}
+
+.show-back-button + .toolbar-content ion-title {
+  padding: 0 0 0 16px;
+}
+
+.bar-button {
+  color: $color-naranja;
+  font-size: 1.7rem;
+  text-transform: initial;
+}
+
+.bar-button-default-md:hover:not(.disable-hover),
+.bar-button-clear-md-default:hover:not(.disable-hover),
+.bar-button-md-default:hover:not(.disable-hover) {
+  color: $color-naranja;
+}
+
+.list-header-md {
+  border: none;
+}
+
+.button-md {
+  box-shadow: none;
+  text-transform: initial;
+}
+
+page-punto-venta .list ion-label {
+  flex: none;
+}
+
+page-pagos .label {
+  width: 50%;
+  margin-right: 0;
+  white-space: initial;
+}
+
+.button-md {
+  height: 2.8em;
+}
+
+.item-md.item-input .item-inner,
+.list-md .item-input {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+ion-content .item.item-label-stacked .text-input,
+ion-content .item.item-label-stacked .select,
+ion-content .item.item-label-stacked .datetime,
+ion-content .text-input,
+ion-content .select,
+ion-content .datetime {
+  color: #333;
+}

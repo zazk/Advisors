@@ -1,0 +1,96 @@
+<!--
+  Generated template for the ContactoPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+</ion-header>
+<ion-content padding>
+    <ion-navbar>
+        <ion-title>Evidencias de siniestro vehicular</ion-title>
+    </ion-navbar>
+    <div>
+        <ng-container *ngIf="!tieneSolicitudes">
+            <ion-list no-lines>
+                <ion-item>
+                    <ion-label stacked>Núm. de Documento*</ion-label>
+                    <ion-input type="text" placeholder="" name="numDocumento" [(ngModel)]="model.numDocumento" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label stacked>Núm. de Placa*</ion-label>
+                    <ion-input type="text" 
+                        placeholder="" name="numPlaca" [(ngModel)]="model.numPlaca" required></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label>* Campos Obligatorios</ion-label>
+                </ion-item>
+            </ion-list>
+            <button class="button-ccs" ion-button full (click)="registrar()">Buscar solicitudes</button>
+        </ng-container>
+        <ng-container *ngIf="tieneSolicitudes">
+            <ion-card *ngFor="let item of data; let ii = index">
+                <ion-item>
+                    <ion-avatar item-start>
+                        <img src="assets/img/avatar5.png">
+                    </ion-avatar>
+                    <h2>{{item.descripcionSolicitante}}</h2>
+                    <p>{{globalService.formatDateHour(item.fecha)}}</p>
+                    <ion-note item-end>Nro.: {{item.codigoSolicitud}}</ion-note>
+                </ion-item>
+                
+                <ion-card-content class="solicitud-card">
+                    <ion-list>
+                        <ion-list-header>
+                            Datos Generales
+                        </ion-list-header>
+                        <ion-item>
+                            <ion-note item-start class="list-title">Tipo Trámite</ion-note>
+                            <h2></h2>
+                            <p>{{item.descripcionTipoTramite}}</p>
+                        </ion-item>
+                        <ion-item>
+                            <ion-note item-start class="list-title">Estado</ion-note>
+                            <p>{{item.estadodescripcion}}</p>
+                        </ion-item>
+                        <ion-item>
+                            <ion-note item-start class="list-title">Responsable</ion-note>
+                            <p>{{item.descripcionResponsable}}</p>
+                        </ion-item>
+                    </ion-list>
+                    <ion-list>
+                        <ion-list-header>
+                            Requisitos
+                        </ion-list-header>
+                        <ion-item *ngFor="let req of item.listaRequisitos;let i = index">
+                            <ion-note item-start class="list-title">{{req.descripcionRequisito}}</ion-note>
+                            <p *ngIf="req.listaRequisitosCabecera.length > 0">
+                                <ng-container *ngFor="let arc of req.listaRequisitosCabecera[0].listaArchivosEntrantes">
+                                    <span>{{arc.nombreArchivo}}</span>
+                                    <button *ngIf="req.listaRequisitosCabecera[0].listaArchivosEntrantes.length > 0"
+                                        ion-button icon-only class="btn-upload-file button-ccs" 
+                                        (click)="descargarArchivo(arc)">
+                                        <ion-icon name="md-cloud-download"></ion-icon>
+                                    </button><br>
+                                </ng-container>
+                                
+                            </p>
+                            <ion-note item-end>
+                                <button ion-button icon-only class="btn-upload-file button-ccs" (click)="file.click()">
+                                    <ion-icon name="md-cloud-upload"></ion-icon>
+                                </button>
+                                <input id="requisito{{i+1}}" 
+                                    style="display: none;" #file type="file" 
+                                    (change)="cargarRequisito(ii, i, $event, file)"
+                                    [multiple]="req.multipleArchivo?true:false">
+                            </ion-note>
+                        </ion-item>
+                    </ion-list>
+                </ion-card-content>
+                
+            </ion-card>
+        </ng-container>
+    </div>
+</ion-content>

@@ -1,0 +1,72 @@
+<ion-list *ngFor="let transporte of detalle.transporte">
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="ionitron" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Num Aplcacion</h3>
+        <h2>{{transporte.numAplicacion}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="ionitron" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Descripción</h3>
+        <h2>{{transporte.descripcionCompleta}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="construct" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Fecha Embarque</h3>
+        <h2>{{transporte.fechaEmbarque}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="bus" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Fecha Llegada</h3>
+        <h2>{{transporte.fechaLlegada}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="paw" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Medio de Transporte</h3>
+        <h2>{{transporte.medioTransporte}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="key" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Tipo de Mercaderia</h3>
+        <h2>{{transporte.tipoMercaderia}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Embalaje</h3>
+        <h2>{{transporte.embalaje}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Procedencia</h3>
+        <h2>{{transporte.procedencia}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Destino</h3>
+        <h2>{{transporte.destino}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Estado</h3>
+        <h2>{{transporte.estado}}</h2>
+    </ion-item>
+</ion-list>

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the PuntoVenta page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+  <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content padding>
+  <ion-navbar>
+    <ion-title>Puntos de venta SOAT</ion-title>
+  </ion-navbar>
+  <!--<ion-list radio-group>
+    <ion-item ion-col>
+      <ion-label>Lunes a Viernes</ion-label>
+      <ion-radio value="lv" checked></ion-radio>
+    </ion-item>
+    <ion-item ion-col> 
+      <ion-label>Sabados y Domingos</ion-label>
+      <ion-radio value="sd" [disabled]="isDisabled""></ion-radio>
+    </ion-item>
+  </ion-list>
+-->
+  <div #map id="map">
+  </div>
+
+  <ion-list *ngFor="let item of markersPuntoVenta" no-lines>
+    <ion-item no-lines>
+      <ion-thumbnail item-left>
+            <img [src]="item.logo">
+      </ion-thumbnail>
+      <ion-label stacked><ion-icon name="md-pin"></ion-icon>{{item.canal}}</ion-label>
+      <ion-label class="info" stacked>{{item.direccion}}</ion-label>
+      <ion-label class="info" stacked>Agencia : {{item.agencia}}</ion-label>
+      <ion-label class="info" stacked>Telefono : {{item.telefono}}</ion-label>
+      <ion-label class="info" stacked>Horarios : {{item.horarios}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

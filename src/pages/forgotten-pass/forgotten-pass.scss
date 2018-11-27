@@ -1,0 +1,30 @@
+page-forgotten-pass {
+.item-icon-left .item-content {
+  padding-left:3em !important;  
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+  background-color: white !important;  
+}
+
+.item-icon-left i {
+  left:0;
+  padding-top:2px !important;
+  padding-bottom:5px !important;
+  right: auto;
+  color: #D4201F !important;
+  font-size: 20px !important;
+}
+
+.item-radio input ~ .radio-icon {
+    visibility: visible !important;
+}
+
+.item-radio > .radio-icon:before {
+    content: "\f3a6" !important; /*deselected - Ionic class = ion-android-radio-button-off */
+}
+
+.item-radio > input[type=radio]:checked ~ .radio-icon:before {
+    content: "\f3a7" !important; /*selected Ionic class = ion-android-radio-button-on */
+}
+
+}

@@ -1,0 +1,49 @@
+<!--
+  Generated template for the ModalPregunta page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header>
+    <ion-navbar>
+    <ion-title>Pregunta de seguridad</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <span ion-text>Salir</span>
+      </button>
+    </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content  padding center>
+  <form (ngSubmit)="updateData()" #registerForm="ngForm">
+   <ion-list>
+      <ion-item no-lines>
+        <ion-label stacked>Pregunta Secreta</ion-label>
+        <ion-select okText="Aceptar" cancelText="Cerrar" interface="action-sheet" 
+         [(ngModel)]="data.PregSecreta" [ngModelOptions]="{standalone: true}" required>
+          <ion-option *ngFor="let preg of preguntas" [value]="preg.codigoTipo">{{preg.descripcion}}</ion-option>
+            
+        </ion-select>
+      </ion-item>
+
+      <ion-item no-lines>
+        <ion-label stacked>Respuesta Secreta<span>*</span></ion-label>
+        <ion-input type="text" placeholder="" name="respuesta" 
+        [(ngModel)]="data.RptaSecreta" required></ion-input>
+      </ion-item>
+     
+    </ion-list>
+    <ion-row>
+      <ion-item no-lines>
+        <ion-label> (<span>*</span>) Campos Obligatorios</ion-label>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button full type="submit">Actualizar</button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

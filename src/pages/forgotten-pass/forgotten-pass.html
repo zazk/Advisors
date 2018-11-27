@@ -1,0 +1,44 @@
+<!--
+  Generated template for the ForgottenPass page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+</ion-header>
+<ion-content padding>
+  <ion-navbar>
+    <ion-title>Recuperación de contraseña</ion-title>
+  </ion-navbar>
+  <form (ngSubmit)="enviar()" #registerForm="ngForm">
+      <ion-list>
+        <ion-item no-lines>
+            <ion-label stacked>Tipo de Documento de Identidad</ion-label>
+            <ion-select interface="action-sheet" 
+            [(ngModel)]="data.TipoDocumento" [ngModelOptions]="{standalone: true}">
+              <ion-option *ngFor="let itemDoc of tipoD" [value]="itemDoc.codigoTipo">{{itemDoc.descripcion}}</ion-option>
+            </ion-select>
+          </ion-item>  
+      <ion-item no-lines>
+        <ion-label stacked>Nro. de Documento:</ion-label>
+        <ion-input type="text" placeholder="" name="documento" [(ngModel)]="data.Usuario" required></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+          <ion-label stacked>Pregunta Secreta<span>*</span></ion-label>
+          <ion-select interface="action-sheet" 
+          [(ngModel)]="data.PregSecreta" [ngModelOptions]="{standalone: true}">
+            <ion-option *ngFor="let itemPre of tipoP" [value]='itemPre.codigoTipo'>{{itemPre.descripcion}}</ion-option>
+          </ion-select>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Respuesta:</ion-label>
+        <ion-input ctype="text" placeholder="" name="documento" [(ngModel)]="data.RptaSecreta"  required></ion-input>
+      </ion-item>
+      </ion-list>
+      <div vc-recaptcha key="'XXXXXXXX'" on-success="onSuccess()"></div>
+      <button ion-button  full>
+          Recuperar
+        </button>
+  </form>
+</ion-content>

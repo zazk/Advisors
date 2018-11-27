@@ -1,0 +1,40 @@
+<!--
+  Generated template for the ContactoPage page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+</ion-header>
+
+<ion-content padding>
+    <ion-navbar>
+      <ion-title>Contacto</ion-title>
+    </ion-navbar>
+    <ion-list>
+      <ion-item no-lines>
+        <ion-label stacked>Remitente</ion-label>
+        <ion-label>{{data.Remitente}}</ion-label>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Asunto</ion-label>
+        <ion-input type="text" placeholder="" name="asunto" [(ngModel)]="data.Asunto" required></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Mensaje</ion-label>
+        <ion-textarea attr.rows="6" class = "textAreaCustom" [(ngModel)]="data.Mensaje"></ion-textarea>
+      </ion-item>
+    </ion-list>
+  
+    <button ion-button full (click)="Enviar()">
+      <ion-icon name="ios-arrow-forward"></ion-icon>
+      Enviar</button>    
+    <ion-list no-lines center>
+      <ion-list-header>¿Deseas contactarnos?</ion-list-header>
+      <button class="button-ccs" ion-button class="info" *ngFor="let itemTel of telefonos" (click)="llamar(itemTel)" full>{{itemTel.concatenado}}</button>
+    </ion-list>
+  </ion-content>

@@ -1,0 +1,46 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<!-- pinkxel: Para todas las páginas, excepto la de inicio y la modales, la sección 'ion-navbar' se incluyó dentro de 'ion-content' a diferencia de lo que sugiere la documentación de Ionic, incluirlo en 'ion-header'.
+
+-->
+
+<ion-header>
+    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+</ion-header>
+<ion-content padding center>
+  <ion-navbar>
+    <ion-title>Ingreso de usuarios</ion-title>
+    <!-- pinkxel: '{{titulo}}'' No funciona en esta y en otras páginas -->
+    <!-- <ion-title>{{titulo}}</ion-title> -->
+  </ion-navbar>
+    <ion-list no-lines>
+      <ion-item>
+        <ion-label stacked>Número de documento</ion-label>
+        <ion-input block type="text" placeholder="Nro. Documento" name="usuario" [(ngModel)]="loginCredentials.username"
+          required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Contraseña</ion-label>
+        <ion-input type="password" placeholder="Contraseña" name="password" [(ngModel)]="loginCredentials.password"
+          required></ion-input>
+      </ion-item>
+    </ion-list>
+    <button ion-button full (click)="login()"><ion-icon name="ios-arrow-forward"></ion-icon>Ingresar</button>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start block clear (click)="forgotAccount()"><ion-icon name="md-help"></ion-icon>Olvidé mi contraseña</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start block clear (click)="createAccount()"><ion-icon name="md-add"></ion-icon>Registro</button>
+      </ion-col>
+    </ion-row>
+  </ion-toolbar>
+</ion-footer>

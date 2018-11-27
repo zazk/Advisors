@@ -1,1 +1,52 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content" id="menuRoot" side="right">
+  <ion-header>
+    <ion-toolbar> <ion-title>Controles de usuario</ion-title> </ion-toolbar>
+  </ion-header>
+  <ion-content class="menu-default">
+    <ion-list class="profile-menu">
+      <ion-item no-lines text-wrap (click)="showMenu()">
+        <p class="user-name">Bienvenido Jhon Smith</p>
+        <p class="user-options">Opciones de usuario</p>
+        <ion-icon name="person" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+    <ion-list class="profile-menu-list" *ngIf="flagMenu" no-lines>
+      <button ion-item *ngFor="let p of pagesHidden" (click)="openMenu(p)">
+        <ion-icon name="{{p.icon}}"></ion-icon>
+        {{ p.titulo }}
+      </button>
+    </ion-list>
+    <ion-list no-lines>
+      <button ion-item *ngFor="let p of pages" (click)="openMenu(p)">
+        <ion-icon name="{{p.icon}}"></ion-icon>
+        {{ p.titulo }}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-menu [content]="content" side="right" id="menuHistorialSiniestro">
+  <ion-header>
+    <ion-toolbar> <ion-title>Mis Siniestros</ion-title> </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-row>
+      <ion-col> Llamada </ion-col>
+      <ion-col> Fecha Suceso </ion-col>
+      <ion-col> Ubicación </ion-col>
+      <ion-col> Fecha Atencion </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let dataSin of dataSiniestros" (click)="setMapa(dataSin)">
+      <ion-col> {{ dataSin.descripcion }} </ion-col>
+      <ion-col>
+        {{ dataSin.fechaRegistro | date: "dd/MM/yyyy H:mm:ss" }}
+      </ion-col>
+      <ion-col> {{ dataSin.ubicacion }} </ion-col>
+      <ion-col>
+        {{ dataSin.fechaAtencion | date: "dd/MM/yyyy H:mm:ss" }}
+      </ion-col>
+    </ion-row>
+  </ion-content>
+</ion-menu>
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

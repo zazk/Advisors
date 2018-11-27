@@ -1,0 +1,318 @@
+<!--
+  Generated template for the Pagos page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalle de seguro</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="dismiss()">
+        <span ion-text>Salir</span>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <h1>{{detalle.riesgo}}</h1>
+  <ion-label class="sub-title">#{{detalle.nroPoliza}}</ion-label>
+  <img class="companyLogo" [src]="detalle.url" />
+  <p>A continuación se muestra el/los pago(s) correspondiente(s) a tu seguro.</p>
+  <p>Al día de hoy tienes 0 cuota(s) vencida(s).</p>
+  <!-- COMENTARIO :  Se agregaron todas las plantillas a este codigo para renderizar debido a q el llamado a los archivos html no se reconocen ... corregir eso -->
+  <!--<p  [innerHTML]="\pagos\vehicular.html"></p>-->
+  <ng-container *ngIf="detalle.flagVehicular">
+    <ion-list no-lines class="inline">            
+      <ion-item>
+        <ion-label stacked>Tipo de Vehículo</ion-label>
+        <ion-label class="info">tipo</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Uso de Vehículo</ion-label>
+        <ion-label class="info">uso</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Clase de Vehículo</ion-label>
+        <ion-label class="info">clase</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Marca</ion-label>
+        <ion-label class="info">marca</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Modelo</ion-label>
+        <ion-label class="info">mod</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Motor</ion-label>
+        <ion-label class="info">mot</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Año</ion-label>
+        <ion-label class="info">año</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Chasis</ion-label>
+        <ion-label class="info">cha</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Placa en Trámite</ion-label>
+        <ion-label class="info">pla</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagInmueble">
+    <ion-list no-lines class="inline" *ngFor="let inmueble of detalle.inmueble">
+      <ion-item>
+        <ion-label>Dirección</ion-label>
+        <ion-label class="info">dir</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estructura</ion-label>
+        <ion-label class="info">estr</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Uso Inmueble</ion-label>
+        <ion-label class="info">asdf</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Año</ion-label>
+        <ion-label class="info">12</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Número de Pisos</ion-label>
+        <ion-label class="info">12</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Número de Sotanos</ion-label>
+        <ion-label class="info">12</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagMaquinaria">
+    <ion-list no-lines class="inline" *ngFor="let maquinaria of detalle.maquinaria">
+      <ion-item>
+        <ion-label>Descripción 1</ion-label>
+        <ion-label class="info">{{maquinaria.descripcion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo de Maquinaria</ion-label>
+        <ion-label class="info">{{maquinaria.tipoMaquinaria}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Marca</ion-label>
+        <ion-label class="info">{{maquinaria.marca}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Modelo</ion-label>
+        <ion-label class="info">{{maquinaria.modelo}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Serie</ion-label>
+        <ion-label class="info">{{maquinaria.serie}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Dirección</ion-label>
+        <ion-label class="info">{{maquinaria.direccion}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagTransporte">
+    <ion-list no-lines class="inline" *ngFor="let transporte of detalle.transporte">
+      <ion-item>
+        <ion-label>Num Aplcacion</ion-label>
+        <ion-label class="info">{{transporte.numAplicacion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Descripción 2</ion-label>
+        <ion-label class="info">{{transporte.descripcionCompleta}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Embarque</ion-label>
+        <ion-label class="info">{{transporte.fechaEmbarque}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Llegada</ion-label>
+        <ion-label class="info">{{transporte.fechaLlegada}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Medio de Transporte</ion-label>
+        <ion-label class="info">{{transporte.medioTransporte}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo de Mercaderia</ion-label>
+        <ion-label class="info">{{transporte.tipoMercaderia}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Embalaje</ion-label>
+        <ion-label class="info">{{transporte.embalaje}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Procedencia</ion-label>
+        <ion-label class="info">{{transporte.procedencia}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Destino</ion-label>
+        <ion-label class="info">{{transporte.destino}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-label class="info">{{transporte.estado}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagOtros">
+    <ion-list no-lines class="inline" *ngFor="let otros of detalle.otros">
+      <ion-item>
+        <ion-label stacked>Descripción 3</ion-label>
+        <ion-label class="info">{{otros.descripcion}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagAccidenteEscolar">
+    <ion-list no-lines class="inline" *ngFor="let item of detalle.accidenteEscolar">
+      <ion-item>
+        <ion-label>Documento</ion-label>
+        <ion-label class="info">{{item.documento}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-label class="info">{{item.nombre}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Condicion</ion-label>
+        <ion-label class="info">{{item.condicion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sede</ion-label>
+        <ion-label class="info">{{item.sede}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Ingreso</ion-label>
+        <ion-label class="info">{{item.fechaIngreso}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Inicio</ion-label>
+        <ion-label class="info">{{item.fechaInicio}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Fin</ion-label>
+        <ion-label class="info">{{item.fechaFin}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-label class="info">{{item.estado}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagAsistenciaMedica">
+    <ion-list no-lines class="inline" *ngFor="let item of detalle.asistenciaMedica">
+      <ion-item>
+        <ion-label>Documento</ion-label>
+        <ion-label class="info">{{item.documento}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-label class="info">{{item.nombre}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Direccion</ion-label>
+        <ion-label class="info">{{item.direccion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Dependientes</ion-label>
+        <ion-list no-lines class="inline" *ngFor="let dependiente of item.dependientes">
+          <ion-item>
+            <ion-label>Nombre</ion-label>
+            <ion-label class="info">{{dependiente.nombre}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Documento</ion-label>
+            <ion-label class="info">{{dependiente.documento}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Parentesco</ion-label>
+            <ion-label class="info">{{dependiente.parentesco}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fecha de Nacimiento</ion-label>
+            <ion-label class="info">{{dependiente.fechaNacimiento}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fecha de Ingreso</ion-label>
+            <ion-label class="info">{{dependiente.fechaIngreso}}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Estado</ion-label>
+            <ion-label class="info">{{dependiente.estado}}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagSctrPenciones">
+    <ion-list no-lines class="inline" *ngFor="let item of detalle.sctrPensiones">
+      <ion-item>
+        <ion-label>Documento</ion-label>
+        <ion-label class="info">{{item.documento}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-label class="info">{{item.nombre}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Condicion</ion-label>
+        <ion-label class="info">{{item.condicion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sede</ion-label>
+        <ion-label class="info">{{item.sede}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Ingreso</ion-label>
+        <ion-label class="info">{{item.fechaIngreso}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-label class="info">{{item.estado}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+  <ng-container *ngIf="detalle.flagSeguroViaje">
+    <ion-list no-lines class="inline" *ngFor="let item of detalle.seguroViaje">
+      <ion-item>
+        <ion-label>Documento</ion-label>
+        <ion-label class="info">{{item.documento}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-label class="info">{{item.nombre}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Condicion</ion-label>
+        <ion-label class="info">{{item.condicion}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Sede</ion-label>
+        <ion-label class="info">{{item.sede}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Ingreso</ion-label>
+        <ion-label class="info">{{item.fechaIngreso}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Inicio</ion-label>
+        <ion-label class="info">{{item.fechaInicio}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fecha Fin</ion-label>
+        <ion-label class="info">{{item.fechaFin}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Estado</ion-label>
+        <ion-label class="info">{{item.estado}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+</ion-content>

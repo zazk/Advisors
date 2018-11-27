@@ -1,0 +1,44 @@
+<ion-list *ngFor="let maquinaria of detalle.maquinaria">
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="ionitron" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Descripción</h3>
+        <h2>{{maquinaria.descripcion}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="construct" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Tipo de Maquinaria</h3>
+        <h2>{{maquinaria.tipoMaquinaria}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="bus" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Marca</h3>
+        <h2>{{maquinaria.marca}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="paw" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Modelo</h3>
+        <h2>{{maquinaria.modelo}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="key" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Serie</h3>
+        <h2>{{maquinaria.serie}}</h2>
+    </ion-item>
+    <ion-item>
+        <ion-avatar item-left>
+            <ion-icon name="flash" item-left></ion-icon>
+        </ion-avatar>
+        <h3>Dirección</h3>
+        <h2>{{maquinaria.direccion}}</h2>
+    </ion-item>    
+</ion-list>
