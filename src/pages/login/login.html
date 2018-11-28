@@ -6,11 +6,11 @@
 -->
 
 <!-- pinkxel: Para todas las páginas, excepto la de inicio y la modales, la sección 'ion-navbar' se incluyó dentro de 'ion-content' a diferencia de lo que sugiere la documentación de Ionic, incluirlo en 'ion-header'.
-
+.svg
 -->
 
-<ion-header>
-    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+<ion-header class="logo-login">
+    <img class="logo-img" src="assets/img/logo-consejeros.svg" />
 </ion-header>
 <ion-content padding center>
   <ion-navbar>
@@ -20,27 +20,21 @@
   </ion-navbar>
     <ion-list no-lines>
       <ion-item>
-        <ion-label stacked>Número de documento</ion-label>
-        <ion-input block type="text" placeholder="Nro. Documento" name="usuario" [(ngModel)]="loginCredentials.username"
+        <ion-input block type="text" placeholder="Usuario" name="usuario" [(ngModel)]="loginCredentials.username"
           required></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Contraseña</ion-label>
-        <ion-input type="password" placeholder="Contraseña" name="password" [(ngModel)]="loginCredentials.password"
+        <ion-input type="password" placeholder="*********" name="password" [(ngModel)]="loginCredentials.password"
           required></ion-input>
       </ion-item>
     </ion-list>
-    <button ion-button full (click)="login()"><ion-icon name="ios-arrow-forward"></ion-icon>Ingresar</button>
+    <button ion-button full (click)="login()">Ingresar</button>
+    <ion-toolbar class="mt40">
+      <ion-row class="mb20">
+          <button class="g0-text-link"  (click)="forgotAccount()">Olvidé mi contraseña</button>
+      </ion-row>
+      <ion-row>
+        <button class="g0-text-link"  (click)="createAccount()">No tienes cuenta? <strong>Regístrate</strong></button>
+      </ion-row>
+    </ion-toolbar>    
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-start block clear (click)="forgotAccount()"><ion-icon name="md-help"></ion-icon>Olvidé mi contraseña</button>
-      </ion-col>
-      <ion-col>
-        <button ion-button icon-start block clear (click)="createAccount()"><ion-icon name="md-add"></ion-icon>Registro</button>
-      </ion-col>
-    </ion-row>
-  </ion-toolbar>
-</ion-footer>
