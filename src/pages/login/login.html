@@ -13,17 +13,12 @@
     <img class="logo-img" src="assets/img/logo-consejeros.svg" />
 </ion-header>
 <ion-content padding center>
-  <ion-navbar>
-    <ion-title>Ingreso de usuarios</ion-title>
-    <!-- pinkxel: '{{titulo}}'' No funciona en esta y en otras páginas -->
-    <!-- <ion-title>{{titulo}}</ion-title> -->
-  </ion-navbar>
-    <ion-list no-lines>
-      <ion-item>
+    <ion-list no-lines >
+      <ion-item class="g0-input-item ico-login">
         <ion-input block type="text" placeholder="Usuario" name="usuario" [(ngModel)]="loginCredentials.username"
           required></ion-input>
       </ion-item>
-      <ion-item>
+      <ion-item class="g0-input-item ico-password">
         <ion-input type="password" placeholder="*********" name="password" [(ngModel)]="loginCredentials.password"
           required></ion-input>
       </ion-item>

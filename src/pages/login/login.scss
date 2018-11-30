@@ -1,2 +1,44 @@
 page-login {
+	.g0-input-item{
+		position: relative;
+		input{
+			height: 60px;
+			background:  none;
+			border-bottom: 1px solid $c1;
+			border-radius:0;
+			padding-left: 40px;
+			box-sizing: border-box;
+		}
+		&.ico-login, &.ico-password{
+			&::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 30px;
+				height: 30px;
+				display: block;
+				bottom: 0;
+				margin: auto 0;
+				background-image: url(../assets/img/ico-sesion.svg);
+				
+			}
+			
+		}
+		&.ico-password{
+			&::after{
+				background-image: url(../assets/img/ico-candado.svg);
+				
+			}
+		}
+		
+	}
+	.logo-login{
+		top:40px;
+		width: 100%;
+		text-align: center;
+	}
+	.scroll-content{
+		top:60px;
+	}
 }
