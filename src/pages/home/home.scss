@@ -1,7 +1,50 @@
 page-home {
+	.hm-name{
+		color:$c2;
+		padding-top: 60px;
+	}
+	// .hm-welcome{
+	// 	background-color: #fff
+	// }
+	.hm-image-perfil{
+		background-color: $c3;
+		position: relative;
+		height: 60px;
+		&::after, &::before{
+			content:"";
+			position: absolute;
+			height: 100%;
+			background-color: $c3;
+			display: block;
+			width: 100vw;
+		}
+		&::after{
+			left: 100%;
+		}
+		&::before{
+			right: 100%;
+		}		
+
+		figure{
+			width: 84px;
+			height: 84px;
+			border-radius: 100%;
+			overflow: hidden;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
 
 	.scroll-content {
-		background-color: $color-lila;
+		background-color: $c4;
 		color: $color-blanco;
 	}
 
