@@ -1,0 +1,84 @@
+
+// header interiores
+.h-header-inner{
+  background-color: $c2;
+  .logo-img{
+    max-width:  160px;
+    height: auto;
+  }
+}
+
+//bloque bienvenido
+.hm-name{
+  color:$c2;
+  padding-top: 20px;
+  text-align: center;
+  p{
+    font-family: $t1;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  strong{
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+.hm-image-perfil{
+  background-color: $c3;
+  position: relative;
+  height: 50px;
+  &::after, &::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    background-color: $c3;
+    display: block;
+    width: 100vw;
+  }
+  &::after{
+    left: 100%;
+  }
+  &::before{
+    right: 100%;
+  }   
+
+  figure{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+//bloque bienvenido
+.h-header-innercontrols{
+  background-color: $c2;
+}
+.h-controls{
+  color: #fff;
+  font-size: 24px;
+  font-family: $t1;
+  position: relative;
+  .back-button{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .button-inner{
+      display: none;
+    }
+  }
+
+}
+

@@ -1,0 +1,30 @@
+
+//footer inner
+.f-footer{
+  background-color: $c2;
+  padding: 10px 0;
+}
+.footer-inner{
+  display: flex;
+  flex-flow: row wrap;
+}
+.f-item{
+  width: 33.33%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border:none;
+  label{
+    display: block;
+    width: 100%;
+    color:#fff;
+    font-family: $t1;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+
+//footer inner
