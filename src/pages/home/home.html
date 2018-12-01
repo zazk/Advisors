@@ -9,7 +9,7 @@
 </ion-header>
 
 
-<ion-content padding center>
+<ion-content padding center class="g0-content">
   <div class="hm-welcome">
     <div class="hm-image-perfil">
       <figure>
@@ -23,48 +23,54 @@
 
   <!-- pinkxel: Aquí termina el código estandar para la cabecera de las páginas post-logeo, -->
   <div class="home-list">
-    <ion-row>
-      <ion-col>
-        <button class="button-main" (click)="goSeguros('Mis Seguros',0)">
-          <ion-icon name="ios-albums">
-          </ion-icon><label>Mis Seguros</label>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button class="button-main" (click)="goPuntoVentaSOAT()">
-          <ion-icon name="md-car">
-          </ion-icon>
-          <label>Punto de Venta SOAT</label>
-        </button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
+
+      <button class="button-main" (click)="goSeguros('Mis Seguros',0)">
+          <img src="assets/img/ico-1.svg" width="65" height="65" alt="">
+          <label>Mis Seguros</label>
+      </button>  
+
+      <button class="button-main" (click)="goPuntoVentaSOAT()">
+          <img src="assets/img/ico-2.svg" width="65" height="65" alt="">
+        <label>Punto de Venta</label>
+      </button>
+
+      <button class="button-main" (click)="goModulo(AvisoSiniestroPage)">
+          <img src="assets/img/ico-3.svg" width="65" height="65" alt="">
+        <label>Siniestro</label>
+      </button>
+
+      <button class="button-main" (click)="goFormadePago()">
+          <img src="assets/img/ico-4.svg" width="65" height="65" alt="">
+        <label>Fomas de Pago</label>
+      </button>
+
+      <button class="button-main" (click)="goContacto()">
+          <img src="assets/img/ico-5.svg" width="65" height="65" alt="">
+        <label>Contacto Consejeros</label>
+      </button>
       
-      <ion-col>
-        <button class="button-main" (click)="goModulo(AvisoSiniestroPage)">
-          <ion-icon name="md-alert">
-          </ion-icon>
-          <label>Siniestro</label>
-        </button>
-      </ion-col>
-      <ion-col>
-        <button class="button-main" (click)="goFormadePago()">
-          <ion-icon name="md-car">
-          </ion-icon>
-          <label>Fomas de Pago</label>
-        </button>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      
-      <ion-col>
-        <button class="button-main" (click)="goContacto()">
-          <ion-icon name="md-chatbubbles">
-          </ion-icon>
-          <label>Contacto Consejeros</label>
-        </button>
-      </ion-col>
-    </ion-row>
+
     
   </div>
 </ion-content>
+<ion-footer class="f-footer">
+  <div class="footer-inner">
+    <button class="f-item">
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+      <label>INICIO</label>      
+    </button>
+    <button class="f-item">
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+      <label>PERFIL</label>      
+    </button>
+    <button menuToggle class="f-item">
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+      <label>MENÚ</label>      
+    </button>
+<!-- 
+  <button ion-button menuToggle end>
+    <ion-icon name="menu"></ion-icon>
+  </button> -->
+
+  </div>
+</ion-footer>

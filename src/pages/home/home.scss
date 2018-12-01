@@ -1,93 +1,44 @@
 page-home {
-	.hm-name{
-		color:$c2;
-		padding-top: 60px;
-	}
-	// .hm-welcome{
-	// 	background-color: #fff
-	// }
-	.hm-image-perfil{
-		background-color: $c3;
-		position: relative;
-		height: 60px;
-		&::after, &::before{
-			content:"";
-			position: absolute;
-			height: 100%;
-			background-color: $c3;
-			display: block;
-			width: 100vw;
-		}
-		&::after{
-			left: 100%;
-		}
-		&::before{
-			right: 100%;
-		}		
-
-		figure{
-			width: 84px;
-			height: 84px;
-			border-radius: 100%;
-			overflow: hidden;
-			position: absolute;
-			top: 15px;
-			left: 0;
-			right: 0;
-			margin: 0 auto;
-		}
-		img{
-			max-width: 100%;
-			height: auto;
-		}
-	}
-
-
-	.scroll-content {
+	.g0-content{
 		background-color: $c4;
-		color: $color-blanco;
 	}
-
-	.home-list {
-		margin-top: 24px;
+	.button-main{
+		width: 130px;
+		height: 130px;
+		border-radius: 25px;
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-flow: row wrap;
+		margin-left: 6%;
+		margin-bottom: 6%;
+		padding: 0;
+		&:active{
+			background-color: #ececec;
+		}
+		label{
+			font-size: 12px;
+			color: $c2;
+			line-height: 15px;
+			display: block;
+			width: 100%;
+			padding: 0 5px;
+			text-transform: uppercase;
+			margin-top: 5px;
+		}
+		&:nth-child(2n+1){
+			margin-left: 0;
+		}
+		&:first-child{
+			margin-left: 0;
+		}
 	}
+	.home-list{
+		padding-top: 25px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
 
-	.toolbar {
-		background-color: $color-blanco;
-		margin-left: -24px;
-		margin-right: -24px;
-		width: calc(100% + 48px);
-		padding-left: 24px;
-		padding-right: 24px;
-	}
-
-	.toolbar .title {
-		padding-left: 24px;
-	}
-
-	.button-main {
-		font-family: 'Facto';
-		background: $color-guindaclaro;
-		color: $color-blanco;
-		border: 0px solid transparent;
-		margin: 0;
-		padding: 0 20px;
-		height: calc(50vw - 24px);
-		width: calc(50vw - 24px);
-		text-align: center;
-		border-radius: 0;
-		border: 1px solid $color-lila;
-		font-size: 1.6rem;
-		line-height: 1.4rem;
-	}
-
-	.button-main.atention {
-		background: $color-naranja;
-	}
-
-	.button-main ion-icon {
-		font-size: 6rem;
-		display: block;
-		padding-right: 0;
 	}
 }

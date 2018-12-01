@@ -19,8 +19,16 @@ $c1:#7c7c7c;
 $c2:#601045;
 $c3:#f16528;
 $c4:#f8f9fb;
+$c5:#e2e2e2;
+
+
+//fonts
+$t1: "Facto";
+$t2: "Facto-Light";
+$t3: "Facto-Medium";
+
 .g0-text-link{
-  font-family: 'Facto-Light';
+  font-family: $t2;
   font-size: 14px;
   color:$c1;
   background: none;
@@ -33,4 +41,92 @@ $c4:#f8f9fb;
 // header interiores
 .h-header-inner{
   background-color: $c2;
+  .logo-img{
+    max-width:  160px;
+    height: auto;
+  }
 }
+
+//bloque bienvenido
+.hm-name{
+  color:$c2;
+  padding-top: 20px;
+  text-align: center;
+  p{
+    font-family: $t1;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+  strong{
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+  }
+}
+.hm-image-perfil{
+  background-color: $c3;
+  position: relative;
+  height: 50px;
+  &::after, &::before{
+    content:"";
+    position: absolute;
+    height: 100%;
+    background-color: $c3;
+    display: block;
+    width: 100vw;
+  }
+  &::after{
+    left: 100%;
+  }
+  &::before{
+    right: 100%;
+  }   
+
+  figure{
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+}
+//bloque bienvenido
+
+//footer inner
+.f-footer{
+  background-color: $c2;
+  padding: 10px 0;
+}
+.footer-inner{
+  display: flex;
+  flex-flow: row wrap;
+}
+.f-item{
+  width: 33.33%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border:none;
+  label{
+    display: block;
+    width: 100%;
+    color:#fff;
+    font-family: $t1;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}
+
+
+//footer inner
