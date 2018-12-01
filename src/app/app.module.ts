@@ -1,3 +1,4 @@
+import { Geolocation } from "@ionic-native/geolocation";
 import { NgModule, ErrorHandler } from "@angular/core";
 import { HttpModule } from "@angular/http";
 import { Device } from "@ionic-native/device";
@@ -100,6 +101,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
     Network,
+    Geolocation,
     AuthService,
     GlovalVars,
     ConnectivityService,
