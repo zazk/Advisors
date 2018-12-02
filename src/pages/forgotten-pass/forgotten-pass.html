@@ -4,41 +4,42 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
-    <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
+<ion-header class="h-header-innercontrols">
+    <div class="h-controls">
+    <ion-navbar>
+      <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Recuperar Contraseña</h3>
+    </ion-navbar>      
+    </div>  
 </ion-header>
 <ion-content padding>
-  <ion-navbar>
-    <ion-title>Recuperación de contraseña</ion-title>
-  </ion-navbar>
-  <form (ngSubmit)="enviar()" #registerForm="ngForm">
-      <ion-list>
+  <form class="g0-form" (ngSubmit)="enviar()" #registerForm="ngForm">
+      <ion-list class="g0-list-inputs">
         <ion-item no-lines>
-            <ion-label stacked>Tipo de Documento de Identidad</ion-label>
-            <ion-select interface="action-sheet" 
+            <ion-label class="g0-label-input" stacked>Tipo de Documento de Identidad</ion-label>
+            <ion-select class="g0-select" interface="action-sheet" 
             [(ngModel)]="data.TipoDocumento" [ngModelOptions]="{standalone: true}">
               <ion-option *ngFor="let itemDoc of tipoD" [value]="itemDoc.codigoTipo">{{itemDoc.descripcion}}</ion-option>
+              <ion-option>DNI</ion-option>  
+              <ion-option>RUC</ion-option>  
+              <ion-option>Carnet de Extranjería</ion-option>  
+              <ion-option>Carnet Identidad Militar</ion-option>  
+              <ion-option>Carnet Diplomático</ion-option>  
+              <ion-option>Partida de Nacimiento</ion-option>                
             </ion-select>
           </ion-item>  
       <ion-item no-lines>
-        <ion-label stacked>Nro. de Documento:</ion-label>
-        <ion-input type="text" placeholder="" name="documento" [(ngModel)]="data.Usuario" required></ion-input>
+        <ion-label class="g0-label-input" stacked>Nro. de Documento:</ion-label>
+        <ion-input class="g0-input" type="text" placeholder="" name="documento" [(ngModel)]="data.Usuario" required></ion-input>
       </ion-item>
-      <ion-item no-lines>
-          <ion-label stacked>Pregunta Secreta<span>*</span></ion-label>
-          <ion-select interface="action-sheet" 
-          [(ngModel)]="data.PregSecreta" [ngModelOptions]="{standalone: true}">
-            <ion-option *ngFor="let itemPre of tipoP" [value]='itemPre.codigoTipo'>{{itemPre.descripcion}}</ion-option>
-          </ion-select>
-      </ion-item>
-      <ion-item no-lines>
-        <ion-label stacked>Respuesta:</ion-label>
-        <ion-input ctype="text" placeholder="" name="documento" [(ngModel)]="data.RptaSecreta"  required></ion-input>
-      </ion-item>
+        <ion-item>
+            <ion-label class="g0-label-input" stacked>Correo Electrónico *</ion-label>
+            <ion-input class="g0-input" type="email" placeholder="" name="email"  required></ion-input>
+        </ion-item>      
+      
       </ion-list>
       <div vc-recaptcha key="'XXXXXXXX'" on-success="onSuccess()"></div>
-      <button ion-button  full>
-          Recuperar
+      <button class="g0-btn-send" ion-button  full>
+          ACTUALIZAR
         </button>
   </form>
 </ion-content>
