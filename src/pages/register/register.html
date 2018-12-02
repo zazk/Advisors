@@ -7,7 +7,7 @@
 <ion-header class="h-header-innercontrols">
     <div class="h-controls">
     <ion-navbar>
-      <h3><span class="nico-arrow-left"></span>Registro de Usuarios</h3>
+      <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Registro de Usuarios</h3>
     </ion-navbar>      
     </div>  
 </ion-header>
@@ -19,13 +19,13 @@
           <ion-item>
               <ion-label stacked class="g0-label-input">Tipo de Documento de Identidad</ion-label>
               <ion-select class="g0-select" interface="action-sheet" [(ngModel)]="registerCredentials.tipoDocumento" [ngModelOptions]="{standalone: true}">
+                  <ion-option *ngFor="let itemDoc of tipoD" [value]="itemDoc.cod">{{itemDoc.desc}}</ion-option>
                   <ion-option>DNI</ion-option>  
                   <ion-option>RUC</ion-option>  
                   <ion-option>Carnet de Extranjería</ion-option>  
                   <ion-option>Carnet Identidad Militar</ion-option>  
                   <ion-option>Carnet Diplomático</ion-option>  
                   <ion-option>Partida de Nacimiento</ion-option>  
-                  <ion-option *ngFor="let itemDoc of tipoD" [value]="itemDoc.cod">{{itemDoc.desc}}</ion-option>
               </ion-select>
           </ion-item>
           <ion-item>
@@ -44,15 +44,20 @@
                 </p>
               </div>
           </ion-item>
-          <ion-item text-wrap>
-              ¿Acepta la políticas de protección de datos personales?<button ion-button block outline (click)="openPoliticaDP()">Leer</button>
+          <ion-item>  
+              <div class="g0-terminos">
+                <div class="g0-input-check">
+                    <input [(ngModel)]="registerCredentials.aceptPoliticas" [ngModelOptions]="{standalone: true}" type="checkbox" id="acepto" checked="" class="form-input validate[required] checkbox" name="info">
+                    <label for="acepto">¿Aceptas la políticas de protección de datos personales?</label>
+                </div>
+                <div class="g0-leer">
+                  <button ion-button block outline (click)="openPoliticaDP()">Leer</button>
+                </div>
+              </div>        
           </ion-item>
-          <ion-item>
-              <ion-label>Acepto</ion-label>
-              <ion-checkbox [(ngModel)]="registerCredentials.aceptPoliticas" [ngModelOptions]="{standalone: true}"></ion-checkbox>
-          </ion-item>
+          
       </ion-list>
-        <button ion-button full type="submit" [disabled]="!registerForm.form.valid">Registrar</button>
+        <button class="g0-btn-send" ion-button full type="submit" [disabled]="!registerForm.form.valid">Registrar</button>
     </form>
   </div>
 </ion-content>

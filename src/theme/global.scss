@@ -65,5 +65,83 @@
   }
 }
 
+  //input check
+.g0-terminos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+.g0-leer{
+  width: 50px;
+  .button-inner{
+    font-size: 15px;
+    font-family: $t2;
+  }
+  .button{
+    border-radius: 0;
+  }
+}
+.g0-input-check{
+  position: relative;
+  width: 70%;
+  input{
+    width: 0;
+    visibility: hidden;
+    position: absolute;
+    &:checked{
+      ~ label{
+        &:after{
+          opacity: 1;
+          color: $c3;
+
+        }
+        &:before{
+          border-color: $c3;
+        }
+      }
+    }
+  }
+  ion-label{
+    white-space: normal !important;
+  }
+  label{
+    white-space: normal !important;
+    line-height: 100%;
+    font-size: 12px;
+    font-family: $t1;
+    color: $c1;
+    position: relative;
+    padding-left: 30px;
+    margin: auto 0;
+    display: inline-block;
+    line-height: 18px;
+    &:after{
+      content: "\e901";
+      font-family: 'icomoon';
+      position: absolute;
+      top: 3px;
+      left: 5px;
+      font-size: 15px;
+      display: block;
+      z-index: 2;
+      transition: all .3s;
+      opacity: 0;
+    }
+      
+    &:before{
+      content: "";
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      border: 1px solid $c1;
+      left: 0;
+      top: 2px;
+      transition: all .3s;
+      display: block;
+      z-index: 1;
+    }
+  }
+}   
 
 //inputs

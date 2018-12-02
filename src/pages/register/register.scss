@@ -2,4 +2,16 @@ page-register {
 	.g0-form{
 		padding-top: 50px;
 	}
+	.scroll-content{
+		contain:none !important;
+	}
+	.g0-btn-send{
+	  position: fixed !important;
+	  bottom: 0;
+	  width: 100%;
+	  left: 0;
+	  margin: 0;
+	  border-radius: 0;
+	  height: 60px;
+	}	
 }
