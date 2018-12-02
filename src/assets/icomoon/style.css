@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?anjlq5');
-  src:  url('fonts/icomoon.eot?anjlq5#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?anjlq5') format('truetype'),
-    url('fonts/icomoon.woff?anjlq5') format('woff'),
-    url('fonts/icomoon.svg?anjlq5#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?j9fjen');
+  src:  url('fonts/icomoon.eot?j9fjen#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?j9fjen') format('truetype'),
+    url('fonts/icomoon.woff?j9fjen') format('woff'),
+    url('fonts/icomoon.svg?j9fjen#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-arrow-down1:before {
+  content: "\e902";
+}
+.nico-close1:before {
+  content: "\e903";
+}
+.nico-nav-1:before {
+  content: "\e904";
+}
+.nico-nav-2:before {
+  content: "\e905";
+}
+.nico-nav-3:before {
+  content: "\e906";
+}
+.nico-nav-4:before {
+  content: "\e907";
+}
+.nico-nav-5:before {
+  content: "\e908";
+}
+.nico-nav-6:before {
+  content: "\e909";
+}
+.nico-arrow-back:before {
+  content: "\e900";
+}
 .nico-check:before {
   content: "\e901";
 }
@@ -38,9 +65,6 @@
 }
 .nico-arrow-up:before {
   content: "\e609";
-}
-.nico-arrow-back:before {
-  content: "\e900";
 }
 .nico-envelope:before {
   content: "\e61d";

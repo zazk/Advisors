@@ -1,2 +1,14 @@
 page-seguros {
+	.g1-navbar{
+		position: absolute;
+		background-color: red;
+		left: 0;
+		width: 100%;
+	}
+	.scroll-content{
+		contain:none;
+	}
+	.g1-content-items{
+		margin-top: 50px;
+	}
 }
