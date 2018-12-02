@@ -58,7 +58,9 @@ imports:[
 
 
   }
-
+  customtab(selector){
+    console.log('prueba de tab',selector);
+  }
   ionViewDidLoad() {
     console.log('ionViewDidLoad SegurosPage');
     if (this.flag === 0) {
