@@ -64,9 +64,14 @@ export class RegisterPage {
   }
 
   openPoliticaDP() {
-    let modal = this.modalCtrl.create(ModalContentPage);
+    let modal = this.modalCtrl.create(ModalContentPage,{},{cssClass:"modal-terminos"});
     console.log("ok");
+    let modalcurrent = document.querySelectorAll('.show-page'); 
+    console.log(modalcurrent);
     modal.present();
+  }
+  customModal(){
+
   }
 
 }
