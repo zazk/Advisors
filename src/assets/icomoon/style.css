@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?j9fjen');
-  src:  url('fonts/icomoon.eot?j9fjen#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?j9fjen') format('truetype'),
-    url('fonts/icomoon.woff?j9fjen') format('woff'),
-    url('fonts/icomoon.svg?j9fjen#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?basmcy');
+  src:  url('fonts/icomoon.eot?basmcy#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?basmcy') format('truetype'),
+    url('fonts/icomoon.woff?basmcy') format('woff'),
+    url('fonts/icomoon.svg?basmcy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-pendiente:before {
+  content: "\e90a";
+}
+.nico-seguro-1:before {
+  content: "\e90b";
+}
+.nico-seguro-2:before {
+  content: "\e90c";
+}
+.nico-seguro-3:before {
+  content: "\e90d";
+}
+.nico-seguro-4:before {
+  content: "\e90e";
+}
+.nico-seguro-5:before {
+  content: "\e90f";
+}
+.nico-seguro-6:before {
+  content: "\e910";
+}
+.nico-seguro-7:before {
+  content: "\e911";
+}
+.nico-zoom:before {
+  content: "\e912";
+}
 .nico-arrow-down1:before {
   content: "\e902";
 }
