@@ -1,15 +1,35 @@
 page-seguros {
+	.g1-content-list{
+		list-style: none;	
+	}
+	.g1-item{
+		display: flex;
+		position: relative;
+		a{
+			position: absolute;
+			right: 0px;
+			top:0px;
+		}
+	}
+	.g1-item-content{
+
+	}
 	.g1-navbar{
 		position: absolute;
-		background-color: red;
 		left: 0;
+		top: 11px;
 		width: 100%;
+		background-color: white
+	}
+	.g1-wrap-nav{
+		background-color:$c4
+		
 	}
 	.scroll-content{
 		contain:none;
 	}
 	.g1-content-items{
-		margin-top: 50px;
+		margin-top: 92px;
 	}
 	.g1-nav{
 		display: flex;
@@ -17,14 +37,27 @@ page-seguros {
 		padding: 0px;
 		background-color: rgba(0,0,0,0);
 		list-style: none;
+		font-family: $t1;
 		li{
 			flex:1;
+		}
+		i{
+			font-size: 40px;
+			display: block;
+			margin-bottom: 4px;
 		}
 		button{
 			background-color: rgba(0,0,0,0);
 			width: 100%;
 			padding: 0px;
 			margin: 0px;
+			padding: 10px 0px;
+			box-sizing: border-box;
+			span{
+				color: $c6;
+				display: block;
+				text-transform: uppercase;
+			}
 		}
 	}
 }
