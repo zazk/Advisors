@@ -11,4 +11,20 @@ page-seguros {
 	.g1-content-items{
 		margin-top: 50px;
 	}
+	.g1-nav{
+		display: flex;
+		margin: 0px;
+		padding: 0px;
+		background-color: rgba(0,0,0,0);
+		list-style: none;
+		li{
+			flex:1;
+		}
+		button{
+			background-color: rgba(0,0,0,0);
+			width: 100%;
+			padding: 0px;
+			margin: 0px;
+		}
+	}
 }

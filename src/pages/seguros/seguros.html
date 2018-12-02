@@ -5,11 +5,11 @@
   Ionic pages and navigation.
 -->
 <ion-header class="h-header-innercontrols">
-    <div class="h-controls">
+  <div class="h-controls">
     <ion-navbar>
       <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Mis Seguros</h3>
     </ion-navbar>      
-    </div>  
+  </div>  
 </ion-header>
 
 <!--
@@ -21,7 +21,15 @@
 
 <ion-content padding class="g1-wrap-nav">
   <div class="g1-navbar">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, rem molestias quibusdam, voluptatem quis ratione, error alias ea sunt voluptatum maxime asperiores accusantium omnis. Nam ea illum exercitationem, ex suscipit!
+    <ul class="g1-nav">
+      <li><button><i class="nico-seguro-1"></i><span>Vehículos</span></button></li>
+      <li><button><i class="nico-seguro-2"></i><span>soat</span></button></li>
+      <li><button><i class="nico-seguro-3"></i><span>DOMICILIARIO</span></button></li>
+      <li><button><i class="nico-seguro-4"></i><span>ASISTENCIA MÉDICA</span></button></li>
+      <li><button><i class="nico-seguro-5"></i><span>accidentes personales</span></button></li>
+      <li><button><i class="nico-seguro-6"></i><span>vida</span></button></li>
+      <li><button><i class="nico-seguro-7"></i><span>otros</span></button></li>
+    </ul>
   </div>
   <div class="g1-content-items">
     <h3>lorem2</h3>
@@ -30,11 +38,11 @@
 
   
   <!-- esto no se utliza por el momento -->
-    <ion-navbar>
-      <ion-title>{{titulo}}</ion-title>
-      <ion-buttons end>
-        <a ion-button>
-          <ion-icon name="md-time"></ion-icon>Pendientes</a>
+  <ion-navbar>
+    <ion-title>{{titulo}}</ion-title>
+    <ion-buttons end>
+      <a ion-button>
+        <ion-icon name="md-time"></ion-icon>Pendientes</a>
       </ion-buttons>
     </ion-navbar>
     <ion-list class="services-list" full>
@@ -48,82 +56,82 @@
           </ion-list-header>
           <ng-container *ngIf="itemComp.displayIt">
             <!--<ion-list *ngFor="let itemRies of itemComp.riesgos" full
-                  no-lines>-->
-            <div class="service-wrapper" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
-              <ion-row class="head-info">
-                <ion-col>
-                  <ion-list-header text-wrap>{{itemPol.nomRiesgo}}</ion-list-header>
-                  #{{itemPol.numPoliza}}
-                </ion-col>
-                <ion-col end>
-                  <ion-label stacked>Vigencia</ion-label>
-                  <p>del {{itemPol.fecInicio | date: 'dd/MM/yyyy'}}</p>
-                  <p>al {{itemPol.fecFin | date: 'dd/MM/yyyy'}}</p>
-                </ion-col>
-              </ion-row>
-              <ion-row>
-                <ion-col relative>
-                  <ion-item class="status">
-                    <ion-icon name='md-checkmark-circle-outline'></ion-icon>{{itemPol.estado}}</ion-item>
-                </ion-col>
-                <!-- pinkxel: Se sugiere evaluar la necesidad del 'Actualizado al', en un sistema se debería poder asumir que la info siempre está actualizada al momento de la consulta. -->
-                <!-- <ion-item>Actualizado al: {{itemPol.actualizado | date: 'dd/MM/yyyy'}}</ion-item>-->
-                <ion-col end>
-                  <!-- pinkxel: Función cambió de 'openPagar' a 'openMore' Se agregó $event para detener el evento click del padre -->
-                  <ng-container *ngIf="itemPol.clienteDirecto">
-                    <button class="button-more" ion-button ion-stop-event="click" (click)="openMore(itemPol, $event)">Ver más
-                      <ion-icon name='ios-arrow-down'></ion-icon>
-                    </button>
-                  </ng-container>
-                </ion-col>
-              </ion-row>
-              <ion-row>
-                <ng-container *ngIf="itemPol.displayPAyment">
-                  <div class="infograph">
-                    <!-- pinkxel: Los años a la izquierda y derecha de la línea de tiempo se rellenan a traves de :before y :after en el CSS de '.timeline' -->
-                    <div class="timeline"></div>
-                    <ion-row>
-                      <ion-col class="period">May</ion-col>
-                      <ion-col class="period">Jun</ion-col>
-                      <ion-col class="period alert">Jul</ion-col>
-                    </ion-row>
-                  </div>
-                </ng-container>
-              </ion-row>
-              <ion-row>
-                <ng-container *ngIf="itemPol.displayCuotas">
-                  <ion-row class="row-coutas">
-                    <div></div>
+              no-lines>-->
+              <div class="service-wrapper" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
+                <ion-row class="head-info">
+                  <ion-col>
+                    <ion-list-header text-wrap>{{itemPol.nomRiesgo}}</ion-list-header>
+                    #{{itemPol.numPoliza}}
+                  </ion-col>
+                  <ion-col end>
+                    <ion-label stacked>Vigencia</ion-label>
+                    <p>del {{itemPol.fecInicio | date: 'dd/MM/yyyy'}}</p>
+                    <p>al {{itemPol.fecFin | date: 'dd/MM/yyyy'}}</p>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col relative>
+                    <ion-item class="status">
+                      <ion-icon name='md-checkmark-circle-outline'></ion-icon>{{itemPol.estado}}</ion-item>
+                    </ion-col>
+                    <!-- pinkxel: Se sugiere evaluar la necesidad del 'Actualizado al', en un sistema se debería poder asumir que la info siempre está actualizada al momento de la consulta. -->
+                    <!-- <ion-item>Actualizado al: {{itemPol.actualizado | date: 'dd/MM/yyyy'}}</ion-item>-->
+                    <ion-col end>
+                      <!-- pinkxel: Función cambió de 'openPagar' a 'openMore' Se agregó $event para detener el evento click del padre -->
+                      <ng-container *ngIf="itemPol.clienteDirecto">
+                        <button class="button-more" ion-button ion-stop-event="click" (click)="openMore(itemPol, $event)">Ver más
+                          <ion-icon name='ios-arrow-down'></ion-icon>
+                        </button>
+                      </ng-container>
+                    </ion-col>
                   </ion-row>
-                </ng-container>
-              </ion-row>
-            </div>
-            <!-- </ion-list>-->
-          </ng-container>
+                  <ion-row>
+                    <ng-container *ngIf="itemPol.displayPAyment">
+                      <div class="infograph">
+                        <!-- pinkxel: Los años a la izquierda y derecha de la línea de tiempo se rellenan a traves de :before y :after en el CSS de '.timeline' -->
+                        <div class="timeline"></div>
+                        <ion-row>
+                          <ion-col class="period">May</ion-col>
+                          <ion-col class="period">Jun</ion-col>
+                          <ion-col class="period alert">Jul</ion-col>
+                        </ion-row>
+                      </div>
+                    </ng-container>
+                  </ion-row>
+                  <ion-row>
+                    <ng-container *ngIf="itemPol.displayCuotas">
+                      <ion-row class="row-coutas">
+                        <div></div>
+                      </ion-row>
+                    </ng-container>
+                  </ion-row>
+                </div>
+                <!-- </ion-list>-->
+              </ng-container>
+            </ion-list>
+          </ion-row>
         </ion-list>
-      </ion-row>
-    </ion-list>
-  <!-- esto no se utliza por el momento -->
-  
-</ion-content>
-<ion-footer class="f-footer">
-  <div class="footer-inner">
-    <button class="f-item">
-      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-      <label>INICIO</label>      
-    </button>
-    <button class="f-item">
-      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-      <label>PERFIL</label>      
-    </button>
-    <button menuToggle class="f-item">
-      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-      <label>MENÚ</label>      
-    </button>
+        <!-- esto no se utliza por el momento -->
+
+      </ion-content>
+      <ion-footer class="f-footer">
+        <div class="footer-inner">
+          <button class="f-item">
+            <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+            <label>INICIO</label>      
+          </button>
+          <button class="f-item">
+            <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+            <label>PERFIL</label>      
+          </button>
+          <button menuToggle class="f-item">
+            <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+            <label>MENÚ</label>      
+          </button>
 <!-- 
   <button ion-button menuToggle end>
     <ion-icon name="menu"></ion-icon>
   </button> -->
 
-  </div>
+</div>
 </ion-footer>
