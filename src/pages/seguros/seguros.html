@@ -34,56 +34,56 @@
   <div class="g1-content-items">
     
     <ul class="g1-content-list">
-       <li class="g1-item">
-        <figure>
-          <img src="assets/img/empresa.jpg">
-        </figure>
-        <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
-          <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
-        </div>
-        <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
-      </li>
-      <li class="g1-item g1-pending">
-        <figure>
-          <img src="assets/img/empresa.jpg">
-        </figure>
-        <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
-          <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
-        </div>
-        <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
-      </li>
-    </ul>
-  </div>
+     <li class="g1-item">
+      <figure>
+        <img src="assets/img/empresa.jpg">
+      </figure>
+      <div class="g1-item-content">
+        <h4>Placa: AHJ156</h4>
+        <p>Toyota Corolla</p>
+        <p>Año: 2017</p>
+        <p>Póliza: 102001421</p>
+        <div class="g1-notification">Sin pagos pendientes</div>
+        <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
+      </div>
+      <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
+    </li>
+    <li class="g1-item g1-pending">
+      <figure>
+        <img src="assets/img/empresa.jpg">
+      </figure>
+      <div class="g1-item-content">
+        <h4>Placa: AHJ156</h4>
+        <p>Toyota Corolla</p>
+        <p>Año: 2017</p>
+        <p>Póliza: 102001421</p>
+        <div class="g1-notification">Sin pagos pendientes</div>
+        <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
+      </div>
+      <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
+    </li>
+  </ul>
+</div>
 
-  
-  <!-- esto no se utliza por el momento -->
-  <ion-navbar>
-    <ion-title>{{titulo}}</ion-title>
-    <ion-buttons end>
-      <a ion-button>
-        <ion-icon name="md-time"></ion-icon>Pendientes</a>
-      </ion-buttons>
-    </ion-navbar>
-    <ion-list class="services-list" full>
-      <ion-row *ngFor="let itemComp of companias">
-        <ion-list class="company-list" no-lines full>
-          <ion-list-header class="company-header">
-            <button ion-button (click)="openData(itemComp)">
-              <ion-icon name="md-add"></ion-icon>
-              <img class="companyLogo" [src]="itemComp.url" />
-            </button>
-          </ion-list-header>
-          <ng-container *ngIf="itemComp.displayIt">
+
+<!-- esto no se utliza por el momento -->
+<ion-navbar>
+  <ion-title>{{titulo}}</ion-title>
+  <ion-buttons end>
+    <a ion-button>
+      <ion-icon name="md-time"></ion-icon>Pendientes</a>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-list class="services-list" full>
+    <ion-row *ngFor="let itemComp of companias">
+      <ion-list class="company-list" no-lines full>
+        <ion-list-header class="company-header">
+          <button ion-button (click)="openData(itemComp)">
+            <ion-icon name="md-add"></ion-icon>
+            <img class="companyLogo" [src]="itemComp.url" />
+          </button>
+        </ion-list-header>
+        <ng-container *ngIf="itemComp.displayIt">
             <!--<ion-list *ngFor="let itemRies of itemComp.riesgos" full
               no-lines>-->
               <div class="service-wrapper" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
