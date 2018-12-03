@@ -27,7 +27,20 @@
 
 }
 
+//padding superior en form
+.g0-form{
+  padding-top: 50px;
+}
 
+// btn enviar
+button.g0-btn-send{
+  border-radius: 0 !important;
+  height: 60px;
+  .button-inner{
+    font-size: 24px;
+    font-family: $t1
+  }
+}
 
 //inputs
   //labels activos
