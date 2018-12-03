@@ -1,18 +1,83 @@
 page-seguros {
 	.g1-content-list{
 		list-style: none;	
+		padding: 0px;
 	}
 	.g1-item{
 		display: flex;
+		margin-bottom: 20px;
 		position: relative;
-		a{
+		background-color: white;
+		> figure{
+			margin: 0px;
+			width:108px;
+		}
+		.g1-close-item{
 			position: absolute;
-			right: 0px;
-			top:0px;
+			right: 11px;
+			top:11px;
+			color:$c2;
+			font-size: 20px;
+			text-decoration: none;
+			i{
+				font-weight: bold;
+			}
+		}
+		&.g1-pending{
+			.g1-notification{
+				display: none;
+				&.g1-pending-notification{
+					display: block;
+				}
+			}	
+		}
+		&:last-child{
+			margin-bottom: 0px; 
 		}
 	}
-	.g1-item-content{
+	.g1-notification{
+		&.g1-pending-notification{
+			display: none;
+			position: relative;
+			i{
+				font-size: 17px;
+				position: absolute;
+				right: 11px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}	
+	}
+	// .g1-notification{
+	// 	display: none;
+	// 	&.g1-pending{
+	// 		.g1-pending-notification{
+	// 			display: block;
+	// 		}
+	// 	}
+	// }
+	.g1-pending-notification{
+		color: #E21C19;
+		padding-right: 40px;
+	}
 
+	.g1-item-content{
+		font-size: 12px;
+		color: $c1;
+		width: calc(100% - 108px);
+		padding-left: 16px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		box-sizing: border-box;
+		h4,p{
+			margin: 0px;
+			padding-right: 40px;
+			line-height: 1;
+			margin-bottom: 4px;
+		}
+		h4{
+			font-size: 18px;
+		}
 	}
 	.g1-navbar{
 		position: absolute;
@@ -29,7 +94,7 @@ page-seguros {
 		contain:none;
 	}
 	.g1-content-items{
-		margin-top: 92px;
+		margin-top: 121px;
 	}
 	.g1-nav{
 		display: flex;
@@ -40,24 +105,43 @@ page-seguros {
 		font-family: $t1;
 		li{
 			flex:1;
+			&.active{
+				background-color: #5A2D6B;
+			}
+
 		}
 		i{
-			font-size: 40px;
+			font-size: 34px;
 			display: block;
-			margin-bottom: 4px;
+			margin-bottom: 10px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&:before{
+				display: block;
+				line-height: 1;
+			}
+		}
+		span{
+			color: $c6;
+			font-size: 8px;
+			display: block;
+			height: 17px;
+			text-transform: uppercase;
 		}
 		button{
 			background-color: rgba(0,0,0,0);
 			width: 100%;
+			height: 85px;
+			box-sizing: border-box;
 			padding: 0px;
 			margin: 0px;
 			padding: 10px 0px;
 			box-sizing: border-box;
-			span{
-				color: $c6;
-				display: block;
-				text-transform: uppercase;
-			}
 		}
 	}
+
+	
+
 }

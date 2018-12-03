@@ -7,8 +7,8 @@
 <ion-header>
   <img class="logo-img" src="assets/img/logo-ccs@2x.png" />
   <button ion-button menuToggle end>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+    <ion-icon name="menu"></ion-icon>
+  </button>
 </ion-header>
 
 <ion-content padding>
@@ -26,20 +26,26 @@
     </ion-item>
   </ion-list>
 -->
-  <div #map id="map">
-  </div>
+<div class="g1-search">
+  <input type="text" placeholder="Buscar" name="">
+  <button><i class="nico-search"></i></button>
+</div>
+<!-- MAPS -->
+<div #map id="map">
+</div>
 
-  <ion-list *ngFor="let item of markersPuntoVenta" no-lines>
-    <ion-item no-lines class="g1-item-puntoventa">
-      <ion-thumbnail item-left>
-            <img [src]="item.logo">
-      </ion-thumbnail>
-      <ion-label stacked><ion-icon name="md-pin"></ion-icon>{{item.canal}}</ion-label>
-      <ion-label class="info" stacked>{{item.direccion}}</ion-label>
-      <ion-label class="info" stacked>Agencia : {{item.agencia}}</ion-label>
-      <ion-label class="info" stacked>Telefono : {{item.telefono}}</ion-label>
-      <ion-label class="info" stacked>Horarios : {{item.horarios}}</ion-label>
-    </ion-item>
-  </ion-list>
+
+<ion-list *ngFor="let item of markersPuntoVenta" no-lines>
+  <ion-item no-lines class="g1-item-puntoventa">
+    <ion-thumbnail item-left>
+      <img [src]="item.logo">
+    </ion-thumbnail>
+    <ion-label stacked><ion-icon name="md-pin"></ion-icon>{{item.canal}}</ion-label>
+    <ion-label class="info" stacked>{{item.direccion}}</ion-label>
+    <ion-label class="info" stacked>Agencia : {{item.agencia}}</ion-label>
+    <ion-label class="info" stacked>Telefono : {{item.telefono}}</ion-label>
+    <ion-label class="info" stacked>Horarios : {{item.horarios}}</ion-label>
+  </ion-item>
+</ion-list>
 
 </ion-content>
