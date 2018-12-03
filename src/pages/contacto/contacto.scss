@@ -1,3 +1,25 @@
 page-contacto {
-
+	.g0-logo-contact{
+		padding: 20px 0;
+		background-color: $c8;
+		position: relative;
+	}
+	.g0-figure{
+		text-align: center;
+		&::after, &::before{
+			content:"";
+			position: absolute;
+			height: 100%;
+			background-color: $c8;
+			display: block;
+			width: 100vw;
+			top: 0;
+		}
+		&::after{
+			left: 100%;
+		}
+		&::before{
+			right: 100%;
+		}   		
+	}
 }
