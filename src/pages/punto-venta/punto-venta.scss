@@ -1,10 +1,60 @@
 page-punto-venta {
-	.content{
-		background-color: #F7F7F7;	
+
+	.g1-title-search{
+		font-size: 12px;
+		color: $c1;
+		font-family: $t1;
+		text-align: center;
 	}
-	.g1-item-puntoventa{
-		border-bottom: 1px solid #000 !important;
-		border-radius: 0 !important;	
+	#map{
+		width: 100%;
+		height: 375px;
+	}
+	.g1-search-map{
+		background-color: #F7F7F7;	
+		position: relative;
+		&:after,&:before{
+			content: "";
+			position: absolute;
+			width: 100%;
+			top: 0px;
+			height: 100%;	
+			background-color: #F7F7F7;
+		}
+		&:after{
+			left: -100%
+		}
+		&:before{
+			right: -100%
+		}
+	}
+	.list{
+		margin:0px;
+		margin: 37px 0px;
+	}
+	.g1-item-sale{
+		border-bottom: 1px solid $c1 !important;
+		border-radius: 0 !important;
+		color: $c1;
+		font-family: $t1;
+		padding: 37px 0px;
+		.info{
+			font-size: 12px;
+			margin: 0px;
+			margin-top: 9px !important;
+			&:first-child{
+				margin-top: 0 !important;
+			}
+			span{
+				display: block;
+				margin-bottom: 9px;
+			}
+		}
+		.g1-sale-title{
+			font-size: 14px;
+			font-family: $t3;
+			color: $c7; 
+		}
 	}
 	.g1-search{
 		position: relative;
