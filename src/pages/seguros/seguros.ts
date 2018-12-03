@@ -59,6 +59,36 @@ imports:[
 
   }
   customtab(selector){
+      var item = document.querySelectorAll('.g1-click-tab'),
+      b2ContentTab= document.querySelectorAll('.g1-content-tab');
+
+      item[0].parentNode.classList.add('active');
+      b2ContentTab[0].classList.add('active');
+
+      for (var i = 0; i < item.length; i++) {
+        item[i].addEventListener('click', function(){
+          for (var r = 0; r < b2ContentTab.length; r++) {
+
+        var headItem=this.parentNode,
+        headItemValor=selector,
+        contentItem=b2ContentTab[r].attributes["id"].value;
+
+        item[r].parentNode.classList.remove("active");
+        b2ContentTab[r].classList.remove("active");
+
+
+        
+        if ( headItemValor.trim() == contentItem.trim() ){
+        console.log(headItemValor,"headItemValor")
+        console.log(contentItem,"contentItem")
+          headItem.classList.add("active");
+          console.log(contentItem,"contentItem")
+          //b2ContentTab[contentItem].classList.add("active");
+        }
+          }
+        }); 
+    }
+
     console.log('prueba de tab',selector);
   }
   ionViewDidLoad() {

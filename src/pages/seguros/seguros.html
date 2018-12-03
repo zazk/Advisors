@@ -18,21 +18,54 @@
 
 -->
 
-
 <ion-content padding class="g1-wrap-nav">
   <div class="g1-navbar">
     <ul class="g1-nav">
-      <li><button (click)="customtab('id-1')"><i class="nico-seguro-1"></i><span>Vehículos</span></button></li>
-      <li><button (click)="customtab('id-2')"><i class="nico-seguro-2"></i><span>soat</span></button></li>
-      <li><button (click)="customtab('id-3')"><i class="nico-seguro-3"></i><span>DOMICILIARIO</span></button></li>
-      <li><button (click)="customtab('id-1')"><i class="nico-seguro-4"></i><span>ASISTENCIA MÉDICA</span></button></li>
-      <li><button (click)="customtab('id-4')"><i class="nico-seguro-5"></i><span>accidentes personales</span></button></li>
-      <li><button (click)="customtab('id-5')"><i class="nico-seguro-6"></i><span>vida</span></button></li>
-      <li><button (click)="customtab('id-6')"><i class="nico-seguro-7"></i><span>otros</span></button></li>
+      <li class="active"><button class="g1-click-tab" (click)="customtab('id-1')"><i class="nico-seguro-1"></i><span>Vehículos</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-2')"><i class="nico-seguro-2"></i><span>soat</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-3')"><i class="nico-seguro-3"></i><span>DOMICILIARIO</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-1')"><i class="nico-seguro-4"></i><span>ASISTENCIA MÉDICA</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-4')"><i class="nico-seguro-5"></i><span>accidentes personales</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-5')"><i class="nico-seguro-6"></i><span>vida</span></button></li>
+      <li><button class="g1-click-tab" (click)="customtab('id-6')"><i class="nico-seguro-7"></i><span>otros</span></button></li>
     </ul>
   </div>
   <div class="g1-content-items">
-    
+    <div class="g1-content-tab active" id="id-1">
+      <ul class="g1-content-list">
+       <li class="g1-item">
+        <figure>
+          <img src="assets/img/empresa.jpg">
+        </figure>
+        <div class="g1-item-content">
+          <h4>Placa: AHJ156</h4>
+          <p>Toyota Corolla</p>
+          <p>Año: 2017</p>
+          <p>Póliza: 102001421</p>
+          <div class="g1-notification">Sin pagos pendientes</div>
+          <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
+        </div>
+        <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
+      </li>
+      <li class="g1-item g1-pending">
+        <figure>
+          <img src="assets/img/empresa.jpg">
+        </figure>
+        <div class="g1-item-content">
+          <h4>Placa: AHJ156</h4>
+          <p>Toyota Corolla</p>
+          <p>Año: 2017</p>
+          <p>Póliza: 102001421</p>
+          <div class="g1-notification">Sin pagos pendientes</div>
+          <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
+        </div>
+        <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
+      </li>
+    </ul>
+
+  </div>
+
+  <div class="g1-content-tab" id="id-2">
     <ul class="g1-content-list">
      <li class="g1-item">
       <figure>
@@ -46,7 +79,7 @@
         <div class="g1-notification">Sin pagos pendientes</div>
         <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
       </div>
-      <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
+      <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
     </li>
     <li class="g1-item g1-pending">
       <figure>
@@ -60,11 +93,47 @@
         <div class="g1-notification">Sin pagos pendientes</div>
         <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
       </div>
-      <a href="" class="g1-close-item"><i class="nico-close1"></i></a>
+      <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
     </li>
   </ul>
+
 </div>
 
+<div class="g1-content-tab" id="id-3">
+  <ul class="g1-content-list">
+   <li class="g1-item">
+    <figure>
+      <img src="assets/img/empresa.jpg">
+    </figure>
+    <div class="g1-item-content">
+      <h4>Placa: AHJ156</h4>
+      <p>Toyota Corolla</p>
+      <p>Año: 2017</p>
+      <p>Póliza: 102001421</p>
+      <div class="g1-notification">Sin pagos pendientes</div>
+      <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
+    </div>
+    <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
+  </li>
+  <li class="g1-item g1-pending">
+    <figure>
+      <img src="assets/img/empresa.jpg">
+    </figure>
+    <div class="g1-item-content">
+      <h4>Placa: AHJ156</h4>
+      <p>Toyota Corolla</p>
+      <p>Año: 2017</p>
+      <p>Póliza: 102001421</p>
+      <div class="g1-notification">Sin pagos pendientes</div>
+      <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
+    </div>
+    <a href="" class="g1-close-item"><i class="nico-zoom"></i></a>
+  </li>
+</ul>
+
+</div>
+
+</div>
 
 <!-- esto no se utliza por el momento -->
 <ion-navbar>
@@ -164,3 +233,4 @@
 
 </div>
 </ion-footer>
+
