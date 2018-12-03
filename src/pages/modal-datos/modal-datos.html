@@ -8,15 +8,12 @@
 <!--
   pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales, comprende 'ion-header' y el inicio de 'ion-content'.
 -->
-<ion-header>
+<ion-header class="h-header-innercontrols">
+    <div class="h-controls" (click)="dismiss()">
     <ion-navbar>
-    <ion-title>Actualizar datos</ion-title>
-    <ion-buttons end>
-      <button ion-button (click)="dismiss()">
-        <span ion-text>Salir</span>
-      </button>
-    </ion-buttons>
-    </ion-navbar>
+      <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Actualiza tus datos</h3>
+    </ion-navbar>      
+    </div>  
 </ion-header>
 <ion-content padding center>
 <!-- pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales. -->
@@ -108,3 +105,19 @@
       </ion-row>
   </form>
 </ion-content>
+<ion-footer class="f-footer">
+  <div class="footer-inner">
+    <button class="f-item">
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+      <label>INICIO</label>      
+    </button>
+    <button class="f-item">
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+      <label>PERFIL</label>      
+    </button>
+    <button menuToggle class="f-item">
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+      <label>MENÚ</label>      
+    </button>
+  </div>
+</ion-footer>
