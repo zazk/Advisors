@@ -1,6 +1,45 @@
 page-contacto {
+	.list{
+		margin-top: 52px;
+	}
 	.g1-item-contact{
-		color: red
+		margin-bottom: 28px;
+		.item-inner{
+			border-bottom:0px !important;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+		.label{
+			display: flex;
+			margin-top: 0;
+			margin-bottom: 0px;
+			i{
+				font-size: 33px;
+				margin-top: 8px;
+			}
+		}
+	}
+	.g1-info{
+		color:$c2;
+		font-size: 22px;
+		font-family: $t1;
+		border-bottom: 1px solid $c1;
+		margin-left: 38px;
+		padding-bottom: 13px;
+		width: calc(100% - 33px);
+		span{
+			display: block;
+			color: $c1;
+			font-size: 12px;
+			margin-bottom: 5px;
+		}
+		a{
+			color:$c2;
+			font-size: 22px;
+			line-height: 1;
+			text-decoration: none;
+		}
 	}
 
 	.g0-logo-contact{
@@ -10,6 +49,8 @@ page-contacto {
 	}
 	.g0-figure{
 		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 34px;
 		&::after, &::before{
 			content:"";
 			position: absolute;
@@ -25,5 +66,8 @@ page-contacto {
 		&::before{
 			right: 100%;
 		}   		
+		.logo-img{
+			max-width: 290px
+		}
 	}
 }

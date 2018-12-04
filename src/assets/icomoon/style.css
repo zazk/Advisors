@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?1bkz8w');
-  src:  url('fonts/icomoon.eot?1bkz8w#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?1bkz8w') format('truetype'),
-    url('fonts/icomoon.woff?1bkz8w') format('woff'),
-    url('fonts/icomoon.svg?1bkz8w#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?tbpx0t');
+  src:  url('fonts/icomoon.eot?tbpx0t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tbpx0t') format('truetype'),
+    url('fonts/icomoon.woff?tbpx0t') format('woff'),
+    url('fonts/icomoon.svg?tbpx0t#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-phone-alt:before {
+  content: "\e914";
+}
 .nico-letter:before {
   content: "\e913";
 }
