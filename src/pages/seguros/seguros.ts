@@ -25,6 +25,7 @@ require('highcharts/modules/exporting')(hcharts);
   templateUrl: 'seguros.html'
 })
 export class SegurosPage {
+  viewMode = 'tab1';
   @ViewChild('myChart') canvas: ElementRef;
   /*
 imports:[
@@ -59,9 +60,7 @@ imports:[
 
   }
   customtab(selector){
-    var item_active = document.querySelectorAll('[data-id="'+selector+'"]');
-
-      item_active.className +='active';
+    
     //   var item = document.querySelectorAll(selector),
     //   b2ContentTab= document.querySelectorAll('.g1-content-tab');
 
