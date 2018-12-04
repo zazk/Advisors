@@ -20,6 +20,10 @@
 
     </div>
     <ion-list>
+      <ion-item class="g1-item-contact">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia recusandae veniam et iste illum ex, itaque ullam veritatis, adipisci nobis quasi inventore similique voluptatibus nulla quos! Laboriosam, cupiditate repellendus atque.
+      </ion-item>
+      <!-- 
       <ion-item no-lines>
         <ion-label stacked>Remitente</ion-label>
         <ion-label>{{data.Remitente}}</ion-label>
@@ -31,16 +35,16 @@
       <ion-item no-lines>
         <ion-label stacked>Mensaje</ion-label>
         <ion-textarea attr.rows="6" class = "textAreaCustom" [(ngModel)]="data.Mensaje"></ion-textarea>
-      </ion-item>
+      </ion-item> -->
     </ion-list>
   
-    <button ion-button full (click)="Enviar()">
+<!--     <button ion-button full (click)="Enviar()">
       <ion-icon name="ios-arrow-forward"></ion-icon>
       Enviar</button>    
     <ion-list no-lines center>
       <ion-list-header>¿Deseas contactarnos?</ion-list-header>
       <button class="button-ccs" ion-button class="info" *ngFor="let itemTel of telefonos" (click)="llamar(itemTel)" full>{{itemTel.concatenado}}</button>
-    </ion-list>
+    </ion-list> -->
   </ion-content>
 
   <ion-footer class="f-footer">

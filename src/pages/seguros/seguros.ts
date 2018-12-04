@@ -59,35 +59,38 @@ imports:[
 
   }
   customtab(selector){
-      var item = document.querySelectorAll('.g1-click-tab'),
-      b2ContentTab= document.querySelectorAll('.g1-content-tab');
+    var item_active = document.querySelectorAll('[data-id="'+selector+'"]');
 
-      item[0].parentNode.classList.add('active');
-      b2ContentTab[0].classList.add('active');
+      item_active.className +='active';
+    //   var item = document.querySelectorAll(selector),
+    //   b2ContentTab= document.querySelectorAll('.g1-content-tab');
 
-      for (var i = 0; i < item.length; i++) {
-        item[i].addEventListener('click', function(){
-          for (var r = 0; r < b2ContentTab.length; r++) {
+    //   item[0].parentNode.classList.add('active');
+    //   b2ContentTab[0].classList.add('active');
 
-        var headItem=this.parentNode,
-        headItemValor=selector,
-        contentItem=b2ContentTab[r].attributes["id"].value;
+    //   for (var i = 0; i < item.length; i++) {
+    //     item[i].addEventListener('click', function(){
+    //       for (var r = 0; r < b2ContentTab.length; r++) {
 
-        item[r].parentNode.classList.remove("active");
-        b2ContentTab[r].classList.remove("active");
+    //     var headItem=this.parentNode,
+    //     headItemValor=selector,
+    //     contentItem=b2ContentTab[r].attributes["id"].value;
+
+    //     item[r].parentNode.classList.remove("active");
+    //     b2ContentTab[r].classList.remove("active");
 
 
         
-        if ( headItemValor.trim() == contentItem.trim() ){
-        console.log(headItemValor,"headItemValor")
-        console.log(contentItem,"contentItem")
-          headItem.classList.add("active");
-          console.log(contentItem,"contentItem")
-          //b2ContentTab[contentItem].classList.add("active");
-        }
-          }
-        }); 
-    }
+    //     if ( headItemValor.trim() == contentItem.trim() ){
+    //     console.log(headItemValor,"headItemValor")
+    //     console.log(contentItem,"contentItem")
+    //       headItem.classList.add("active");
+    //       console.log(contentItem,"contentItem")
+    //       //b2ContentTab[contentItem].classList.add("active");
+    //     }
+    //       }
+    //     }); 
+    // }
 
     console.log('prueba de tab',selector);
   }
