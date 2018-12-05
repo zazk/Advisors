@@ -4,6 +4,8 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
+  <!-- COMENTARIO :  Se agregaron todas las plantillas a este codigo para renderizar debido a q el llamado a los archivos html no se reconocen ... corregir eso -->
+  <!--<p  [innerHTML]="\pagos\vehicular.html"></p>-->
 <ion-header class="g0-headerterminos">
   
     <h3 class="g0-title-terminos">
@@ -14,13 +16,16 @@
     </button>
 </ion-header>
 <ion-content padding>
-  <h1>{{detalle.riesgo}}</h1>
-  <ion-label class="sub-title">#{{detalle.nroPoliza}}</ion-label>
-  <img class="companyLogo" [src]="detalle.url" />
-  <p>A continuación se muestra el/los pago(s) correspondiente(s) a tu seguro.</p>
-  <p>Al día de hoy tienes 0 cuota(s) vencida(s).</p>
-  <!-- COMENTARIO :  Se agregaron todas las plantillas a este codigo para renderizar debido a q el llamado a los archivos html no se reconocen ... corregir eso -->
-  <!--<p  [innerHTML]="\pagos\vehicular.html"></p>-->
+
+  <ion-list class="g1-list-items">
+    <ion-item>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a, vel, aperiam dignissimos voluptatibus unde modi. Nam enim ex illo blanditiis ullam porro quam qui explicabo vel! Temporibus, sapiente, magni.
+    </ion-item>
+    <ion-item>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a, vel, aperiam dignissimos voluptatibus unde modi. Nam enim ex illo blanditiis ullam porro quam qui explicabo vel! Temporibus, sapiente, magni.
+    </ion-item>
+  </ion-list>
+  <!-- 
   <ng-container *ngIf="detalle.flagVehicular">
     <ion-list no-lines class="inline">            
       <ion-item>
@@ -313,5 +318,5 @@
         <ion-label class="info">{{item.estado}}</ion-label>
       </ion-item>
     </ion-list>
-  </ng-container>
+  </ng-container> -->
 </ion-content>
