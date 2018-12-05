@@ -25,7 +25,9 @@
 }
 
 // hacer el cambio del prefijo por: new-ico;
-
+.nico-letter-ios:before {
+  content: "\e915";
+}
 .nico-phone-alt:before {
   content: "\e914";
 }

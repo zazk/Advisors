@@ -4,27 +4,72 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-  <!-- COMENTARIO :  Se agregaron todas las plantillas a este codigo para renderizar debido a q el llamado a los archivos html no se reconocen ... corregir eso -->
-  <!--<p  [innerHTML]="\pagos\vehicular.html"></p>-->
+<!-- COMENTARIO :  Se agregaron todas las plantillas a este codigo para renderizar debido a q el llamado a los archivos html no se reconocen ... corregir eso -->
+<!--<p  [innerHTML]="\pagos\vehicular.html"></p>-->
 <ion-header class="g0-headerterminos">
-  
-    <h3 class="g0-title-terminos">
-      Políticas de protección de datos personales
-    </h3>
-    <button class="g0-btn-headclose" (click)="dismiss()">
-        <span class="nico-close1"></span>
-    </button>
+  <div class="g1-title-imagen">
+    <figure>
+      <img src="assets/img/logo-pago.jpg">
+    </figure>
+    <h3 class="g1-title-terminos">
+     Placa: AHJ156
+   </h3>
+ </div>
+
+ <button class="g0-btn-headclose" (click)="dismiss()">
+  <span class="nico-close1"></span>
+</button>
 </ion-header>
 <ion-content padding>
 
   <ion-list class="g1-list-items">
     <ion-item>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a, vel, aperiam dignissimos voluptatibus unde modi. Nam enim ex illo blanditiis ullam porro quam qui explicabo vel! Temporibus, sapiente, magni.
+      <i class="nico-letter-ios"></i>
+      <div class="g1-text">
+        <h4>Datos de Póliza</h4>
+        <p><span>Número:</span> 102001245</p>
+        <p><span>Certificado:</span> 653</p>
+
+      </div>
     </ion-item>
     <ion-item>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque a, vel, aperiam dignissimos voluptatibus unde modi. Nam enim ex illo blanditiis ullam porro quam qui explicabo vel! Temporibus, sapiente, magni.
-    </ion-item>
-  </ion-list>
+     <i class="nico-letter-ios"></i>
+     <div class="g1-text">
+      <h4>Datos de Póliza</h4>
+      <!-- files -->
+      <p><span>Número:</span> 102001245</p>
+      <p><span>Certificado:</span> 653</p>
+      <!-- col -->
+      <div class="g1-group-col">
+        <div class="g1-group-item">
+          <p><span>Placa:</span> AHJ156</p>
+          <p><span>Marca:</span> Toyota</p>
+        </div>
+        <div class="g1-group-item">
+         <p><span>Marca:</span> Toyota</p>
+         <p><span>Certificado:</span> 653</p>
+       </div>
+
+     </div>
+   </div>
+ </ion-item>
+ <ion-item>
+   <i class="nico-letter-ios"></i>
+   <div class="g1-text">
+    <h4>Datos de Póliza</h4>
+    <p><span>Número:</span> 102001245</p>
+    <p><span>Certificado:</span> 653</p>
+  </div>
+</ion-item>
+<ion-item>
+ <i class="nico-letter-ios"></i>
+ <div class="g1-text">
+  <h4>Datos de Póliza</h4>
+  <p><span>Número:</span> 102001245</p>
+  <p><span>Certificado:</span> 653</p>
+</div>
+</ion-item>
+</ion-list>
   <!-- 
   <ng-container *ngIf="detalle.flagVehicular">
     <ion-list no-lines class="inline">            
