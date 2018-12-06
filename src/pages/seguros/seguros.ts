@@ -79,6 +79,7 @@ imports:[
   openDatelle(poliza) {
     let modal = this.modalCtrl.create(PagosPage, { data: poliza.codigoPoliza },{cssClass:"modal-seguros"});
     modal.present();
+    
   }
 
   goComoPagar() {
