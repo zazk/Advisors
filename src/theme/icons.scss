@@ -23,7 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.nico-edit-ios:before {
+  content: "\e916";
+}
 // hacer el cambio del prefijo por: new-ico;
 .nico-letter-ios:before {
   content: "\e915";

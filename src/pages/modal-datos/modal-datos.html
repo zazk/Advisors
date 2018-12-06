@@ -9,21 +9,124 @@
   pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales, comprende 'ion-header' y el inicio de 'ion-content'.
 -->
 <ion-header class="h-header-innercontrols">
-    <div class="h-controls" (click)="dismiss()">
+  <div class="h-controls" (click)="dismiss()">
     <ion-navbar>
       <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Actualiza tus datos</h3>
     </ion-navbar>      
-    </div>  
+  </div>  
 </ion-header>
 <ion-content padding center>
-<!-- pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales. -->
+  <!-- pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales. -->
   <div class="g1-wraps-items ">
-    <div class="g1-item"> 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, necessitatibus repellendus voluptate quas excepturi suscipit velit cumque obcaecati magnam, accusantium laborum recusandae eos earum nemo, vel commodi iusto quasi nesciunt?
-    </div>
-    <div class="g1-item"> 
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, necessitatibus repellendus voluptate quas excepturi suscipit velit cumque obcaecati magnam, accusantium laborum recusandae eos earum nemo, vel commodi iusto quasi nesciunt?
-    </div>
+   <ion-list>
+    <ion-item class="g1-item-contact">
+      <i class="nico-letter"></i>
+      <div class="g1-info">
+
+        <div class="g1-item-info">
+          <span>Documento de identidad</span>
+          <div class="g1-text">DNI - 48291022<button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+
+
+      </div>
+    </ion-item>
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Nombre y Apellido</span>
+          <div class="g1-text g1-edit">Pablo Cornejo<button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Fecha de Nacimiento</span>
+          <div class="g1-text g1-edit">21/07/1967<button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Sexo</span>
+          <div class="g1-text g1-edit">Masculino<button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+    
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Correo Electrónico</span>
+          <div class="g1-text g1-edit">hencinas@consejeros.com.pe <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Teléfonos</span>
+          <div class="g1-text g1-edit">(01)-6283531 <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+        <div class="g1-item-info">
+          <!-- <span>Teléfonos</span> -->
+          <div class="g1-text g1-edit">942108447 <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+
+    <ion-item class="g1-item-contact">
+      <i class="nico-phone-alt"></i>
+      <div class="g1-info">
+        <div class="g1-item-info">
+          <span>Dirección</span>
+          <div class="g1-text g1-edit">Av. San Borja Sur 115, Dpt 115 <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+        <div class="g1-item-info">
+          <span>Departamento</span>
+          <div class="g1-text g1-edit">Lima <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+        <div class="g1-item-info">
+          <span>Provincia</span>
+          <div class="g1-text g1-edit">Lima <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+         <div class="g1-item-info">
+          <span>Distrito</span>
+          <div class="g1-text g1-edit">San Borja <button class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>    
+        </div>
+      </div>
+    </ion-item>
+
+
+
+
+
+
+
+      <!-- 
+      <ion-item no-lines>
+        <ion-label stacked>Remitente</ion-label>
+        <ion-label>{{data.Remitente}}</ion-label>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Asunto</ion-label>
+        <ion-input type="text" placeholder="" name="asunto" [(ngModel)]="data.Asunto" required></ion-input>
+      </ion-item>
+      <ion-item no-lines>
+        <ion-label stacked>Mensaje</ion-label>
+        <ion-textarea attr.rows="6" class = "textAreaCustom" [(ngModel)]="data.Mensaje"></ion-textarea>
+      </ion-item> -->
+    </ion-list>
+    <button class="g1-update-list">Actualizar</button>
   </div>
 
   <!-- 
@@ -113,21 +216,21 @@
           <button ion-button full type="submit">Actualizar</button>
         </ion-col>
       </ion-row>
-  </form> -->
-</ion-content>
-<ion-footer class="f-footer">
-  <div class="footer-inner">
-    <button class="f-item">
-      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-      <label>INICIO</label>      
-    </button>
-    <button class="f-item">
-      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-      <label>PERFIL</label>      
-    </button>
-    <button menuToggle class="f-item">
-      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-      <label>MENÚ</label>      
-    </button>
-  </div>
-</ion-footer>
+    </form> -->
+  </ion-content>
+  <ion-footer class="f-footer">
+    <div class="footer-inner">
+      <button class="f-item">
+        <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+        <label>INICIO</label>      
+      </button>
+      <button class="f-item">
+        <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+        <label>PERFIL</label>      
+      </button>
+      <button menuToggle class="f-item">
+        <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+        <label>MENÚ</label>      
+      </button>
+    </div>
+  </ion-footer>

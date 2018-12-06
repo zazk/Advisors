@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?omb7rk');
-  src:  url('fonts/icomoon.eot?omb7rk#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?omb7rk') format('truetype'),
-    url('fonts/icomoon.woff?omb7rk') format('woff'),
-    url('fonts/icomoon.svg?omb7rk#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?il8hqp');
+  src:  url('fonts/icomoon.eot?il8hqp#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?il8hqp') format('truetype'),
+    url('fonts/icomoon.woff?il8hqp') format('woff'),
+    url('fonts/icomoon.svg?il8hqp#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="nico-"], [class*=" nico-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: none;
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-edit-ios:before {
+  content: "\e916";
+}
 .nico-letter-ios:before {
   content: "\e915";
 }
