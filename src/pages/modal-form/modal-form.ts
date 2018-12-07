@@ -11,6 +11,7 @@ import {
 @Component({
   selector: "modal-form",
   templateUrl: "modal-form.html"
+  
 })
 export class ModalForm {
   constructor(

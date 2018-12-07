@@ -50,21 +50,35 @@
   <!-- detalle de seguro solo activo en tab 1 - replicar cuando programen  -->
   <div class="g1-content-items" [ngSwitch]="viewMode">
     <div class="g1-content-tab active" id="tab1" *ngSwitchCase="'tab1'">
-      <ul class="g1-content-list" *ngFor="let itemComp of companias">
-        <li class="g1-item g1-pending" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
-          <figure>
-            <img src="assets/img/empresa.jpg">
-          </figure>
-          <div class="g1-item-content">
-            <h4>Placa: AHJ156 Tab 1</h4>
-            <p>Toyota Corolla</p>
-            <p>Año: 2017</p>
-            <p>Póliza: 102001421</p>
-            <div class="g1-notification">Sin pagos pendientes</div>
-            <div class="g1-notification g1-pending-notification">Pagos Pendientes</div>
-          </div>
-          <a href="" (click)="openData(itemComp)" class="g1-close-item"><i class="nico-zoom"></i></a>
-        </li>
+      <ul class="g1-content-list">
+     <li class="g1-item">
+      <figure>
+        <img src="assets/img/empresa.jpg">
+      </figure>
+      <div class="g1-item-content">
+        <h4>Placa: AHJ15 Tab 1</h4>
+        <p>Toyota Corolla</p>
+        <p>Año: 2017</p>
+        <p>Póliza: 102001421</p>
+        <div class="g1-notification">Sin pagos pendientes</div>
+        <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
+      </div>
+      <a href="" class="g1-close-item"><i class="nico-nav-6"></i></a>
+    </li>
+    <li class="g1-item g1-pending">
+      <figure>
+        <img src="assets/img/empresa.jpg">
+      </figure>
+      <div class="g1-item-content">
+        <h4>Placa: AHJ156</h4>
+        <p>Toyota Corolla</p>
+        <p>Año: 2017</p>
+        <p>Póliza: 102001421</p>
+        <div class="g1-notification">Sin pagos pendientes</div>
+        <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
+      </div>
+      <a href="" class="g1-close-item"><i class="nico-nav-6"></i></a>
+    </li>
 
 
     </ul>
