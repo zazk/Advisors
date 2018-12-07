@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ViewController, AlertController, LoadingController } from 'ionic-angular';
+import { NavController, NavParams, ModalController, ViewController, AlertController, LoadingController } from 'ionic-angular';
 import { Usuario, LoadDataActualizar, Entidad } from '../../models/usuario'
 import { Componentes } from '../../models/componentes'
 import { AuthService } from '../../providers/auth-service'
 import { GlovalVars } from '../../providers/gloval-vars'
 import { ModelError } from '../../models/error'
+import { ModalForm } from '../modal-form/modal-form'
 
 /*
   Generated class for the ModalDatos page.
@@ -43,9 +44,14 @@ export class ModalDatosPage {
 
   ubigeoCod = { CodigoTipo: '' }
 
-  constructor(public navCtrl: NavController, public navParams: NavParams
-    , public viewCtrl: ViewController, public alertCtrl: AlertController
-    , public auth: AuthService, public vars: GlovalVars, private loadingCtrl: LoadingController) {
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams, 
+    public viewCtrl: ViewController, 
+    public alertCtrl: AlertController,
+    public auth: AuthService, 
+    public vars: GlovalVars, 
+    public modalCtrl: ModalController,
+    private loadingCtrl: LoadingController) {
     let loader = this.loadingCtrl.create({
       content: "Espere por Favor..."
     });
@@ -55,6 +61,15 @@ export class ModalDatosPage {
   }
 
   ionViewDidLoad() {
+  }
+
+  openModalForm() {
+    // When you want to open a page in a modal use the next two lines
+    let modal = this.modalCtrl.create(ModalForm);
+    modal.present();
+
+    // If you wanna to push a Page in your navigation use this:
+    // this.navCtrl.push(ModalForm);
   }
 
   dismiss() {
