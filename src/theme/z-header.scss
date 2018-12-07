@@ -1,3 +1,52 @@
+.h-wrapmenu-up{
+  background-image: url(../assets/img/bg-menu-up.svg);
+  background-size: cover;
+  background-position: center center;
+  margin-top: 18px;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.h-name-perfil{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  p{
+    margin: 0;
+    margin-right: 10px;
+    font-size: 24px;
+    font-family: $t1
+    color #fff;
+  }
+}
+.h-menu-perfil{
+  text-align: right;
+  margin-top: 20px;
+}
+.h-menu-item{
+  font-size: 12px;
+  color: #fff;
+  font-family: $t1;
+  height: 25px;
+  line-height: 25px;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+  &:last-child{
+    border-right: none;
+  }
+}
+
+
+
+.h-wraptitle-menu{
+  background-color: $c2;
+  .h-title-menu{
+    font-size: 24px;
+    font-family: $t1;
+    color: #fff;
+
+  }
+}
+
 
 // header interiores
 .h-header-inner{
