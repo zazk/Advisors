@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 import { NavController, NavParams, AlertController, LoadingController, ViewController, ModalController, Platform } from 'ionic-angular';
 import { AuthService } from '../../providers/auth-service';
 import { GlovalVars } from '../../providers/gloval-vars';
@@ -9,6 +9,7 @@ import { Device } from '@ionic-native/device';
     templateUrl: 'aviso.siniestro.html'
 })
 export class AvisoSiniestroPage {
+    viewMode = 'tab1';
     public model:any = {numDocumento:"", numPlaca:""};
     public mask = [/[0-9 a-z A-Z]/, /[0-9 a-z A-Z]/, /[0-9 a-z A-Z]/, '-', /[0-9]/, /[0-9]/, /[0-9]/];
     constructor(
@@ -16,9 +17,9 @@ export class AvisoSiniestroPage {
         private modalCtrl: ModalController, private plat: Platform, private alertCtrl: AlertController,
         private device: Device, private loadingCtrl: LoadingController,
         public globalService: GlovalVars
-    ) {
+        ) {
     }
     public registrar() {
-        
+
     }
 }

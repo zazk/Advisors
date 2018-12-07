@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nico-casa:before {
+  content: "\e917";
+}
 .nico-edit-ios:before {
   content: "\e916";
 }

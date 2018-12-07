@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?il8hqp');
-  src:  url('fonts/icomoon.eot?il8hqp#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?il8hqp') format('truetype'),
-    url('fonts/icomoon.woff?il8hqp') format('woff'),
-    url('fonts/icomoon.svg?il8hqp#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?e0q06t');
+  src:  url('fonts/icomoon.eot?e0q06t#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?e0q06t') format('truetype'),
+    url('fonts/icomoon.woff?e0q06t') format('woff'),
+    url('fonts/icomoon.svg?e0q06t#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-casa:before {
+  content: "\e917";
+}
 .nico-edit-ios:before {
   content: "\e916";
 }
