@@ -65,7 +65,7 @@ export class ModalDatosPage {
 
   openModalForm() {
     // When you want to open a page in a modal use the next two lines
-    let modal = this.modalCtrl.create(ModalForm);
+    let modal = this.modalCtrl.create(ModalForm,{},{cssClass:"modal-editar"});
     modal.present();
 
     // If you wanna to push a Page in your navigation use this:
