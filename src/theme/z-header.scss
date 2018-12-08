@@ -1,3 +1,5 @@
+// menu principal
+
 .h-wrapmenu-up{
   background-image: url(../assets/img/bg-menu-up.svg);
   background-size: cover;
@@ -6,6 +8,7 @@
   padding: 20px;
   padding-bottom: 10px;
 }
+
 .h-name-perfil{
   display: flex;
   justify-content: flex-end;
@@ -14,8 +17,8 @@
     margin: 0;
     margin-right: 10px;
     font-size: 24px;
-    font-family: $t1
-    color #fff;
+    font-family: $t1;
+    color:#fff;
   }
 }
 .h-menu-perfil{
@@ -46,6 +49,34 @@
 
   }
 }
+
+.h-item-list{
+  width: 100%;
+  display: block;
+  padding: 0 20px;
+}
+.h-menu-link{
+  border-bottom: 1px solid $c10;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  color:$c2;
+  font-size: 18px;
+  font-family: $t1;
+  height: 50px;
+  text-align: left;
+  span{
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  p{
+    margin: 0;
+    text-align: left;
+  }
+}
+// menu principal
+
 
 
 // header interiores

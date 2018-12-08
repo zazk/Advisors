@@ -52,37 +52,47 @@ export class MyApp {
 
   loadDefaultMenu() {
     this.pages = [
-      { icon: "home", titulo: "Inicio", component: HomePage, flag: 0 },
+      { icon: "nico-nav-1", titulo: "Inicio", component: HomePage, flag: 0 },
       {
-        icon: "briefcase",
+        icon: "nico-nav-2",
         titulo: "Mis Seguros",
         component: SegurosPage,
         flag: 0
       },
+      // {
+      //   icon: "alert",
+      //   titulo: "Pendientes de Pago",
+      //   component: SegurosPage,
+      //   flag: 1
+      // },
       {
-        icon: "alert",
-        titulo: "Pendientes de Pago",
-        component: SegurosPage,
-        flag: 1
-      },
-      {
-        icon: "car",
+        icon: "nico-nav-3",
         titulo: "Punto de Venta SOAT",
+        component: PuntoVentaPage,
+        flag: 0
+      },      {
+        icon: "nico-nav-4",
+        titulo: "Contáctenos",
+        component: PuntoVentaPage,
+        flag: 0
+      },      {
+        icon: "nico-nav-5",
+        titulo: "Estado de Cuenta",
         component: PuntoVentaPage,
         flag: 0
       },
       {
-        icon: "medkit",
+        icon: "nico-nav-6",
         titulo: "Reporte de Siniestro",
         component: AvisoSiniestroPage,
         flag: 0
       },
-      {
-        icon: "pricetag",
-        titulo: "Formas de Pago WEB",
-        component: FormasPagoPage,
-        flag: 0
-      }
+      // {
+      //   icon: "pricetag",
+      //   titulo: "Formas de Pago WEB",
+      //   component: FormasPagoPage,
+      //   flag: 0
+      // }
     ];
     this.pagesHidden = [
       { icon: "body", titulo: "Mi perfil", component: PerfilPage, flag: 0 },

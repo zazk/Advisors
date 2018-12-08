@@ -2,7 +2,7 @@
   <ion-header class="h-wraptitle-menu">
     <h3 class="h-title-menu">Controles de usuario</h3>
   </ion-header>
-  <ion-content class="menu-default">
+  <ion-content class="menu-default h-menu-main">
     <div class="h-wrapmenu-up">
       <div class="h-name-perfil">
         <p>Pablo Martin</p>
@@ -14,17 +14,27 @@
         </button>        
       </div>
     </div>
-    <ion-list class="profile-menu-list" *ngIf="flagMenu" no-lines>
-      <button ion-item *ngFor="let p of pagesHidden" (click)="openMenu(p)">
-        <ion-icon name="{{p.icon}}"></ion-icon>
-        {{ p.titulo }} xxx
-      </button>
-    </ion-list>
+
     <ion-list no-lines>
-      <button ion-item *ngFor="let p of pages" (click)="openMenu(p)">
-        <ion-icon name="{{p.icon}}"></ion-icon>
-        {{ p.titulo }}
+      
+      <button class="h-item-list">
+        <div class="h-menu-link">
+          <span class="nico-nav-2"></span>
+          <p>
+              menu acordeon
+          </p>       
+        </div>
       </button>
+      <button class="h-item-list" *ngFor="let p of pages" (click)="openMenu(p)">
+        <div class="h-menu-link">
+          <span class="{{p.icon}}"></span>
+          <p>
+              {{ p.titulo }}
+          </p>       
+        </div>
+      </button>
+
+
     </ion-list>
   </ion-content>
 </ion-menu>
