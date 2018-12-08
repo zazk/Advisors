@@ -30,6 +30,7 @@ import { PuntoVentaPage } from "../pages/punto-venta/punto-venta";
 import { SiniestroPage } from "../pages/siniestro/siniestro";
 import { ContactoPage } from "../pages/contacto/contacto";
 import { FormasPagoPage } from "../pages/formas-pago/formas-pago";
+import { EstadoCuenta } from "../pages/estado-cuenta/estado-cuenta";
 import { FormasPagoSliderPage } from "../pages/formas-pago-slider/formas-pago-slider";
 //import { GoogleChart } from 'angular2-google-chart/directives/angular2-google-chart.directive'
 import { AvisoSiniestroPage } from "../pages/aviso-siniestro/aviso.siniestro";
@@ -62,6 +63,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
     ContactoPage,
     FormSolicitarSeguroPage,
     FormasPagoPage,
+    EstadoCuenta,
     FormasPagoSliderPage,
     AvisoSiniestroPage,
     EvidenciasSiniestroPage
@@ -97,6 +99,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
     ContactoPage,
     FormSolicitarSeguroPage,
     FormasPagoPage,
+    EstadoCuenta,
     FormasPagoSliderPage,
     AvisoSiniestroPage,
     EvidenciasSiniestroPage

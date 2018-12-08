@@ -9,6 +9,7 @@ import { SegurosPage } from '../seguros/seguros'
 import { CotizadorSoatPage } from '../cotizador-soat/cotizador-soat'
 import { PuntoVentaPage } from '../punto-venta/punto-venta'
 import { FormasPagoPage } from '../formas-pago/formas-pago'
+import { EstadoCuenta } from '../estado-cuenta/estado-cuenta'
 import { AvisoSiniestroPage } from '../aviso-siniestro/aviso.siniestro'
 import { GlovalVars } from '../../providers/gloval-vars'
 
@@ -52,6 +53,9 @@ export class HomePage {
 
   goFormadePago(){
     this.navCtrl.setRoot(FormasPagoPage);
+  }
+  goEstadoCuenta(){
+    this.navCtrl.setRoot(EstadoCuenta);
   }
 
   goContacto(){
