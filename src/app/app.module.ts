@@ -1,4 +1,5 @@
 import { ModalForm } from "./../pages/modal-form/modal-form";
+import { ModalAvisoLlamar } from "./../pages/modal-aviso-llamar/modal-aviso-llamar";
 import { Geolocation } from "@ionic-native/geolocation";
 import { NgModule, ErrorHandler } from "@angular/core";
 import { HttpModule } from "@angular/http";
@@ -53,6 +54,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
     DetalleSegurosPagePage,
     PerfilPage,
     ModalForm,
+    ModalAvisoLlamar,
     ModalDatosPage,
     ModalPasswordPage,
     ModalPreguntaPage,
@@ -89,6 +91,7 @@ import { SplashScreen } from "@ionic-native/splash-screen";
     DetalleSegurosPagePage,
     PerfilPage,
     ModalForm,
+    ModalAvisoLlamar,
     ModalDatosPage,
     ModalPasswordPage,
     ModalPreguntaPage,

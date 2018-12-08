@@ -1,0 +1,13 @@
+.modal-aviso-llamar{
+	background-color: rgba(0,0,0,0.5) ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.modal-wrapper{
+		width: 80vw;
+		height: 90vh;
+	}
+	.g1-content-modal{
+		padding-top: 50px;
+	}
+}
