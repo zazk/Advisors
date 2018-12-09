@@ -13,23 +13,25 @@
     <img class="logo-img" src="assets/img/logo-consejeros.svg" />
 </ion-header>
 <ion-content padding center>
-    <ion-list no-lines >
-      <ion-item class="g0-input-item ico-login">
-        <ion-input block type="text" placeholder="Usuario" name="usuario" [(ngModel)]="loginCredentials.username"
-          required></ion-input>
-      </ion-item>
-      <ion-item class="g0-input-item ico-password">
-        <ion-input type="password" placeholder="*********" name="password" [(ngModel)]="loginCredentials.password"
-          required></ion-input>
-      </ion-item>
-    </ion-list>
-    <button ion-button full (click)="login()">Ingresar</button>
-    <ion-toolbar class="mt40">
-      <ion-row class="mb20">
-          <button class="g0-text-link"  (click)="forgotAccount()">Olvidé mi contraseña</button>
-      </ion-row>
-      <ion-row>
-        <button class="g0-text-link"  (click)="createAccount()">No tienes cuenta? <strong>Regístrate</strong></button>
-      </ion-row>
-    </ion-toolbar>    
+    <div class="cnt-wrapper">
+      <ion-list no-lines >
+        <ion-item class="g0-input-item ico-login">
+          <ion-input block type="text" placeholder="Usuario" name="usuario" [(ngModel)]="loginCredentials.username"
+            required></ion-input>
+        </ion-item>
+        <ion-item class="g0-input-item ico-password">
+          <ion-input type="password" placeholder="*********" name="password" [(ngModel)]="loginCredentials.password"
+            required></ion-input>
+        </ion-item>
+      </ion-list>
+      <button class="g0-btn-ingresar" ion-button full (click)="login()">Ingresar</button>
+      <ion-toolbar class="g0-linksrecover">
+        <ion-row class="mb20">
+            <button class="g0-text-link big"  (click)="forgotAccount()">Olvidé mi contraseña</button>
+        </ion-row>
+        <ion-row>
+          <button class="g0-text-link"  (click)="createAccount()">No tienes cuenta? <strong>Regístrate</strong></button>
+        </ion-row>
+      </ion-toolbar>
+    </div>
 </ion-content>

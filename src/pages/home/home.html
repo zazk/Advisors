@@ -10,64 +10,75 @@
 
 
 <ion-content padding center class="g0-content">
-  <div class="hm-welcome">
-    <div class="hm-image-perfil">
-      <figure>
-        <img src="assets/img/img-perfil.svg" alt="">
-      </figure>
+  <div class="cnt-wrapper">
+    <div class="hm-welcome">
+      <div class="hm-image-perfil">
+        <figure>
+          <img src="assets/img/img-perfil.svg" alt="">
+        </figure>
+      </div>
+      <div class="hm-name">
+        <p>Bienvenido(a) <strong>PABLO MARTIN</strong></p>
+      </div>
     </div>
-    <div class="hm-name">
-      <p>Bienvenido(a) <strong>PABLO MARTIN</strong></p>    
+
+    <!-- pinkxel: Aquí termina el código estandar para la cabecera de las páginas post-logeo, -->
+    <div class="home-list">
+
+        <button class="button-main" (click)="goSeguros('Mis Seguros',0)">
+            <img src="assets/img/ico-1.svg" width="65" height="65" alt="">
+            <label>Mis Seguros</label>
+        </button>
+
+        <button class="button-main" (click)="goPuntoVentaSOAT()">
+            <img src="assets/img/ico-2.svg" width="65" height="65" alt="">
+          <label>Puntos de Venta</label>
+        </button>
+
+        <button class="button-main" (click)="goModulo(AvisoSiniestroPage)">
+            <img src="assets/img/ico-3.svg" width="65" height="65" alt="">
+          <label>Reporte de Siniestro</label>
+        </button>
+
+        <button class="button-main" (click)="goEstadoCuenta()">
+            <img src="assets/img/ico-4.svg" width="65" height="65" alt="">
+          <label>Estado de cuenta</label>
+        </button>
+
+        <button class="button-main" (click)="goContacto()">
+            <img src="assets/img/ico-5.svg" width="65" height="65" alt="">
+          <label>Contáctenos</label>
+        </button>
+        <button class="button-main" (click)="goContacto()">
+            <img src="assets/img/ico-5.svg" width="65" height="65" alt="">
+          <label>Contáctenos</label>
+        </button>
+        <button class="button-main" (click)="goContacto()">
+            <img src="assets/img/ico-5.svg" width="65" height="65" alt="">
+          <label>Contáctenos</label>
+        </button>
+
+
     </div>
-  </div> 
 
-  <!-- pinkxel: Aquí termina el código estandar para la cabecera de las páginas post-logeo, -->
-  <div class="home-list">
-
-      <button class="button-main" (click)="goSeguros('Mis Seguros',0)">
-          <img src="assets/img/ico-1.svg" width="65" height="65" alt="">
-          <label>Mis Seguros</label>
-      </button>  
-
-      <button class="button-main" (click)="goPuntoVentaSOAT()">
-          <img src="assets/img/ico-2.svg" width="65" height="65" alt="">
-        <label>Puntos de Venta</label>
-      </button>
-
-      <button class="button-main" (click)="goModulo(AvisoSiniestroPage)">
-          <img src="assets/img/ico-3.svg" width="65" height="65" alt="">
-        <label>Reporte de Siniestro</label>
-      </button>
-
-      <button class="button-main" (click)="goEstadoCuenta()">
-          <img src="assets/img/ico-4.svg" width="65" height="65" alt="">
-        <label>Estado de cuenta</label>
-      </button>
-
-      <button class="button-main" (click)="goContacto()">
-          <img src="assets/img/ico-5.svg" width="65" height="65" alt="">
-        <label>Contáctenos</label>
-      </button>
-      
-
-    
   </div>
+
 </ion-content>
 <ion-footer class="f-footer">
   <div class="footer-inner">
     <button class="f-item">
       <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-      <label>INICIO</label>      
+      <label>INICIO</label>
     </button>
     <button class="f-item">
       <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-      <label>PERFIL</label>      
+      <label>PERFIL</label>
     </button>
     <button menuToggle class="f-item">
       <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-      <label>MENÚ</label>      
+      <label>MENÚ</label>
     </button>
-<!-- 
+<!--
   <button ion-button menuToggle end>
     <ion-icon name="menu"></ion-icon>
   </button> -->

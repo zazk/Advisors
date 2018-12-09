@@ -99,7 +99,7 @@ export class MyApp {
     ];
     this.pagesHidden = [
       { icon: "body", titulo: "Mi perfil", component: PerfilPage, flag: 0 },
-      { icon: "log-out", titulo: "Salir", component: null, flag: 0 }
+      { icon: "log-out", titulo: "Cerrar Sesión", component: null, flag: 0 }
     ];
   }
 

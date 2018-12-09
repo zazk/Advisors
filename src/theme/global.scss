@@ -14,8 +14,18 @@
   margin-bottom: 80px;
 }
 
-
-
+.cnt-wrapper{
+  max-width: 480px;
+  margin: 0 auto;
+}
+.g0-btn-ingresar{
+  margin-top: 40px !important;
+  height: 60px;
+  border-radius: 0 !important;
+}
+.g0-linksrecover{
+  margin-top: 65px;
+}
 .g0-text-link{
   font-family: $t2;
   font-size: 14px;
@@ -23,6 +33,9 @@
   background: none;
   text-align: center;
   width: 100%;
+  &.big{
+    font-size: 16px;
+  }
 
 
 }
