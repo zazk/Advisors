@@ -1,5 +1,7 @@
 // menu principal
-
+#menuRoot .menu-inner{
+  width: 355px;
+}
 .h-wrapmenu-up{
   background-image: url(../assets/img/bg-menu-up.svg);
   background-size: cover;
@@ -59,13 +61,13 @@
   border-bottom: 1px solid $c10;
   box-sizing: border-box;
   display: flex;
+  text-align: left;
   width: 100%;
   align-items: center;
   color:$c2;
   font-size: 18px;
   font-family: $t1;
   height: 50px;
-  text-align: left;
   span{
     font-size: 30px;
     margin-right: 15px;
@@ -74,6 +76,60 @@
     margin: 0;
     text-align: left;
   }
+}
+
+  //submenu
+.h-menulink-open  {
+  position: relative;
+}
+.h-icon-submenu  {
+  position: absolute;
+  top:10px;
+  right: 10px;
+  font-size: 18px !important;
+  color: $c2;
+
+}
+.h-submenu  {
+  background-color: $c11;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.h-subitem-list{
+  width: 100%;
+  padding: 0;
+}
+.h-submenu-link{
+    display: flex;
+    text-align: left;
+    color:$c2;
+    font-size: 16px;
+    font-family: $t1;
+    height: 35px;
+    align-items: center;
+    span{
+      font-size: 30px;
+      margin-right: 10px;
+      &.h-number{
+        font-size: 10px;
+        color: #fff;
+        margin-left: 5px;
+        font-family: $t1;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 16px;
+        text-align: center;
+        width: 16px;
+        height: 16px;
+        border-radius: 5px;
+        background-color: $c3;
+      }
+    }
+    p{
+      margin: 0;
+      text-align: left;
+    }
 }
 // menu principal
 
@@ -122,7 +178,7 @@
   }
   &::before{
     right: 100%;
-  }   
+  }
 
   figure{
     width: 65px;
