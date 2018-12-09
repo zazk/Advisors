@@ -20,12 +20,12 @@
     </div>
 
     <ion-list no-lines>
-      <button class="h-item-list" (click)="toggleSubMenu()">
-        <div class="h-menu-link h-menulink-open">
+      <div class="h-item-list" >
+        <button class="h-menu-link h-menulink-open" (click)="toggleSubMenu()">
           <span class="nico-nav-2"></span>
           <span class="h-icon-submenu nico-arrow-down1"></span>
           <p>menu acordeon</p>
-        </div>
+        </button>
         <div class="h-submenu " [ngClass]="{ active: isOpenSubmenu }">
           <button class="h-subitem-list">
             <div class="h-submenu-link">
@@ -70,7 +70,7 @@
             </div>
           </button>
         </div>
-      </button>
+      </div>
       <button class="h-item-list" *ngFor="let p of pages" (click)="openMenu(p)">
         <div class="h-menu-link">
           <span class="{{p.icon}}"></span>
