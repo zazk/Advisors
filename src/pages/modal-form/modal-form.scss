@@ -3,6 +3,41 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	.g1-action-list{
+		display: flex;
+		box-sizing: border-box;
+		padding-bottom: 50px;
+	}
+	.g1-action-info{
+		flex: 1;
+		height: 32px;
+		color: $c9;
+		font-family: $t1;
+		font-size: 16px;
+	}
+	.g1-update-action{
+		background-color:$c3
+	}
+	.g1-cancel-action{
+		background-color:$c1
+	}
+	.h-header-innercontrols{
+		padding: 14px 20px;	
+	}
+	.list{
+		margin-bottom: 0px;
+	}
+	.g1-wraps-items {
+		margin-top: 15px;
+	}
+	.h-header-icon{
+		display: flex;
+		justify-content: space-between;
+		i{
+			font-size: 32px;
+			color: white;
+		}
+	}
 	.label{
 		margin-right: 0;
 	}
@@ -31,9 +66,9 @@
 		white-space: normal;
 		box-sizing: border-box;
 	}
-	.g1-wraps-items{
-		padding-bottom: 20px;
-	}
+	// .g1-wraps-items{
+	// 	padding-bottom: 20px;
+	// }
 	// 	padding-top: 20px;
 	// 	.list{
 	// 		margin-bottom: 40px;	
@@ -56,6 +91,7 @@
 	}
 	.g1-item-contact{
 		margin-bottom: 28px;
+		margin-bottom: 18px;
 		.item-inner{
 			border-bottom:0px !important;
 		}
@@ -72,6 +108,14 @@
 			i{
 				font-size: 30px;
 				margin-top: 6px;
+			}
+			span{
+				i{
+					position: relative;
+					top: 2px;
+					padding-left: 2px;
+					font-size: 13px;
+				}
 			}
 		}
 		.g1-action-info{
@@ -106,6 +150,7 @@
 			color: $c1;
 			font-size: 12px;
 			margin-bottom: 10px;
+
 		}
 		.g1-text{
 			color:$c2;

@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nico-circle-plus:before {
+  content: "\e919";
+}
 .nico-trash:before {
   content: "\e918";
 }
