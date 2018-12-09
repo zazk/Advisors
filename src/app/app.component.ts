@@ -53,13 +53,14 @@ export class MyApp {
 
   loadDefaultMenu() {
     this.pages = [
-      { icon: "nico-nav-1", titulo: "Inicio", component: HomePage, flag: 0 },
-      {
-        icon: "nico-nav-2",
-        titulo: "Mis Seguros",
-        component: SegurosPage,
-        flag: 0
-      },
+
+      // { icon: "nico-nav-1", titulo: "Inicio", component: HomePage, flag: 0 },
+      // {
+      //   icon: "nico-nav-2",
+      //   titulo: "Mis Seguros",
+      //   component: SegurosPage,
+      //   flag: 0
+      // },
       // {
       //   icon: "alert",
       //   titulo: "Pendientes de Pago",
@@ -112,6 +113,7 @@ export class MyApp {
         titulo: page.titulo,
         flag: page.flag
       });
+      console.log(page);
     }
   }
 

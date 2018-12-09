@@ -748,3 +748,19 @@ ion-content .select,
 ion-content .datetime {
   color: #333;
 }
+@media screen and (max-width: 480px){
+  #menuRoot .menu-inner{
+    width: 305px;
+  }
+  .h-submenu{
+    padding-left: 30px;
+  }
+  .h-submenu-link span{
+    font-size: 25px;
+    margin-right: 7px;
+  }
+  .h-submenu-link{
+    font-size: 14px;
+  }
+
+}
