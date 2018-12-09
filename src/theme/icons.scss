@@ -23,6 +23,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.nico-alerta:before {
+  content: "\e91a";
+}
 .nico-circle-plus:before {
   content: "\e919";
 }
@@ -35,7 +39,6 @@
 .nico-edit-ios:before {
   content: "\e916";
 }
-// hacer el cambio del prefijo por: new-ico;
 .nico-letter-ios:before {
   content: "\e915";
 }
@@ -142,4 +145,3 @@
 .nico-youtube:before {
   content: "\e601";
 }
-
