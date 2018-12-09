@@ -6,81 +6,67 @@
     <div class="h-wrapmenu-up">
       <div class="h-name-perfil">
         <p>Pablo Martin</p>
-        <img src="assets/img/img-perfil.svg" width="50" height="50" alt="">
+        <img src="assets/img/img-perfil.svg" width="50" height="50" alt="" />
       </div>
       <div class="h-menu-perfil">
-        <button class="h-menu-item" *ngFor="let p of pagesHidden" (click)="openMenu(p)">
+        <button
+          class="h-menu-item"
+          *ngFor="let p of pagesHidden"
+          (click)="openMenu(p)"
+        >
           {{ p.titulo }}
         </button>
       </div>
     </div>
 
     <ion-list no-lines>
-
-      <button class="h-item-list">
+      <button class="h-item-list" (click)="toggleSubMenu()">
         <div class="h-menu-link h-menulink-open">
           <span class="nico-nav-2"></span>
           <span class="h-icon-submenu nico-arrow-down1"></span>
-          <p>
-              menu acordeon
-
-          </p>
+          <p>menu acordeon</p>
         </div>
-        <div class="h-submenu">
+        <div class="h-submenu " [ngClass]="{ active: isOpenSubmenu }">
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-1"></span>
-              <p>
-                 Vehículos <span class="h-number">10</span>
-              </p>
+              <p>Vehículos <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-2"></span>
-              <p>
-                SOAT <span class="h-number">10</span>
-              </p>
+              <p>SOAT <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-3"></span>
-              <p>
-                Domiciliario <span class="h-number">10</span>
-              </p>
+              <p>Domiciliario <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-4"></span>
-              <p>
-                Asistencia Médica <span class="h-number">10</span>
-              </p>
+              <p>Asistencia Médica <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-5"></span>
-              <p>
-                Accidentes Personales <span class="h-number">10</span>
-              </p>
+              <p>Accidentes Personales <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-6"></span>
-              <p>
-                Vida <span class="h-number">10</span>
-              </p>
+              <p>Vida <span class="h-number">10</span></p>
             </div>
           </button>
           <button class="h-subitem-list">
             <div class="h-submenu-link">
               <span class="nico-seguro-7"></span>
-              <p>
-                Otros <span class="h-number">10</span>
-              </p>
+              <p>Otros <span class="h-number">10</span></p>
             </div>
           </button>
         </div>
@@ -88,13 +74,9 @@
       <button class="h-item-list" *ngFor="let p of pages" (click)="openMenu(p)">
         <div class="h-menu-link">
           <span class="{{p.icon}}"></span>
-          <p>
-              {{ p.titulo }}
-          </p>
+          <p>{{ p.titulo }}</p>
         </div>
       </button>
-
-
     </ion-list>
   </ion-content>
 </ion-menu>
