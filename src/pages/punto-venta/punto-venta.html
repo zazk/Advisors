@@ -39,42 +39,42 @@
   
 </div>
 
-
-<ion-list *ngFor="let item of markersPuntoVenta" no-lines>
-  <ion-item no-lines class="g1-item-sale">
-    <ion-thumbnail item-left class="g1-logo">
-      <span class="g1-distance">20 metros de distancia</span>
-      <img [src]="item.logo">
-    </ion-thumbnail>
-    <!-- <ion-icon name="md-pin"></ion-icon> -->
-    <ion-label class="g1-sale-title info" stacked>{{item.canal}}</ion-label>
-    <ion-label class="info" stacked>{{item.direccion}}</ion-label>
-    <ion-label class="info" stacked>Agencia : {{item.agencia}}</ion-label>
-    <ion-label class="info" stacked>Telefono : {{item.telefono}}</ion-label>
-    <ion-label class="info" stacked><span>Horarios:</span> {{item.horarios}}</ion-label>
-  </ion-item>
-</ion-list>
-
+<div class="cnt-wrapper">
+  <ion-list *ngFor="let item of markersPuntoVenta" no-lines>
+    <ion-item no-lines class="g1-item-sale">
+      <ion-thumbnail item-left class="g1-logo">
+        <span class="g1-distance">20 metros de distancia</span>
+        <img [src]="item.logo">
+      </ion-thumbnail>
+      <!-- <ion-icon name="md-pin"></ion-icon> -->
+      <ion-label class="g1-sale-title info" stacked>{{item.canal}}</ion-label>
+      <ion-label class="info" stacked>{{item.direccion}}</ion-label>
+      <ion-label class="info" stacked>Agencia : {{item.agencia}}</ion-label>
+      <ion-label class="info" stacked>Telefono : {{item.telefono}}</ion-label>
+      <ion-label class="info" stacked><span>Horarios:</span> {{item.horarios}}</ion-label>
+    </ion-item>
+  </ion-list>
+</div>
 </ion-content>
 
-      <ion-footer class="f-footer">
-        <div class="footer-inner">
-          <button class="f-item">
-            <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-            <label>INICIO</label>      
-          </button>
-          <button class="f-item">
-            <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-            <label>PERFIL</label>      
-          </button>
-          <button menuToggle class="f-item">
-            <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-            <label>MENÚ</label>      
-          </button>
-<!-- 
-  <button ion-button menuToggle end>
-    <ion-icon name="menu"></ion-icon>
-  </button> -->
+<ion-footer class="f-footer">
+  <div class="footer-inner">
+    <button class="f-item">
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+      <label>INICIO</label>      
+    </button>
+    <button class="f-item">
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+      <label>PERFIL</label>      
+    </button>
+    <button menuToggle class="f-item">
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+      <label>MENÚ</label>      
+    </button>
+  <!-- 
+    <button ion-button menuToggle end>
+      <ion-icon name="menu"></ion-icon>
+    </button> -->
 
-</div>
+  </div>
 </ion-footer>

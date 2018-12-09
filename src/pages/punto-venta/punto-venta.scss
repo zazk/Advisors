@@ -54,6 +54,7 @@ page-punto-venta {
 			margin-bottom: 0;
 			.g1-item-sale{
 				border-bottom: 0px !important;
+				padding-bottom: 10px;
 			}
 		}
 	}
@@ -65,8 +66,10 @@ page-punto-venta {
 		padding: 37px 0px;
 		.item-inner{
 			width: calc(40% - 100%)		
-		}
+		}	
 		.info{
+			color: $c1;
+			font-family: $t1;
 			font-size: 12px;
 			margin: 0px;
 			margin-top: 9px !important;
@@ -76,6 +79,11 @@ page-punto-venta {
 			span{
 				display: block;
 				margin-bottom: 9px;
+			}
+			p{
+				color: $c1;
+				font-family: $t1;
+				font-size: 12px;	
 			}
 		}
 		.g1-sale-title{

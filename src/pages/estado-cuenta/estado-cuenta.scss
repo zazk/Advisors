@@ -40,6 +40,9 @@ estado-cuenta{
 			}
 		}
 	}
+	.g1-state{
+		white-space: nowrap;
+	}
 	.g1-defeated{
 		color: #B12317;
 		i{
@@ -68,7 +71,8 @@ estado-cuenta{
 				padding-top: 4px;
 				padding-bottom: 4px;
 				line-height: 1;
-				box-sizing: border-box;				
+				box-sizing: border-box;	
+				white-space: nowrap;			
 			}			
 			thead{
 				background-color: $c3;
@@ -179,7 +183,7 @@ estado-cuenta{
 		color: $c1;
 		width: calc(100% - 102px);
 		padding-left: 24px;
-		padding-right: 40px;
+		padding-right: 34px;
 		padding-top: 10px;
 		font-family: $t1;
 		padding-bottom: 10px;
@@ -187,7 +191,7 @@ estado-cuenta{
 		box-sizing: border-box;
 		h4,p{
 			margin: 0px;
-			padding-right: 40px;
+			// padding-right: 40px;
 			line-height: 1;
 			margin-bottom: 4px;
 		}
