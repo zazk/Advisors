@@ -40,6 +40,12 @@ estado-cuenta{
 			}
 		}
 	}
+	.g1-defeated{
+		color: #B12317;
+		i{
+			margin-left: 2px;
+		}
+	}
 	.g1-content-tab{
 		position: absolute;
 		left: 0px;
@@ -51,17 +57,19 @@ estado-cuenta{
 		padding-left: 16px;
 		padding-right: 16px;
 		box-sizing: border-box;
+		padding-bottom: 8px;
 		table{
 			font-family: $t1;
 			font-size: 15px;
 			text-align: center;
-			td{
+			td,th{
 				padding-left: 10px;
 				padding-right: 10px;
 				padding-top: 4px;
 				padding-bottom: 4px;
-				box-sizing: border-box;
-			}
+				line-height: 1;
+				box-sizing: border-box;				
+			}			
 			thead{
 				background-color: $c3;
 			}
@@ -95,9 +103,24 @@ estado-cuenta{
 		margin-bottom: 14px;
 		position: relative;
 		background-color: white;
-		> figure{
+		.g1-item-cat{
 			margin: 0px;
-			width:108px;
+			width:102px;
+			display: flex;
+			background-color: #5A2D6B;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			font-family: $t1;
+			font-size: 12px;
+			color: $c9;
+			span{
+				text-align:center;
+			}
+			i{
+				margin-bottom: 3px;
+				font-size: 36px;
+			}
 		}
 		.g1-close-item{
 			position: absolute;
@@ -154,12 +177,13 @@ estado-cuenta{
 	.g1-item-content{
 		font-size: 12px;
 		color: $c1;
-		width: calc(100% - 108px);
-		padding-left: 16px;
+		width: calc(100% - 102px);
+		padding-left: 24px;
 		padding-right: 40px;
 		padding-top: 10px;
 		font-family: $t1;
 		padding-bottom: 10px;
+		padding-top: 14px;
 		box-sizing: border-box;
 		h4,p{
 			margin: 0px;
@@ -168,7 +192,7 @@ estado-cuenta{
 			margin-bottom: 4px;
 		}
 		h4{
-			font-size: 18px;
+			font-size: 20px;
 		}
 	}
 	.g1-navbar{

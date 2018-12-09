@@ -5,9 +5,53 @@
 	justify-content: center;
 	.modal-wrapper{
 		width: 80vw;
-		height: 90vh;
+		max-height: 219px;
+		background-color: $c2
+		// height: auto;
+		// height: 90vh;
+	}
+	.g0-btn-headclose{
+		position: absolute;
+		right: 7px;
+		top: 6px;
+		width: auto;
+		font-size: 24px;
+	}
+	.scroll-content{
+		overflow-y:auto; 
+	}
+	.content-md{
+		background-color: rgba(0,0,0,0)
+	}
+	.scroll-content{
+		margin-top: 0 !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 	.g1-content-modal{
-		padding-top: 50px;
+		color: $c9;
+		font-family: $t1;
+		box-sizing: border-box;
+		padding: 0px 30px;
+		// min-width: 277px;
+		p{
+			margin: 0;
+			margin-bottom: 20px;
+		}
+		button{
+			height: 44px;
+			margin: 0 auto;
+			width: 100%;
+			color: $c9;
+			background-color: $c3;
+			i{
+				font-size: 30px;
+			}
+		}
 	}
+	// .g1-content-modal{
+	// 	padding-top: 50px;
+	// }
 }

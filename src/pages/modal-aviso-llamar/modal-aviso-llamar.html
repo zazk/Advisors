@@ -1,18 +1,20 @@
-<ion-header class="g0-headerterminos">
-  
-    <h3 class="g0-title-terminos">
-      modal llamadas
-    </h3>
-    <button class="g0-btn-headclose" (click)="dismiss()">
-        <span class="nico-close1"></span>
-    </button>
-</ion-header>
-<ion-content padding center>
-  <div class="g1-content-modal">
-	  <div>Modal aviso llamadas</div>
-	  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores sint earum ex ullam ducimus, ipsam veritatis beatae architecto deleniti, maxime animi neque blanditiis harum quas dolor nulla illum ipsum.
-  	<button (click)="goEnLlamada()">
-      Llamar
-    </button>
-  </div>
+<!-- <ion-header class="g0-headerterminos">
+
+  <h3 class="g0-title-terminos">
+    modal llamadas
+  </h3>
+</ion-header> -->
+<ion-content>
+  <button class="g0-btn-headclose" (click)="dismiss()">
+    <span class="nico-close1"></span>
+  </button>
+  <div class="g1-content-modal"><!-- 
+   <div>Modal aviso llamadas</div> -->
+   <p>¿DESEA LLAMAR A LA CENTRAL
+     DE EMERGENCIA DE LA POSITIVA
+   (01-211-0211)?</p>
+   <button (click)="goEnLlamada()">
+    <i class="nico-phone-alt"></i>
+  </button>
+</div>
 </ion-content>

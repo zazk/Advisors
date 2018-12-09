@@ -2,7 +2,7 @@ page-modal-datos {
 	.g1-wraps-items{
 		padding-top: 20px;
 		.list{
-			margin-bottom: 40px;	
+			margin-bottom: 30px;	
 		}
 	}
 	.g1-update-list{
@@ -17,6 +17,13 @@ page-modal-datos {
 	}
 	.g1-item-contact{
 		margin-bottom: 28px;
+		&:last-child{
+			.g1-info{
+				&:after{
+					display: none;
+				}				
+			}
+		}
 		.item-inner{
 			border-bottom:0px !important;
 		}
@@ -40,6 +47,9 @@ page-modal-datos {
 			padding: 0px;
 			font-size: 10px;
 			opacity: 0;
+			position: absolute;
+			right: 0px;
+			top: 0px;
 			visibility: hidden;
 			i{
 				font-size: 18px;
@@ -52,10 +62,23 @@ page-modal-datos {
 		color:$c2;
 		font-size: 22px;
 		font-family: $t1;
-		border-bottom: 1px solid $c1;
-		margin-left: 37px;
+		// margin-left: 37px;
+		padding-left: 37px;
 		padding-bottom: 18px;
 		width: calc(100% - 33px);
+		box-sizing: border-box;
+		position: relative;
+		// border-bottom: 1px solid $c1;
+		&:after{
+			content: "";
+			width: calc(100% - 37px);
+			height: 1px;
+			right: 0px;
+			position: absolute;
+			bottom: 0px;
+			background-color: $c1;
+
+		}
 		.g1-item-info{
 			margin-bottom: 10px;
 			&:last-child{
@@ -74,10 +97,14 @@ page-modal-datos {
 			line-height: 1;
 			text-decoration: none;
 			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
+			line-height: 1;
+			white-space: normal;
+			// display: flex;
+			// align-items: center;
+			// justify-content: space-between;
 			&.g1-edit{
+				padding-right: 24px;
+				box-sizing: border-box;
 				.g1-edit-action{
 					opacity: 1;
 					visibility: visible;
