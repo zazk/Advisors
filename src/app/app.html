@@ -20,8 +20,12 @@
     </div>
 
     <ion-list no-lines>
-      <div class="h-item-list" >
-        <button class="h-menu-link h-menulink-open" (click)="toggleSubMenu()">
+      <div class="h-item-list">
+        <button
+          class="h-menu-link h-menulink-open"
+          [ngClass]="{ active: isOpenSubmenu }"
+          (click)="toggleSubMenu()"
+        >
           <span class="nico-nav-2"></span>
           <span class="h-icon-submenu nico-arrow-down1"></span>
           <p>menu acordeon</p>
