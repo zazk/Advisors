@@ -23,7 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.nico-money:before {
+  content: "\e91b";
+}
 .nico-alerta:before {
   content: "\e91a";
 }

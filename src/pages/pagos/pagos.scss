@@ -68,23 +68,27 @@ page-pagos {
 		padding-bottom: 5px;
 		&:first-child{
 			padding-top: 0;
+			border-bottom: 0px;
 		}
 	}
-	.g1-list-items .label {
-		display: flex;
-		// padding-left: 17px;
-		box-sizing: border-box;
-		overflow: initial;
-		margin: 0px;
-		i{
-			width: 30px;
-			color: $c2;
-			margin-top: 3px;
-			&:before{
-				font-size: 40px;
+	.g1-list-items {
+		margin-bottom: 0;
+		.label {
+			display: flex;
+			// padding-left: 17px;
+			box-sizing: border-box;
+			overflow: initial;
+			margin: 0px;
+			i{
+				width: 30px;
+				color: $c2;
+				margin-top: 3px;
+				&:before{
+					font-size: 34px;
 
+				}
 			}
-		}
+		}		
 	}
 	.g1-text{
 		width: calc(100% - 30px);
