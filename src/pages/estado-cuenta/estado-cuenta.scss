@@ -273,5 +273,15 @@ estado-cuenta{
 			padding: 10px 0px;
 			box-sizing: border-box;
 		}
-	}
+  }
+  @media screen and (max-width:360px){
+    .g1-item-content{
+      padding-left: 14px;
+      padding-right: 24px;
+    }
+    .g1-head-tab .g1-close-item{
+      font-size: 16px;
+    }
+  }
+
 }
