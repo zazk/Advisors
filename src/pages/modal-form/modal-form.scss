@@ -25,7 +25,7 @@
 		background-color:$c1
 	}
 	.h-header-innercontrols{
-		padding: 14px 20px;	
+		padding: 14px 20px;
 	}
 	.list{
 		margin-bottom: 0px;
@@ -37,7 +37,7 @@
 		display: flex;
 		justify-content: space-between;
 		i{
-			font-size: 32px;
+			font-size: 27px;
 			color: white;
 		}
 	}
@@ -45,11 +45,11 @@
 		margin-right: 0;
 	}
 	.modal-wrapper{
-		width: 80vw;
+		width: 90vw;
 		height: 90vh;
 	}
 
-	
+
 	.g1-close-modal{
 		position: fixed;
 		left: 0px;
@@ -61,7 +61,7 @@
 		font-size: 20px;
 		height: 60px;
 		background-color: $c1;
-		
+
 	}
 
 	.g1-text-info{
@@ -74,7 +74,7 @@
 	// }
 	// 	padding-top: 20px;
 	// 	.list{
-	// 		margin-bottom: 40px;	
+	// 		margin-bottom: 40px;
 	// 	}
 	// }
 	.g1-action-crud{
@@ -157,7 +157,7 @@
 		}
 		.g1-text{
 			color:$c2;
-			font-size: 22px;
+			font-size: 16px;
 			line-height: 1;
 			text-decoration: none;
 			position: relative;

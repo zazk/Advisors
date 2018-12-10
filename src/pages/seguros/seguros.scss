@@ -1,6 +1,7 @@
 page-seguros {
+
 	.g1-content-list{
-		list-style: none;	
+		list-style: none;
 		padding: 0px;
 		margin: 0;
 	}
@@ -47,10 +48,10 @@ page-seguros {
 				&.g1-pending-notification{
 					display: block;
 				}
-			}	
+			}
 		}
 		&:last-child{
-			margin-bottom: 0px; 
+			margin-bottom: 0px;
 		}
 	}
 	.g1-notification{
@@ -64,7 +65,7 @@ page-seguros {
 				top: 50%;
 				transform: translateY(-50%);
 			}
-		}	
+		}
 	}
 	// .g1-notification{
 	// 	display: none;
@@ -105,8 +106,11 @@ page-seguros {
 		background-color: white
 	}
 	.g1-wrap-nav{
-		background-color:$c4
-		
+		background-color:$c4;
+		.scroll-content{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 	}
 	.scroll-content{
 		contain:none;
@@ -149,10 +153,13 @@ page-seguros {
 		}
 		span{
 			color: $c6;
-			font-size: 8px;
+			font-size: 7px;
 			display: block;
 			height: 17px;
-			text-transform: uppercase;
+      text-transform: uppercase;
+      @media screen and (min-width:745px){
+        font-size: 12px;
+      }
 		}
 		button{
 			background-color: rgba(0,0,0,0);
@@ -166,6 +173,6 @@ page-seguros {
 		}
 	}
 
-	
+
 
 }

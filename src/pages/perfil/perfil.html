@@ -8,43 +8,46 @@
     <div class="h-controls">
     <ion-navbar>
       <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Mi perfil</h3>
-    </ion-navbar>      
-    </div>  
+    </ion-navbar>
+    </div>
 </ion-header>
 
 <ion-content padding center>
-  <div class="hm-welcome">
-    <div class="hm-image-perfil">
-      <figure>
-        <img src="assets/img/img-perfil.svg" alt="">
-      </figure>
+  <div class="cnt-wrapper">
+    <div class="hm-welcome">
+      <div class="hm-image-perfil">
+        <figure>
+          <img src="assets/img/img-perfil.svg" alt="">
+        </figure>
+      </div>
+      <div class="hm-name">
+        <p><strong>PABLO MARTIN</strong></p>
+      </div>
     </div>
-    <div class="hm-name">
-      <p><strong>PABLO MARTIN</strong></p>    
-    </div>
-  </div> 
-  <ion-list no-lines>
-    <button class="g0-btn-perfil" ion-item (click)="openModalDatos()">
-      Actualiza tus datos
-    </button>
-    <button class="g0-btn-perfil" ion-item (click)="openModalPassword()">
-      Cambio de Contraseña
-    </button>
-  </ion-list>
+    <ion-list no-lines>
+      <button class="g0-btn-perfil" ion-item (click)="openModalDatos()">
+        Actualiza tus datos
+      </button>
+      <button class="g0-btn-perfil" ion-item (click)="openModalPassword()">
+        Cambio de Contraseña
+      </button>
+    </ion-list>
+
+  </div>
 </ion-content>
 <ion-footer class="f-footer">
   <div class="footer-inner">
     <button class="f-item">
       <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-      <label>INICIO</label>      
+      <label>INICIO</label>
     </button>
     <button class="f-item">
       <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-      <label>PERFIL</label>      
+      <label>PERFIL</label>
     </button>
     <button menuToggle class="f-item">
       <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-      <label>MENÚ</label>      
+      <label>MENÚ</label>
     </button>
   </div>
 </ion-footer>
