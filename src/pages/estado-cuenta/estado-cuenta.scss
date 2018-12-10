@@ -1,4 +1,11 @@
 estado-cuenta{
+	.g1-wrap-nav{
+		background-color:$c4;
+		.scroll-content{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+	}
 	.g1-content-ec{
 		padding-top: 50px;
 	}
@@ -10,7 +17,7 @@ estado-cuenta{
 		overflow-x: auto;
 	}
 	.g1-content-list{
-		list-style: none;	
+		list-style: none;
 		padding: 0px;
 		margin: 0;
 	}
@@ -18,7 +25,7 @@ estado-cuenta{
 		i{
 			color: #CCCCCC;
 		}
-		
+
 	}
 	.g1-item{
 		background-color: white;
@@ -71,9 +78,9 @@ estado-cuenta{
 				padding-top: 4px;
 				padding-bottom: 4px;
 				line-height: 1;
-				box-sizing: border-box;	
-				white-space: nowrap;			
-			}			
+				box-sizing: border-box;
+				white-space: nowrap;
+			}
 			thead{
 				background-color: $c3;
 			}
@@ -83,9 +90,9 @@ estado-cuenta{
 			tbody{
 				tr:nth-child(odd) {
 					background-color: #eee;
-				}				
+				}
 			}
-			
+
 		}
 		&.active{
 			opacity: 1;
@@ -145,10 +152,10 @@ estado-cuenta{
 				&.g1-pending-notification{
 					display: block;
 				}
-			}	
+			}
 		}
 		&:last-child{
-			margin-bottom: 0px; 
+			margin-bottom: 0px;
 		}
 	}
 	.g1-notification{
@@ -163,7 +170,7 @@ estado-cuenta{
 				top: 50%;
 				transform: translateY(-50%);
 			}
-		}	
+		}
 	}
 	// .g1-notification{
 	// 	display: none;
@@ -208,7 +215,7 @@ estado-cuenta{
 	}
 	.g1-wrap-nav{
 		background-color:$c4
-		
+
 	}
 	.scroll-content{
 		contain:none;
