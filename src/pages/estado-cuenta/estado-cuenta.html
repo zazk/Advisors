@@ -1,262 +1,296 @@
 <ion-header class="h-header-innercontrols">
   <div class="h-controls">
     <ion-navbar>
-      <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Estado de cuenta</h3>
-    </ion-navbar>      
-  </div>  
+      <h3 class="h-controls-title">
+        <span class="nico-arrow-back"></span>Estado de cuenta
+      </h3>
+    </ion-navbar>
+  </div>
 </ion-header>
 
 <ion-content padding class="g1-wrap-nav">
-
   <div class="g1-content-ec">
-   <ul class="g1-content-list">
-     <li class="g1-item active">
-      <div class="g1-head-tab">
-       <div class="g1-item-cat">
-        <i class="nico-seguro-1"></i>
-        <span>VEHICULAR</span>
-      </div>
-      <div class="g1-item-content">
-        <h4>Póliza: 742933</h4>
-        <p>Compañia: Pacifico</p>
-        <p>Aviso de Cobranza: 7582932</p>      
-        <p>Moneda: Soles</p>      
-      </div>
-      <button class="g1-close-item "><i class="nico-arrow-down1"></i></button>
-
-    </div>
-    <div class="g1-content-tab ">
-      <p>DETALLE DEL FINANCIAMIENTO</p>
-      <div class="g1-table-content">
-        <table cellpadding="0" bordercolor="white" border="1" cellspacing="0" width="100%" align="center">
-          <thead>
-           <tr>
-            <th>Item</th>
-            <th>nro cupon</th>
-            <th>monto</th>
-            <th>fecha vcmto</th>
-            <th>estado</th>
-          </tr>
-        </thead>
-        <tbody>
-         <tr>
-          <td>03/10</td>
-          <td>91758306</td>
-          <td>3,090.69</td>
-          <td>15/10/2018</td>
-          <td><span class="g1-state g1-defeated">VENCIDO <i class="nico-alerta"></i></span></td>
-        </tr>
-        <tr>
-          <td>03/10</td>
-          <td>91758306</td>
-          <td>3,090.69</td>
-          <td>15/10/2018</td>
-          <td><span class="g1-state">POR VENCER</span></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td align="right">Total:</td>
-          <td>24,725.51</td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
+    <ul class="g1-content-list">
+      <li class="g1-item">
+        <div class="g1-head-tab" (click)="toggleContent($event)">
+          <div class="g1-item-cat">
+            <i class="nico-seguro-1"></i> <span>VEHICULAR</span>
+          </div>
+          <div class="g1-item-content">
+            <h4>Póliza: 000000</h4>
+            <p>Compañia: Pacifico</p>
+            <p>Aviso de Cobranza: 7582932</p>
+            <p>Moneda: Soles</p>
+          </div>
+          <button class="g1-close-item ">
+            <i class="nico-arrow-down1"></i>
+          </button>
+        </div>
+        <div class="g1-content-tab ">
+          <p>DETALLE DEL FINANCIAMIENTO</p>
+          <div class="g1-table-content">
+            <table
+              cellpadding="0"
+              bordercolor="white"
+              border="1"
+              cellspacing="0"
+              width="100%"
+              align="center"
+            >
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>nro cupon</th>
+                  <th>monto</th>
+                  <th>fecha vcmto</th>
+                  <th>estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>
+                    <span class="g1-state g1-defeated"
+                      >VENCIDO <i class="nico-alerta"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td><span class="g1-state">POR VENCER</span></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td align="right">Total:</td>
+                  <td>24,725.51</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </li>
+      <li class="g1-item">
+        <div class="g1-head-tab" (click)="toggleContent($event)">
+          <div class="g1-item-cat">
+            <i class="nico-seguro-1"></i> <span>VEHICULAR</span>
+          </div>
+          <div class="g1-item-content">
+            <h4>Póliza: 742933</h4>
+            <p>Compañia: Pacifico</p>
+            <p>Aviso de Cobranza: 7582932</p>
+            <p>Moneda: Soles</p>
+          </div>
+          <button class="g1-close-item ">
+            <i class="nico-arrow-down1"></i>
+          </button>
+        </div>
+        <div class="g1-content-tab ">
+          <p>DETALLE DEL FINANCIAMIENTO</p>
+          <div class="g1-table-content">
+            <table
+              cellpadding="0"
+              bordercolor="white"
+              border="1"
+              cellspacing="0"
+              width="100%"
+              align="center"
+            >
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>nro cupon</th>
+                  <th>monto</th>
+                  <th>fecha vcmto</th>
+                  <th>estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>
+                    <span class="g1-defeated"
+                      >VENCIDO <i class="nico-pendiente"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>POR VENCER</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td align="right">Total:</td>
+                  <td>24,725.51</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </li>
+      <li class="g1-item">
+        <div class="g1-head-tab" (click)="toggleContent($event)">
+          <div class="g1-item-cat">
+            <i class="nico-seguro-1"></i> <span>VEHICULAR</span>
+          </div>
+          <div class="g1-item-content">
+            <h4>Póliza: 742933</h4>
+            <p>Compañia: Pacifico</p>
+            <p>Aviso de Cobranza: 7582932</p>
+            <p>Moneda: Soles</p>
+          </div>
+          <button class="g1-close-item ">
+            <i class="nico-arrow-down1"></i>
+          </button>
+        </div>
+        <div class="g1-content-tab ">
+          <p>DETALLE DEL FINANCIAMIENTO</p>
+          <div class="g1-table-content">
+            <table
+              cellpadding="0"
+              bordercolor="white"
+              border="1"
+              cellspacing="0"
+              width="100%"
+              align="center"
+            >
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>nro cupon</th>
+                  <th>monto</th>
+                  <th>fecha vcmto</th>
+                  <th>estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>
+                    <span class="g1-defeated"
+                      >VENCIDO <i class="nico-pendiente"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>POR VENCER</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td align="right">Total:</td>
+                  <td>24,725.51</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </li>
+      <li class="g1-item">
+        <div class="g1-head-tab" (click)="toggleContent($event)">
+          <div class="g1-item-cat">
+            <i class="nico-seguro-1"></i> <span>VEHICULAR</span>
+          </div>
+          <div class="g1-item-content">
+            <h4>Póliza: 742933</h4>
+            <p>Compañia: Pacifico</p>
+            <p>Aviso de Cobranza: 7582932</p>
+            <p>Moneda: Soles</p>
+          </div>
+          <button class="g1-close-item ">
+            <i class="nico-arrow-down1"></i>
+          </button>
+        </div>
+        <div class="g1-content-tab ">
+          <p>DETALLE DEL FINANCIAMIENTO</p>
+          <div class="g1-table-content">
+            <table
+              cellpadding="0"
+              bordercolor="white"
+              border="1"
+              cellspacing="0"
+              width="100%"
+              align="center"
+            >
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>nro cupon</th>
+                  <th>monto</th>
+                  <th>fecha vcmto</th>
+                  <th>estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>
+                    <span class="g1-defeated"
+                      >VENCIDO <i class="nico-pendiente"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>03/10</td>
+                  <td>91758306</td>
+                  <td>3,090.69</td>
+                  <td>15/10/2018</td>
+                  <td>POR VENCER</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td align="right">Total:</td>
+                  <td>24,725.51</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
-
-</div>
-</li>
-<li class="g1-item ">
-  <div class="g1-head-tab">
-   <div class="g1-item-cat">
-    <i class="nico-seguro-1"></i>
-    <span>VEHICULAR</span>
-  </div>
-  <div class="g1-item-content">
-    <h4>Póliza: 742933</h4>
-    <p>Compañia: Pacifico</p>
-    <p>Aviso de Cobranza: 7582932</p>      
-    <p>Moneda: Soles</p>      
-  </div>
-  <button class="g1-close-item "><i class="nico-arrow-down1"></i></button>
-
-</div>
-<div class="g1-content-tab ">
-  <p>DETALLE DEL FINANCIAMIENTO</p>
-  <div class="g1-table-content">
-    <table cellpadding="0" bordercolor="white" border="1" cellspacing="0" width="100%" align="center">
-      <thead>
-       <tr>
-        <th>Item</th>
-        <th>nro cupon</th>
-        <th>monto</th>
-        <th>fecha vcmto</th>
-        <th>estado</th>
-      </tr>
-    </thead>
-    <tbody>
-     <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td><span class="g1-defeated">VENCIDO <i class="nico-pendiente"></i></span></td>
-    </tr>
-    <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td>POR VENCER</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td align="right">Total:</td>
-      <td>24,725.51</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-</div>
-</li>
-<li class="g1-item active">
-  <div class="g1-head-tab">
-   <div class="g1-item-cat">
-    <i class="nico-seguro-1"></i>
-    <span>VEHICULAR</span>
-  </div>
-  <div class="g1-item-content">
-    <h4>Póliza: 742933</h4>
-    <p>Compañia: Pacifico</p>
-    <p>Aviso de Cobranza: 7582932</p>      
-    <p>Moneda: Soles</p>      
-  </div>
-  <button class="g1-close-item "><i class="nico-arrow-down1"></i></button>
-
-</div>
-<div class="g1-content-tab ">
-  <p>DETALLE DEL FINANCIAMIENTO</p>
-  <div class="g1-table-content">
-    <table cellpadding="0" bordercolor="white" border="1" cellspacing="0" width="100%" align="center">
-      <thead>
-       <tr>
-        <th>Item</th>
-        <th>nro cupon</th>
-        <th>monto</th>
-        <th>fecha vcmto</th>
-        <th>estado</th>
-      </tr>
-    </thead>
-    <tbody>
-     <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td><span class="g1-defeated">VENCIDO <i class="nico-pendiente"></i></span></td>
-    </tr>
-    <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td>POR VENCER</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td align="right">Total:</td>
-      <td>24,725.51</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-</div>
-</li>
-<li class="g1-item">
-  <div class="g1-head-tab">
-   <div class="g1-item-cat">
-    <i class="nico-seguro-1"></i>
-    <span>VEHICULAR</span>
-  </div>
-  <div class="g1-item-content">
-    <h4>Póliza: 742933</h4>
-    <p>Compañia: Pacifico</p>
-    <p>Aviso de Cobranza: 7582932</p>      
-    <p>Moneda: Soles</p>      
-  </div>
-  <button class="g1-close-item "><i class="nico-arrow-down1"></i></button>
-
-</div>
-<div class="g1-content-tab ">
-  <p>DETALLE DEL FINANCIAMIENTO</p>
-  <div class="g1-table-content">
-    <table cellpadding="0" bordercolor="white" border="1" cellspacing="0" width="100%" align="center">
-      <thead>
-       <tr>
-        <th>Item</th>
-        <th>nro cupon</th>
-        <th>monto</th>
-        <th>fecha vcmto</th>
-        <th>estado</th>
-      </tr>
-    </thead>
-    <tbody>
-     <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td><span class="g1-defeated">VENCIDO <i class="nico-pendiente"></i></span></td>
-    </tr>
-    <tr>
-      <td>03/10</td>
-      <td>91758306</td>
-      <td>3,090.69</td>
-      <td>15/10/2018</td>
-      <td>POR VENCER</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td align="right">Total:</td>
-      <td>24,725.51</td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-
-</div>
-
-</div>
-</li>
-
-</ul>
-
-</div>
 </ion-content>
 <ion-footer class="f-footer">
   <div class="footer-inner">
     <button class="f-item">
-      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-      <label>INICIO</label>      
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="" />
+      <label>INICIO</label>
     </button>
     <button class="f-item">
-      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-      <label>PERFIL</label>      
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="" />
+      <label>PERFIL</label>
     </button>
     <button menuToggle class="f-item">
-      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-      <label>MENÚ</label>      
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="" />
+      <label>MENÚ</label>
     </button>
-
   </div>
 </ion-footer>

@@ -11,7 +11,6 @@ import {
 @Component({
   selector: "estado-cuenta",
   templateUrl: "estado-cuenta.html"
-  
 })
 export class EstadoCuenta {
   constructor(
@@ -24,5 +23,9 @@ export class EstadoCuenta {
   ) {}
   dismiss() {
     this.viewCtrl.dismiss();
+  }
+  toggleContent(event) {
+    const element = event.currentTarget.parentNode;
+    element.classList.toggle("active");
   }
 }
