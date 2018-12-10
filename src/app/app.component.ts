@@ -14,6 +14,7 @@ import { ContactoPage } from "../pages/contacto/contacto";
 import { AuthService } from "../providers/auth-service";
 import { InicioPage } from "../pages/inicio/inicio";
 import { FormasPagoPage } from "../pages/formas-pago/formas-pago";
+import { EstadoCuenta } from "../pages/estado-cuenta/estado-cuenta";
 
 @Component({
   templateUrl: "app.html"
@@ -53,7 +54,6 @@ export class MyApp {
 
   loadDefaultMenu() {
     this.pages = [
-
       // { icon: "nico-nav-1", titulo: "Inicio", component: HomePage, flag: 0 },
       // {
       //   icon: "nico-nav-2",
@@ -82,7 +82,7 @@ export class MyApp {
       {
         icon: "nico-nav-5",
         titulo: "Estado de Cuenta",
-        component: PuntoVentaPage,
+        component: EstadoCuenta,
         flag: 0
       },
       {
@@ -104,6 +104,9 @@ export class MyApp {
     ];
   }
 
+  openHome() {
+    this.openMenu({ titulo: "Inicio", component: HomePage, flag: 0 });
+  }
   openMenu(page) {
     if (page.component === null) {
       this.logout();
