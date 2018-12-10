@@ -58,16 +58,21 @@
 		width: 100%;
 		color: white;
 		font-family: $t1;
-		font-size: 20px;
-		height: 60px;
+		font-size: 18px;
+		height: 48px;
 		background-color: $c1;
 
 	}
 
 	.g1-text-info{
-		padding-right: 48px;
 		white-space: normal;
 		box-sizing: border-box;
+		input{
+			border: 0px;
+			width: 100%;	
+			background-color: rgba(0,0,0,0)
+		}
+		// padding-right: 48px;
 	}
 	// .g1-wraps-items{
 	// 	padding-bottom: 20px;

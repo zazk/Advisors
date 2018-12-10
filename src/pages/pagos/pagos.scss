@@ -72,7 +72,7 @@ page-pagos {
 	}
 	.g1-list-items .label {
 		display: flex;
-		padding-left: 17px;
+		// padding-left: 17px;
 		box-sizing: border-box;
 		overflow: initial;
 		margin: 0px;
@@ -88,10 +88,10 @@ page-pagos {
 	}
 	.g1-text{
 		width: calc(100% - 30px);
-		padding-left: 30px;
+		padding-left: 17px;
 		box-sizing: border-box;
 		h4,p{
-			margin-bottom: 10px !important;
+			margin-bottom: 8px !important;
 			line-height: 1;
 		}
 		h4{
