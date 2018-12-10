@@ -179,7 +179,10 @@ aviso-siniestro-page {
 			font-size: 8px;
 			display: block;
 			height: 17px;
-			text-transform: uppercase;
+      text-transform: uppercase;
+      @media screen and (min-width:745px){
+        font-size: 12px;
+      }
 		}
 		button{
 			background-color: rgba(0,0,0,0);
