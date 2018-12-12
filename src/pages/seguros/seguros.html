@@ -60,9 +60,9 @@
       <div class="g1-content-items" [ngSwitch]="viewMode">
         <div class="g1-content-tab active" id="tab1" *ngSwitchCase="'tab1'">
           <ul class="g1-content-list" *ngFor="let itemComp of companias">
-            <li class="g1-item g1-pending" *ngFor="let itemPol of itemComp.polizas" (click)="openDatelle(itemPol)">
+            <li class="g1-item g1-pending" *ngFor="let itemPol of itemComp.polizas" >
               <figure>
-                <img src="assets/img/empresa.jpg">
+                <img src="assets/img/logo-seguro-108x96-1.png">
               </figure>
               <div class="g1-item-content">
                 <h4>Placa: AHJ156</h4>
@@ -72,11 +72,11 @@
                 <div class="g1-notification">Sin pagos pendientes</div>
                 <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
               </div>
-              <button  (click)="openData(itemComp)" class="g1-zoom-item"><i class="nico-zoom"></i></button>
+              <button (click)="openDatelle(itemPol)" class="g1-zoom-item"><i class="nico-zoom"></i></button>
             </li>
             <li class="g1-item g1-pending">
               <figure>
-                <img src="assets/img/empresa.jpg">
+                <img src="assets/img/logo-seguro-108x96-1.png">
               </figure>
               <div class="g1-item-content">
                 <h4>Placa: AHJ156</h4>
@@ -84,7 +84,7 @@
                 <p>Año: 2017</p>
                 <p>Póliza: 102001421</p>
                 <div class="g1-notification">Sin pagos pendientes</div>
-                <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
+                <!-- <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div> -->
               </div>
               <button (click)="openData(itemComp)" class="g1-zoom-item"><i class="nico-zoom"></i></button>
             </li>            
@@ -99,7 +99,7 @@
         <ul class="g1-content-list">
         <li class="g1-item">
           <figure>
-            <img src="assets/img/empresa.jpg">
+            <img src="assets/img/logo-seguro-108x96-2.png">
           </figure>
           <div class="g1-item-content">
             <h4>Placa: AHJ15</h4>
@@ -113,7 +113,7 @@
         </li>
         <li class="g1-item g1-pending">
           <figure>
-            <img src="assets/img/empresa.jpg">
+            <img src="assets/img/logo-seguro-108x96-2.png">
           </figure>
           <div class="g1-item-content">
             <h4>Placa: AHJ156</h4>
@@ -133,37 +133,98 @@
       <ul class="g1-content-list">
       <li class="g1-item">
         <figure>
-          <img src="assets/img/empresa.jpg">
+          <img src="assets/img/logo-seguro-108x96-1.png">
         </figure>
         <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
+          <h4>Av. San Borja Sur 155, Dpto. 602</h4>
+          <p>Distrito: San Borja</p>
+          <p>Póliza: 102001245</p>
           <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientesss <i class="nico-pendiente"></i></div>
+          
         </div>
         <button class="g1-zoom-item"><i class="nico-zoom"></i></button>
       </li>
-      <li class="g1-item g1-pending">
+ 
+    </ul>
+
+    </div>
+    <div class="g1-content-tab active" id="tab4" *ngSwitchCase="'tab4'">
+      <ul class="g1-content-list">
+      <li class="g1-item">
         <figure>
-          <img src="assets/img/empresa.jpg">
+          <img src="assets/img/logo-seguro-108x96-2.png">
         </figure>
         <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
+          <h4>Pablo Cornejo + 2 dependientes</h4>
+          <p>Póliza: 102001245</p>
           <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientes <i class="nico-pendiente"></i></div>
+          
         </div>
         <button class="g1-zoom-item"><i class="nico-zoom"></i></button>
       </li>
+ 
+    </ul>
+
+    </div>
+    <div class="g1-content-tab active" id="tab5" *ngSwitchCase="'tab5'">
+      <ul class="g1-content-list">
+      <li class="g1-item">
+        <figure>
+          <img src="assets/img/logo-seguro-108x96-2.png">
+        </figure>
+        <div class="g1-item-content">
+          <h4>Pablo Cornejo</h4>
+          <p></p>
+          <p>Póliza: 102001245</p>
+          <div class="g1-notification">Sin pagos pendientes</div>
+          
+        </div>
+        <button class="g1-zoom-item"><i class="nico-zoom"></i></button>
+      </li>
+ 
+    </ul>
+
+    </div>
+    <div class="g1-content-tab active" id="tab6" *ngSwitchCase="'tab6'">
+      <ul class="g1-content-list">
+      <li class="g1-item">
+        <figure>
+          <img src="assets/img/logo-seguro-108x96-1.png">
+        </figure>
+        <div class="g1-item-content">
+          <h4>Pablo Cornejo</h4>
+          <p></p>
+          <p>Póliza: 102001245</p>
+          <div class="g1-notification">Sin pagos pendientes</div>
+          
+        </div>
+        <button class="g1-zoom-item"><i class="nico-zoom"></i></button>
+      </li>
+ 
+    </ul>
+
+    </div>
+    <div class="g1-content-tab active" id="tab7" *ngSwitchCase="'tab7'">
+      <ul class="g1-content-list">
+      <li class="g1-item">
+        <figure>
+          <img src="assets/img/logo-seguro-108x96-2.png">
+        </figure>
+        <div class="g1-item-content">
+          <h4>Pablo Cornejo</h4>
+          <p></p>
+          <p>Póliza: 102001245</p>
+          <div class="g1-notification">Sin pagos pendientes</div>
+          
+        </div>
+        <button class="g1-zoom-item"><i class="nico-zoom"></i></button>
+      </li>
+ 
     </ul>
 
     </div>
 
-    </div>
+  </div>
 
 
 
