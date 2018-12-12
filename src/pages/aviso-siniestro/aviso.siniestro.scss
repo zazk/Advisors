@@ -151,7 +151,7 @@ aviso-siniestro-page {
 		li{
 			flex:1;
 			&.active{
-				background-color: #5A2D6B;
+				background-color: $c12;
 				i{
 					color: white;
 				}

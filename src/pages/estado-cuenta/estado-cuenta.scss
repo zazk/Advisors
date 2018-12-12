@@ -118,7 +118,7 @@ estado-cuenta{
 			margin: 0px;
 			width:102px;
 			display: flex;
-			background-color: #5A2D6B;
+			background-color: $c12;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
@@ -233,7 +233,7 @@ estado-cuenta{
 		li{
 			flex:1;
 			&.active{
-				background-color: #5A2D6B;
+				background-color: $c12;
 				i{
 					color: white;
 				}
