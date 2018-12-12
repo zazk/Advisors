@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nico-numeral:before {
+  content: "\e923";
+}
 .nico-datos-1:before {
   content: "\e91c";
 }

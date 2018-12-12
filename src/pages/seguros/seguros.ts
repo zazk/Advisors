@@ -162,131 +162,132 @@ imports:[
     polizInm.clienteDirecto = false;
     comp.polizas.push(polizInm)
 
-    var polizMaqui = new Poliza()
-    polizMaqui.codigoPoliza = 3
-    polizMaqui.codigoContratante = 1
-    polizMaqui.numPoliza = '12345'
-    polizMaqui.codigoRiesgo = 1
-    polizMaqui.grupoSeguro = 'asd'
-    polizMaqui.nomRiesgo = 'Maquinaria'
-    polizMaqui.moneda = 'S/'
-    polizMaqui.fecFin = new Date();
-    polizMaqui.fecInicio = new Date();
-    polizMaqui.estado = 'Vigente'
-    polizMaqui.nroFinanciamiento = '123456'
-    polizMaqui.actualizado = new Date();
-    polizMaqui.displayCuotas = false;
-    polizMaqui.displayPAyment = false;
-    polizMaqui.clienteDirecto = true;
-    comp.polizas.push(polizMaqui)
 
-    var polizTrans = new Poliza()
-    polizTrans.codigoPoliza = 4
-    polizTrans.codigoContratante = 1
-    polizTrans.numPoliza = '12345'
-    polizTrans.codigoRiesgo = 1
-    polizTrans.grupoSeguro = 'asd'
-    polizTrans.nomRiesgo = 'Transporte'
-    polizTrans.moneda = 'S/'
-    polizTrans.fecFin = new Date();
-    polizTrans.fecInicio = new Date();
-    polizTrans.estado = 'Vigente'
-    polizTrans.nroFinanciamiento = '123456'
-    polizTrans.actualizado = new Date();
-    polizTrans.displayCuotas = false;
-    polizTrans.displayPAyment = false;
-    polizTrans.clienteDirecto = false;
-    comp.polizas.push(polizTrans)
+    // var polizMaqui = new Poliza()
+    // polizMaqui.codigoPoliza = 3
+    // polizMaqui.codigoContratante = 1
+    // polizMaqui.numPoliza = '12345'
+    // polizMaqui.codigoRiesgo = 1
+    // polizMaqui.grupoSeguro = 'asd'
+    // polizMaqui.nomRiesgo = 'Maquinaria'
+    // polizMaqui.moneda = 'S/'
+    // polizMaqui.fecFin = new Date();
+    // polizMaqui.fecInicio = new Date();
+    // polizMaqui.estado = 'Vigente'
+    // polizMaqui.nroFinanciamiento = '123456'
+    // polizMaqui.actualizado = new Date();
+    // polizMaqui.displayCuotas = false;
+    // polizMaqui.displayPAyment = false;
+    // polizMaqui.clienteDirecto = true;
+    // comp.polizas.push(polizMaqui)
 
-    var polizOtros = new Poliza()
-    polizOtros.codigoPoliza = 5
-    polizOtros.codigoContratante = 1
-    polizOtros.numPoliza = '12345'
-    polizOtros.codigoRiesgo = 1
-    polizOtros.grupoSeguro = 'asd'
-    polizOtros.nomRiesgo = 'Otro'
-    polizOtros.moneda = 'S/'
-    polizOtros.fecFin = new Date();
-    polizOtros.fecInicio = new Date();
-    polizOtros.estado = 'Vigente'
-    polizOtros.nroFinanciamiento = '123456'
-    polizOtros.actualizado = new Date();
-    polizOtros.displayCuotas = false;
-    polizOtros.displayPAyment = false;
-    polizOtros.clienteDirecto = true;
-    comp.polizas.push(polizOtros)
+    // var polizTrans = new Poliza()
+    // polizTrans.codigoPoliza = 4
+    // polizTrans.codigoContratante = 1
+    // polizTrans.numPoliza = '12345'
+    // polizTrans.codigoRiesgo = 1
+    // polizTrans.grupoSeguro = 'asd'
+    // polizTrans.nomRiesgo = 'Transporte'
+    // polizTrans.moneda = 'S/'
+    // polizTrans.fecFin = new Date();
+    // polizTrans.fecInicio = new Date();
+    // polizTrans.estado = 'Vigente'
+    // polizTrans.nroFinanciamiento = '123456'
+    // polizTrans.actualizado = new Date();
+    // polizTrans.displayCuotas = false;
+    // polizTrans.displayPAyment = false;
+    // polizTrans.clienteDirecto = false;
+    // comp.polizas.push(polizTrans)
 
-    var polizAccEscolar = new Poliza()
-    polizAccEscolar.codigoPoliza = 6
-    polizAccEscolar.codigoContratante = 1
-    polizAccEscolar.numPoliza = '12345'
-    polizAccEscolar.codigoRiesgo = 1
-    polizAccEscolar.grupoSeguro = 'asd'
-    polizAccEscolar.nomRiesgo = 'Accidentes escolares'
-    polizAccEscolar.moneda = 'S/'
-    polizAccEscolar.fecFin = new Date();
-    polizAccEscolar.fecInicio = new Date();
-    polizAccEscolar.estado = 'Vigente'
-    polizAccEscolar.nroFinanciamiento = '123456'
-    polizAccEscolar.actualizado = new Date();
-    polizAccEscolar.displayCuotas = false;
-    polizAccEscolar.displayPAyment = false;
-    polizAccEscolar.clienteDirecto = false;
-    comp.polizas.push(polizAccEscolar)
+    // var polizOtros = new Poliza()
+    // polizOtros.codigoPoliza = 5
+    // polizOtros.codigoContratante = 1
+    // polizOtros.numPoliza = '12345'
+    // polizOtros.codigoRiesgo = 1
+    // polizOtros.grupoSeguro = 'asd'
+    // polizOtros.nomRiesgo = 'Otro'
+    // polizOtros.moneda = 'S/'
+    // polizOtros.fecFin = new Date();
+    // polizOtros.fecInicio = new Date();
+    // polizOtros.estado = 'Vigente'
+    // polizOtros.nroFinanciamiento = '123456'
+    // polizOtros.actualizado = new Date();
+    // polizOtros.displayCuotas = false;
+    // polizOtros.displayPAyment = false;
+    // polizOtros.clienteDirecto = true;
+    // comp.polizas.push(polizOtros)
 
-    var polizAsisMEdica = new Poliza()
-    polizAsisMEdica.codigoPoliza = 7
-    polizAsisMEdica.codigoContratante = 1
-    polizAsisMEdica.numPoliza = '12345'
-    polizAsisMEdica.codigoRiesgo = 1
-    polizAsisMEdica.grupoSeguro = 'asd'
-    polizAsisMEdica.nomRiesgo = 'Asistencia médica'
-    polizAsisMEdica.moneda = 'S/'
-    polizAsisMEdica.fecFin = new Date();
-    polizAsisMEdica.fecInicio = new Date();
-    polizAsisMEdica.estado = 'Vigente'
-    polizAsisMEdica.nroFinanciamiento = '123456'
-    polizAsisMEdica.actualizado = new Date();
-    polizAsisMEdica.displayCuotas = false;
-    polizAsisMEdica.displayPAyment = false;
-    polizAsisMEdica.clienteDirecto = true;
-    comp.polizas.push(polizAsisMEdica)
+    // var polizAccEscolar = new Poliza()
+    // polizAccEscolar.codigoPoliza = 6
+    // polizAccEscolar.codigoContratante = 1
+    // polizAccEscolar.numPoliza = '12345'
+    // polizAccEscolar.codigoRiesgo = 1
+    // polizAccEscolar.grupoSeguro = 'asd'
+    // polizAccEscolar.nomRiesgo = 'Accidentes escolares'
+    // polizAccEscolar.moneda = 'S/'
+    // polizAccEscolar.fecFin = new Date();
+    // polizAccEscolar.fecInicio = new Date();
+    // polizAccEscolar.estado = 'Vigente'
+    // polizAccEscolar.nroFinanciamiento = '123456'
+    // polizAccEscolar.actualizado = new Date();
+    // polizAccEscolar.displayCuotas = false;
+    // polizAccEscolar.displayPAyment = false;
+    // polizAccEscolar.clienteDirecto = false;
+    // comp.polizas.push(polizAccEscolar)
 
-    var polizSCTR = new Poliza()
-    polizSCTR.codigoPoliza = 8
-    polizSCTR.codigoContratante = 1
-    polizSCTR.numPoliza = '12345'
-    polizSCTR.codigoRiesgo = 1
-    polizSCTR.grupoSeguro = 'asd'
-    polizSCTR.nomRiesgo = 'SCTR Pensiones'
-    polizSCTR.moneda = 'S/'
-    polizSCTR.fecFin = new Date();
-    polizSCTR.fecInicio = new Date();
-    polizSCTR.estado = 'Vigente'
-    polizSCTR.nroFinanciamiento = '123456'
-    polizSCTR.actualizado = new Date();
-    polizSCTR.displayCuotas = false;
-    polizSCTR.displayPAyment = false;
-    polizSCTR.clienteDirecto = false;
-    comp.polizas.push(polizSCTR)
+    // var polizAsisMEdica = new Poliza()
+    // polizAsisMEdica.codigoPoliza = 7
+    // polizAsisMEdica.codigoContratante = 1
+    // polizAsisMEdica.numPoliza = '12345'
+    // polizAsisMEdica.codigoRiesgo = 1
+    // polizAsisMEdica.grupoSeguro = 'asd'
+    // polizAsisMEdica.nomRiesgo = 'Asistencia médica'
+    // polizAsisMEdica.moneda = 'S/'
+    // polizAsisMEdica.fecFin = new Date();
+    // polizAsisMEdica.fecInicio = new Date();
+    // polizAsisMEdica.estado = 'Vigente'
+    // polizAsisMEdica.nroFinanciamiento = '123456'
+    // polizAsisMEdica.actualizado = new Date();
+    // polizAsisMEdica.displayCuotas = false;
+    // polizAsisMEdica.displayPAyment = false;
+    // polizAsisMEdica.clienteDirecto = true;
+    // comp.polizas.push(polizAsisMEdica)
 
-    var polizSegViaje = new Poliza()
-    polizSegViaje.codigoPoliza = 9
-    polizSegViaje.codigoContratante = 1
-    polizSegViaje.numPoliza = '12345'
-    polizSegViaje.codigoRiesgo = 1
-    polizSegViaje.grupoSeguro = 'asasdafwefwefd'
-    polizSegViaje.nomRiesgo = 'Seguro de viaje'
-    polizSegViaje.moneda = 'S/'
-    polizSegViaje.fecFin = new Date();
-    polizSegViaje.fecInicio = new Date();
-    polizSegViaje.estado = 'Vigente'
-    polizSegViaje.nroFinanciamiento = '123456'
-    polizSegViaje.actualizado = new Date();
-    polizSegViaje.displayCuotas = false;
-    polizSegViaje.displayPAyment = false;
-    polizSegViaje.clienteDirecto = true;
-    comp.polizas.push(polizSegViaje)
+    // var polizSCTR = new Poliza()
+    // polizSCTR.codigoPoliza = 8
+    // polizSCTR.codigoContratante = 1
+    // polizSCTR.numPoliza = '12345'
+    // polizSCTR.codigoRiesgo = 1
+    // polizSCTR.grupoSeguro = 'asd'
+    // polizSCTR.nomRiesgo = 'SCTR Pensiones'
+    // polizSCTR.moneda = 'S/'
+    // polizSCTR.fecFin = new Date();
+    // polizSCTR.fecInicio = new Date();
+    // polizSCTR.estado = 'Vigente'
+    // polizSCTR.nroFinanciamiento = '123456'
+    // polizSCTR.actualizado = new Date();
+    // polizSCTR.displayCuotas = false;
+    // polizSCTR.displayPAyment = false;
+    // polizSCTR.clienteDirecto = false;
+    // comp.polizas.push(polizSCTR)
+
+    // var polizSegViaje = new Poliza()
+    // polizSegViaje.codigoPoliza = 9
+    // polizSegViaje.codigoContratante = 1
+    // polizSegViaje.numPoliza = '12345'
+    // polizSegViaje.codigoRiesgo = 1
+    // polizSegViaje.grupoSeguro = 'asasdafwefwefd'
+    // polizSegViaje.nomRiesgo = 'Seguro de viaje'
+    // polizSegViaje.moneda = 'S/'
+    // polizSegViaje.fecFin = new Date();
+    // polizSegViaje.fecInicio = new Date();
+    // polizSegViaje.estado = 'Vigente'
+    // polizSegViaje.nroFinanciamiento = '123456'
+    // polizSegViaje.actualizado = new Date();
+    // polizSegViaje.displayCuotas = false;
+    // polizSegViaje.displayPAyment = false;
+    // polizSegViaje.clienteDirecto = true;
+    // comp.polizas.push(polizSegViaje)
 
 
     /* pinkxel: Se añadió un push adicional por efectos de maquetación */

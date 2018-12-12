@@ -31,7 +31,8 @@ page-seguros {
 			margin: 0px;
 			width:108px;
 		}
-		.g1-close-item{
+		.g1-zoom-item{
+			background: none;
 			position: absolute;
 			right: 11px;
 			top:11px;
@@ -95,7 +96,7 @@ page-seguros {
 			margin-bottom: 4px;
 		}
 		h1,h2,h3,h4,h5,h6{
-			font-size: 18px;
+			font-size: 16px;
 		}
 	}
 	.g1-navbar{
@@ -146,6 +147,7 @@ page-seguros {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			color:#ccc;
 			&:before{
 				display: block;
 				line-height: 1;
