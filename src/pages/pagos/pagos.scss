@@ -63,11 +63,10 @@ page-pagos {
 	.item-block{
 		overflow: initial;
 		padding: 15px 0px;
-		border-bottom: 1px solid #7C7C7C;
+		border-bottom: 1px solid #7c7c7c;
 		border-radius: 0px;
 		padding-bottom: 5px;
-		&:first-child{
-			padding-top: 0;
+		&:last-child{
 			border-bottom: 0px;
 		}
 	}
@@ -133,7 +132,7 @@ page-pagos {
 	justify-content: center;
 	.modal-wrapper{
 		width: 90vw;
-		height: 90vh;
+		height: 70vh;
 	}
 	.g1-list-items{
 		padding-top: 50px;
