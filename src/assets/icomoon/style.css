@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?w6c8w1');
-  src:  url('fonts/icomoon.eot?w6c8w1#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?w6c8w1') format('truetype'),
-    url('fonts/icomoon.woff?w6c8w1') format('woff'),
-    url('fonts/icomoon.svg?w6c8w1#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u8axd5');
+  src:  url('fonts/icomoon.eot?u8axd5#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u8axd5') format('truetype'),
+    url('fonts/icomoon.woff?u8axd5') format('woff'),
+    url('fonts/icomoon.svg?u8axd5#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.nico-datos-1:before {
+  content: "\e91c";
+}
+.nico-datos-2:before {
+  content: "\e91d";
+}
+.nico-datos-3:before {
+  content: "\e91e";
+}
+.nico-datos-4:before {
+  content: "\e91f";
+}
+.nico-datos-5:before {
+  content: "\e920";
+}
+.nico-datos-6:before {
+  content: "\e921";
+}
+.nico-datos-7:before {
+  content: "\e922";
+}
 .nico-money:before {
   content: "\e91b";
 }
