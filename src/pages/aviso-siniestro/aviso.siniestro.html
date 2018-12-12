@@ -17,30 +17,30 @@
     <div class="g1-navbar">
       <ul class="g1-nav">
         <li [class.active]="viewMode == 'tab1'" rel="tab1" (click)="viewMode ='tab1'">
-            <button class="g1-click-tab"><i class="nico-seguro-1"></i><span>Vehículos</span></button>
+          <button class="g1-click-tab"><i class="nico-seguro-1"></i><span>Vehículos</span></button>
         </li>
         <li [class.active]="viewMode == 'tab2'" rel="tab2" (click)="viewMode ='tab2'">
-            <button class="g1-click-tab" >
+          <button class="g1-click-tab" >
             <i class="nico-seguro-2"></i><span>soat</span></button>
-        </li>
-        <li [class.active]="viewMode == 'tab3'" rel="tab3" (click)="viewMode ='tab3'">
+          </li>
+          <li [class.active]="viewMode == 'tab3'" rel="tab3" (click)="viewMode ='tab3'">
             <button class="g1-click-tab" >
-          <i class="nico-casa"></i><span>hogar</span></button>
-        </li>
+              <i class="nico-casa"></i><span>hogar</span></button>
+            </li>
 
-        <!-- solo se habilitado tres tabs - para el resto agregue contenido  -->
-        <li [class.active]="viewMode == 'tab4'" rel="tab4" (click)="viewMode ='tab4'">
-            <button class="g1-click-tab">
-          <i class="nico-seguro-4"></i><span>salud</span></button>
-        </li>
-        <li [class.active]="viewMode == 'tab5'" rel="tab5" (click)="viewMode ='tab5'">
-            <button class="g1-click-tab">
-          <i class="nico-seguro-5"></i><span>accidentes </span></button>
-        </li>
-        <li [class.active]="viewMode == 'tab6'" rel="tab6" (click)="viewMode ='tab6'">
-            <button class="g1-click-tab" >
-          <i class="nico-seguro-6"></i><span>vida</span></button>
-        </li>
+            <!-- solo se habilitado tres tabs - para el resto agregue contenido  -->
+            <li [class.active]="viewMode == 'tab4'" rel="tab4" (click)="viewMode ='tab4'">
+              <button class="g1-click-tab">
+                <i class="nico-seguro-4"></i><span>salud</span></button>
+              </li>
+              <li [class.active]="viewMode == 'tab5'" rel="tab5" (click)="viewMode ='tab5'">
+                <button class="g1-click-tab">
+                  <i class="nico-seguro-5"></i><span>accidentes </span></button>
+                </li>
+                <li [class.active]="viewMode == 'tab6'" rel="tab6" (click)="viewMode ='tab6'">
+                  <button class="g1-click-tab" >
+                    <i class="nico-seguro-6"></i><span>vida</span></button>
+                  </li>
       <!--  <li [class.active]="viewMode == 'tab7'" rel="tab7" (click)="viewMode ='tab7'">
             <button class="g1-click-tab">
           <i class="nico-seguro-7"></i><span>otros</span></button>
@@ -52,49 +52,104 @@
     <div class="g1-content-items" [ngSwitch]="viewMode">
       <div class="g1-content-tab active" id="tab1" *ngSwitchCase="'tab1'">
         <ul class="g1-content-list">
-      <li class="g1-item">
-        <figure>
-          <img src="assets/img/empresa.jpg">
-        </figure>
-        <div class="g1-item-content">
-          <h4>Placa: AHJ15 Tab 1</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
-          <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
-        </div>
-        <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
-      </li>
-      <li class="g1-item g1-pending">
-        <figure>
-          <img src="assets/img/empresa.jpg">
-        </figure>
-        <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
-          <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
-        </div>
-        <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
-      </li>
+          <li class="g1-item"> 
+            <figure>
+              <img src="assets/img/logo-positiva.jpg">
+            </figure>
+            <div class="g1-item-content">
+              <h4>Placa: AHJ15</h4>
+              <p>Toyota Corolla</p>
+              <p>Año: 2017</p>
+              <p>Póliza: 102001421</p>
+              <div class="g1-notification">Sin pagos pendientes</div>
+              <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
+            </div>
+            <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+          </li>
+          <li class="g1-item g1-pending">
+            <figure>
+              <img src="assets/img/empresa.jpg">
+            </figure>
+            <div class="g1-item-content">
+              <h4>Placa: AHJ156</h4>
+              <p>Toyota Corolla</p>
+              <p>Año: 2017</p>
+              <p>Póliza: 102001421</p>
+              <div class="g1-notification">Sin pagos pendientes</div>
+              <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
+            </div>
+            <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+          </li>
 
+        </ul>
+
+      </div>
+      <!-- detalle de seguro solo activo en tab 1 - replicar cuando programen  -->
+
+      <div class="g1-content-tab active" id="tab2" *ngSwitchCase="'tab2'">
+        <ul class="g1-content-list">
+          <li class="g1-item"> 
+            <figure>
+              <img src="assets/img/logo-positiva.jpg">
+            </figure>
+            <div class="g1-item-content">
+              <h4>Placa: AHJ15</h4>
+              <p>Toyota Corolla</p>
+              <p>Año: 2017</p>
+              <p>Póliza: 102001421</p>
+              <div class="g1-notification">Sin pagos pendientes</div>
+              <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
+            </div>
+            <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+          </li>
+          <li class="g1-item g1-pending">
+            <figure>
+              <img src="assets/img/empresa.jpg">
+            </figure>
+            <div class="g1-item-content">
+              <h4>Placa: AHJ156</h4>
+              <p>Toyota Corolla</p>
+              <p>Año: 2017</p>
+              <p>Póliza: 102001421</p>
+              <div class="g1-notification">Sin pagos pendientes</div>
+              <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
+            </div>
+            <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="g1-content-tab active" id="tab3" *ngSwitchCase="'tab3'">
+       <ul class="g1-content-list">
+        <li class="g1-item"> 
+          <figure>
+            <img src="assets/img/logo-positiva.jpg">
+          </figure>
+          <div class="g1-item-content">
+            <h4>Placa: AHJ15</h4>
+            <p>Toyota Corolla</p>
+            <p>Año: 2017</p>
+            <p>Póliza: 102001421</p>
+            <div class="g1-notification">Sin pagos pendientes</div>
+            <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
+          </div>
+          <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+        </li>
 
       </ul>
 
     </div>
-    <!-- detalle de seguro solo activo en tab 1 - replicar cuando programen  -->
 
-    <div class="g1-content-tab active" id="tab2" *ngSwitchCase="'tab2'">
-      <ul class="g1-content-list">
-      <li class="g1-item">
+    <div class="g1-content-tab active" id="tab3" *ngSwitchCase="'tab4'">
+     <ul class="g1-content-list">
+      <li class="g1-item"> 
         <figure>
-          <img src="assets/img/empresa.jpg">
+          <img src="assets/img/logo-positiva.jpg">
         </figure>
         <div class="g1-item-content">
-          <h4>Placa: AHJ15 Tab 2</h4>
+          <h4>Placa: AHJ15</h4>
           <p>Toyota Corolla</p>
           <p>Año: 2017</p>
           <p>Póliza: 102001421</p>
@@ -103,32 +158,19 @@
         </div>
         <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
       </li>
-      <li class="g1-item g1-pending">
-        <figure>
-          <img src="assets/img/empresa.jpg">
-        </figure>
-        <div class="g1-item-content">
-          <h4>Placa: AHJ156</h4>
-          <p>Toyota Corolla</p>
-          <p>Año: 2017</p>
-          <p>Póliza: 102001421</p>
-          <div class="g1-notification">Sin pagos pendientes</div>
-          <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
-        </div>
-        <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
-      </li>
+
     </ul>
 
   </div>
 
-  <div class="g1-content-tab active" id="tab3" *ngSwitchCase="'tab3'">
-    <ul class="g1-content-list">
-    <li class="g1-item">
+  <div class="g1-content-tab active" id="tab3" *ngSwitchCase="'tab5'">
+   <ul class="g1-content-list">
+    <li class="g1-item"> 
       <figure>
-        <img src="assets/img/empresa.jpg">
+        <img src="assets/img/logo-positiva.jpg">
       </figure>
       <div class="g1-item-content">
-        <h4>Placa: AHJ156 Tab 3</h4>
+        <h4>Placa: AHJ15</h4>
         <p>Toyota Corolla</p>
         <p>Año: 2017</p>
         <p>Póliza: 102001421</p>
@@ -137,42 +179,49 @@
       </div>
       <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
     </li>
-    <li class="g1-item g1-pending">
-      <figure>
-        <img src="assets/img/empresa.jpg">
-      </figure>
-      <div class="g1-item-content">
-        <h4>Placa: AHJ156</h4>
-        <p>Toyota Corolla</p>
-        <p>Año: 2017</p>
-        <p>Póliza: 102001421</p>
-        <div class="g1-notification">Sin pagos pendientes</div>
-        <div class="g1-notification g1-pending-notification">Pagos Pendientes </div>
-      </div>
-      <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
-    </li>
+
   </ul>
 
-  </div>
-
-  </div>
-
-  </div>
-
-      </ion-content>
-<ion-footer class="f-footer">
-    <div class="footer-inner">
-      <button class="f-item">
-        <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-        <label>INICIO</label>
-      </button>
-      <button class="f-item">
-        <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-        <label>PERFIL</label>
-      </button>
-      <button menuToggle class="f-item">
-        <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-        <label>MENÚ</label>
-      </button>
+</div>
+<div class="g1-content-tab active" id="tab3" *ngSwitchCase="'tab6'">
+ <ul class="g1-content-list">
+  <li class="g1-item"> 
+    <figure>
+      <img src="assets/img/logo-positiva.jpg">
+    </figure>
+    <div class="g1-item-content">
+      <h4>Placa: AHJ15</h4>
+      <p>Toyota Corolla</p>
+      <p>Año: 2017</p>
+      <p>Póliza: 102001421</p>
+      <div class="g1-notification">Sin pagos pendientes</div>
+      <div class="g1-notification g1-pending-notification">Pagos Pendientesss </div>
     </div>
+    <button (click)="openModalLlamar()" class="g1-close-item"><i class="nico-nav-6"></i></button>
+  </li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</ion-content>
+<ion-footer class="f-footer">
+  <div class="footer-inner">
+    <button class="f-item">
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
+      <label>INICIO</label>
+    </button>
+    <button class="f-item">
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
+      <label>PERFIL</label>
+    </button>
+    <button menuToggle class="f-item">
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
+      <label>MENÚ</label>
+    </button>
+  </div>
 </ion-footer>

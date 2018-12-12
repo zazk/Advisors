@@ -2,9 +2,9 @@ estado-cuenta{
 	.g1-wrap-nav{
 		background-color:$c4;
 		.scroll-content{
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+			padding-left: 10px;
+			padding-right: 10px;
+		}
 	}
 	.g1-content-ec{
 		padding-top: 50px;
@@ -273,15 +273,22 @@ estado-cuenta{
 			padding: 10px 0px;
 			box-sizing: border-box;
 		}
-  }
-  @media screen and (max-width:360px){
-    .g1-item-content{
-      padding-left: 14px;
-      padding-right: 24px;
-    }
-    .g1-head-tab .g1-close-item{
-      font-size: 16px;
-    }
-  }
+	}
+	@media screen and (max-width: 580px){
+		.g1-content-tab{
+			table{
+				font-size: 9px;
+			}
+		} 	
+	}
+	@media screen and (max-width:360px){
+		.g1-item-content{
+			padding-left: 14px;
+			padding-right: 24px;
+		}
+		.g1-head-tab .g1-close-item{
+			font-size: 16px;
+		}
+	}
 
 }
