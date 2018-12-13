@@ -76,7 +76,7 @@ export class MyApp {
       {
         icon: "nico-nav-4",
         titulo: "Contáctenos",
-        component: PuntoVentaPage,
+        component: ContactoPage,
         flag: 0
       },
       {
