@@ -104,6 +104,7 @@
 		.item-inner{
 			border-bottom:0px !important;
 		}
+	
 		&:last-child{
 			margin-bottom: 0;
 			.g1-info{
@@ -138,6 +139,14 @@
 				color: $c12;
 				font-weight:bold;
 			}
+		}
+		&.g1-text-action{
+			.g1-action-info{
+				height: auto;
+			}
+			.g1-text{
+				padding-right: 20px;
+			}		
 		}
 	}
 	.g1-info{
@@ -180,6 +189,7 @@
 					visibility: visible;
 				}
 			}
+
 		}
 	}
 }
