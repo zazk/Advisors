@@ -764,3 +764,11 @@ ion-content .datetime {
   }
 
 }
+@media screen and (max-width: 400px){
+  .fixed-content,
+  .scroll-content {
+    margin-top: 60px !important;
+  }
+
+
+}

@@ -28,3 +28,18 @@
 
 
 //footer inner
+@media screen and (max-width: 400px){
+  .f-footer{
+    padding: 5px 0;
+  }
+  .f-item{
+    img{
+      width: 22px;
+      height: 22px;
+    }
+  }
+  .f-item label  {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+}
