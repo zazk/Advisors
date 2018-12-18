@@ -6,7 +6,7 @@
 	.g1-action-list{
 		display: flex;
 		box-sizing: border-box;
-		padding-bottom: 50px;
+		
 	}
 	.input-wrapper{
 		width: 100%;
@@ -31,7 +31,12 @@
 		margin-bottom: 0px;
 	}
 	.g1-wraps-items {
-		margin-top: 15px;
+		padding-top: 30px;
+		margin-top: 0;
+		.list{
+			margin-top: 0;
+		}
+
 	}
 	.h-header-icon{
 		display: flex;
@@ -46,13 +51,23 @@
 	}
 	.modal-wrapper{
 		width: 90vw;
-		min-height: 50vh;
+		min-height: 390px;
 		height: auto;
 	}
 
+	.g1-form-edit{
+		.cnt-wrapper{
+			height: 100%;
+			padding: 0 20px;
+			padding-bottom: 50px;
+			box-sizing: border-box;
+			position: relative;
+			
+		}
 
+	}
 	.g1-close-modal{
-		position: fixed;
+		position: absolute;
 		left: 0px;
 		width: 100%;
 		bottom: 0px;
@@ -101,6 +116,9 @@
 	.g1-item-contact{
 		margin-bottom: 28px;
 		margin-bottom: 18px;
+		&:first-child{
+			border: none !important;
+		}
 		.item-inner{
 			border-bottom:0px !important;
 		}

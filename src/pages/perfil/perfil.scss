@@ -11,10 +11,19 @@ page-perfil {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	border-radius: 0 !important;
 	border-bottom: 1px solid $c1 !important;
 	.label{
 		font-size: 24px;
 		color: $c2;
 		font-family: $t1
+	}
+}
+@media screen and (max-width: 400px){
+	.g0-btn-perfil .label{
+		font-size: 18px;
+	}
+	.g0-btn-perfil{
+		height: 80px;
 	}
 }
