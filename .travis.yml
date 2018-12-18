@@ -11,9 +11,7 @@ before_script:
   - npm install -g firebase-tools
 
 script:
-  - ionic build
+  - npx ionic build
 
-deploy:
-  provider: firebase
-  token:
-    secure: "lbuVioH6eSQsjT3dY0IS1TUl+eVQ6l1o0oWxF0YnpVTRnkMqIBkc6/Yq+49yt+890HtN9DyXefeakv8wGicV7lfJCTYFxI21f8yYC1YhchO0okVeOUUeShn4T0D/aNnzE0MfQzvJ4wYSXtabYExEPkWn4LfNNm96yG7tYYW30rETPTwepjnQXH4obvi10jY7aOyzXZGewWEFr2MIR6xAHbi+KaN5fvuGCqRF5Ib3jlRdlT03hTl2IU30St95fsd5QtS7InaOXcnKJEpjlNsyfKCbuI3nuHDzTyTauYfjcArolaqX/78WUOEnyTngBcUG8i4s/JzwYgt5ynXvoKec/+sWmJ0oP98pnKk+PfrLsJZqmr7dwBg9PWiirAKhbfSQ5S6xQIl23brgFUXbY0xM/WWS1fgxkAnW0FnTr7bqTxys4PpFBzocF16QPlpGMAqgxyFJpiiy4fJry67axYldnhOnXiJZPukL4JnsR+3idWLjPpWScY38QLToXoDSZkCHJpAporoLAqOe5jFsR7adEBM0Q5d/3hM5H/SxqUe/K2mZQPieNX1tJPkVLSfkUAaE1jIgSSq6H/8FepDzsEFRsqQs42X1oaEPM3EKw5WebQMpKUHwCnROshesAcNdPBmMbKHKUxWj09tciEd+IKx0kJxU8Tk4rKCfeO2mFeuRw7o="
+after_success:
+  - firebase deploy --token $FIREBASE_TOKEN --non-interactive
