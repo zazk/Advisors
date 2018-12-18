@@ -57,12 +57,16 @@ page-contacto {
 			font-size: 12px;
 			margin-bottom: 5px;
 		}
-		a{
+		a, p{
 			color:$c2;
 			font-size: 20px;
 			line-height: 1;
 			text-decoration: none;
 		}
+		p{
+			margin: 0;
+		}
+
 	}
 
 	.g0-logo-contact{
