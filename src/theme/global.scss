@@ -63,6 +63,7 @@ button.g0-btn-send{
 .g0-list-inputs{
   ion-item{
     margin-bottom: 25px;
+    border-bottom: none !important
   }
 
   ion-label.g0-label-input{
@@ -97,5 +98,18 @@ button.g0-btn-send{
   .g0-linksrecover{
     margin-top: 45px;
   }
-  
+  .g0-list-inputs ion-select.g0-select, 
+  .g0-list-inputs ion-input.g0-input input  {
+    height: 30px !important;
+
+  }
+  .g0-list-inputs ion-item{
+    margin-bottom: 10px;
+  }
+  button.g0-btn-send{
+    height: 50px;
+  }
+  button.g0-btn-send .button-inner{
+    font-size: 20px;
+  }
 }

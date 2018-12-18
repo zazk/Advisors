@@ -228,6 +228,7 @@
   }
 }
 @media screen and (max-width: 400px){
+
   .hm-image-perfil figure{
     width: 45px;
     height: 45px;
@@ -247,4 +248,13 @@
   .h-name-perfil p{
     font-size: 20px;
   } 
+  .h-name-perfil img{
+    width: 40px;
+  }
+  .h-menu-perfil{
+    margin-top: 5px;
+  }
+  .h-menu-link{
+    height: 45px;
+  }
 }

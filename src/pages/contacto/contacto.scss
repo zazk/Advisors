@@ -4,6 +4,7 @@ page-contacto {
 	}
 	.g1-item-contact{
 		margin-bottom: 28px;
+		border-top:none !important;
 		&:last-child{
 			.g1-info{
 				&:after{
@@ -16,6 +17,7 @@ page-contacto {
 		}
 		&:last-child{
 			margin-bottom: 0;
+			border-bottom:none !important;
 		}
 		.label{
 			display: flex;
@@ -90,5 +92,27 @@ page-contacto {
 		.logo-img{
 			max-width: 290px
 		}
+	}
+}
+@media screen and (max-width: 400px){
+	page-contacto .g0-figure{
+		margin: 20px 0;
+	}
+	page-contacto .g0-figure .logo-img{
+		max-width: 200px;
+		height: auto;
+	}
+	page-contacto .list{
+		margin-top: 30px;
+	}
+	page-contacto .g1-info{
+		width: calc(100% - 30px);
+		padding-left: 20px;
+		a{
+			font-size: 18px;
+		}
+	}
+	page-contacto .g1-info:after{
+		width: calc(100% - 20px);
 	}
 }

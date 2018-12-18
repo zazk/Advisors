@@ -1,8 +1,11 @@
 .modal-aviso-llamar{
-	background-color: rgba(0,0,0,0.5) ;
 	display: flex;
+	background-color: rgba(0,0,0,0.5) ;
 	align-items: center;
 	justify-content: center;
+	.content-ios{
+		background-color: $c2
+	}
 	.modal-wrapper{
 		width: 80vw;
 		max-height: 219px;

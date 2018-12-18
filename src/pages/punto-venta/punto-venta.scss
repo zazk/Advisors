@@ -121,3 +121,8 @@ page-punto-venta {
 		}
 	}
 }
+@media screen and (max-width: 400px){
+	page-punto-venta .g1-item-sale{
+		padding: 25px 0;
+	}
+}

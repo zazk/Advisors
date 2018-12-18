@@ -42,8 +42,10 @@ en-llamada{
 		height: 70px;
 	}
 	.g1-item-contact{
+		border-top:none !important;
 		margin-bottom: 28px;
 		&:last-child{
+			border-bottom:none !important;
 			.g1-info{
 				&:after{
 					display: none;
@@ -133,4 +135,17 @@ en-llamada{
 		}
 	}
 
+}
+@media screen and (max-width: 400px){
+	en-llamada .g1-info{
+		padding-left: 20px;
+		width: calc(100% - 20px);
+
+	}
+	en-llamada .g1-info:after{
+		width: calc(100% - 20px);
+	}
+	en-llamada .g1-info .g1-text{
+		font-size: 16px;
+	}
 }
