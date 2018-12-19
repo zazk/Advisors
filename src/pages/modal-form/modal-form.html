@@ -1,56 +1,47 @@
 <ion-header class="h-header-innercontrols header header-md">
-	<div class="h-header-icon">
-
-		<i class="nico-letter"></i>
-		<!-- <i class="nico-circle-plus"></i> -->
-	</div>
-
+  <div class="h-header-icon">
+    <i class="nico-letter"></i>
+    <i class="nico-circle-plus" (click)="addField()"></i>
+  </div>
 </ion-header>
 <ion-content center class="g1-form-edit">
   <div class="cnt-wrapper">
     <form action="">
       <div class="g1-wraps-items ">
         <ion-list>
-          <ion-item class="g1-item-contact g1-text-action">
-
+          <ion-item
+            *ngFor="let item of extraFields"
+            class="g1-item-contact g1-text-action"
+          >
             <div class="g1-info">
-
               <div class="g1-item-info">
-                <span>Correo Principal <!-- <i class="nico-arrow-down1"></i> --></span>
+                <span>Correo Principal <i class="nico-arrow-down1"></i> </span>
                 <div class="g1-text ">
                   <div class="g1-text-info">
-                    <input type="text" value="hencinas@consejeros.com.pe"> 
+                    <input type="text" value="hencinas@consejeros.com.pe" />
                   </div>
                   <div class="g1-action-crud">
-                    <button class="g1-action-info g1-deleted-action"><i class="nico-trash"></i></button>
+                    <button class="g1-action-info g1-deleted-action">
+                      <i class="nico-trash" (click)="removeField(item)"></i>
+                    </button>
                   </div>
-                 
                 </div>
               </div>
-
             </div>
           </ion-item>
 
-            <ion-item class="g1-item-contact g1-text-action">
-
+          <ion-item class="g1-item-contact g1-text-action">
             <div class="g1-info">
-
               <div class="g1-item-info">
                 <span>Correo Personal </span>
                 <div class="g1-text">
                   <div class="g1-text-info">
-                    <input type="text" value="hencinas@consejeros.com.pe">
-                  </div>
-                	<div class="g1-action-crud">
-                    <button class="g1-action-info g1-deleted-action"><i class="nico-trash"></i></button>
+                    <input type="text" value="hencinas@consejeros.com.pe" />
                   </div>
                 </div>
               </div>
-
             </div>
           </ion-item>
-
-
         </ion-list>
       </div>
 
@@ -59,12 +50,6 @@
         <button class="g1-action-info g1-cancel-action">Cancelar</button>
       </div>
       <button (click)="dismiss()" class="g1-close-modal">Salir</button>
-      
     </form>
-
   </div>
-
-
-
 </ion-content>
-
