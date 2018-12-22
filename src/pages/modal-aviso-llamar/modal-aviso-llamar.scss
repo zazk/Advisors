@@ -8,6 +8,9 @@
 	}
 	.modal-wrapper{
 		width: 80vw;
+		left: 0 !important;
+		right: 0 !important;
+		margin: 0 auto;
 		max-height: 219px;
 		background-color: $c2
 		// height: auto;

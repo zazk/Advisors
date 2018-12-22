@@ -3,6 +3,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	// contain:inherit;
+	// .scroll-content, ion-content, .ion-page, .modal-wrapper{
+	// 	contain:inherit;
+	// }
 	.g1-action-list{
 		display: flex;
 		box-sizing: border-box;
@@ -53,6 +57,9 @@
 		width: 90vw;
 		min-height: 390px;
 		height: auto;
+		left: 0 !important;
+		right: 0 !important;
+		margin: 0 auto;
 	}
 
 	.g1-form-edit{
@@ -67,7 +74,8 @@
 
 	}
 	.g1-close-modal{
-		position: absolute;
+		// position: fixed;
+		margin-top: 20px;
 		left: 0px;
 		width: 100%;
 		bottom: 0px;
