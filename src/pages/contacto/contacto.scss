@@ -119,4 +119,8 @@ page-contacto {
 	page-contacto .g1-info:after{
 		width: calc(100% - 20px);
 	}
+
+	page-contacto .g1-info a, page-contacto .g1-info p{
+		font-size: 14px;
+	}
 }

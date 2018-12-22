@@ -141,3 +141,19 @@ page-pagos {
 	// aqui modificar lo relacionado al modal de seguros
 
 }
+@media screen and (max-width: 400px){
+	page-pagos .g1-list-items .label i:before{
+		font-size: 28px;
+	}
+	page-pagos .g1-text{
+		padding-left: 10px;
+		width: calc(100% - 10px);
+		p, h4{
+			font-size: 11px;
+		}
+	}
+	page-pagos .g1-title-terminos{
+		font-size: 16px;
+	}
+
+}
