@@ -23,6 +23,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.nico-nzoom:before {
+  content: "\e924";
+}
 .nico-numeral:before {
   content: "\e923";
 }
