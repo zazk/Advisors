@@ -84,6 +84,9 @@ button.g0-btn-send{
     font-size: 12px;
     font-family: $t1;
     color: $c2;
+    ion-label{
+      margin: 0 !important;
+    }
     p{
       margin-bottom: 0;
       color: $c2;
@@ -100,16 +103,19 @@ button.g0-btn-send{
   }
   .g0-list-inputs ion-select.g0-select, 
   .g0-list-inputs ion-input.g0-input input  {
-    height: 30px !important;
+    height: 28px !important;
 
   }
   .g0-list-inputs ion-item{
     margin-bottom: 10px;
   }
   button.g0-btn-send{
-    height: 50px;
+    height: 40px;
   }
   button.g0-btn-send .button-inner{
     font-size: 20px;
   }
+.g0-list-inputs ion-label.g0-label-input{
+  font-size: 14px;
+}  
 }

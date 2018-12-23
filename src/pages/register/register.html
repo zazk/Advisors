@@ -37,14 +37,14 @@
               <ion-input class="g0-input" type="email" placeholder="" name="email" [(ngModel)]="registerCredentials.email" required></ion-input>
           </ion-item>
 
-          <ion-item>
-              <div class="g0-text-required">
+          <ion-item class="g0-text-required">
+              <div >
                 <p>
                   (*) Campos Obligatorios
                 </p>
               </div>
           </ion-item>
-          <ion-item>
+          <ion-item class="g0-wrap-terminos">
               <div class="g0-terminos">
                 <div class="g0-input-check">
                     <input [(ngModel)]="registerCredentials.aceptPoliticas" [ngModelOptions]="{standalone: true}" type="checkbox" id="acepto" checked="" class="form-input validate[required] checkbox" name="info">

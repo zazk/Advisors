@@ -98,6 +98,15 @@ page-register {
 }
 @media screen and (max-width: 400px){
 	page-register .g0-form{
-		padding-top: 30px;
+		padding-top: 20px;
+	}
+	.g0-wrap-terminos{
+		ion-label{
+			margin: 0 !important;
+		}
+	}
+	page-register .g0-input-check label{
+		line-height: 15px;
+		font-size: 11px;
 	}
 }
