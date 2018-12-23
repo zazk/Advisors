@@ -107,6 +107,12 @@
 		position: absolute;
 		right: 0px;
 		top: 0px;
+		button{
+			&:first-child{
+				margin-right: 5px;
+			}
+		}
+
 	}
 	.g1-update-list{
 		color: $c9;
@@ -214,5 +220,16 @@
 			}
 
 		}
+	}
+}
+@media screen and (max-width: 400px){
+	.modal-editar .g1-form-edit .cnt-wrapper{
+		padding: 0 12px;
+	}	
+	.modal-editar .g1-item-contact.g1-text-action .g1-text{
+		padding-right: 40px;
+	}
+	.modal-editar .g1-text-info input{
+		font-size: 14px;
 	}
 }

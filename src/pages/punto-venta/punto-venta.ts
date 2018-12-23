@@ -40,7 +40,7 @@ export class PuntoVentaPage {
     public geo: Geolocation
   ) {
     var pv1 = {
-      canal: "Caja Arequipa",
+      canal: "CONSEJEROS Y CORREDORES DE SEGUROS AREQUIPA",
       agencia: "Mercaderes",
       telefono: "2134567",
       latitud: -16.399232,

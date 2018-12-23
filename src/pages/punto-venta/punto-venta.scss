@@ -16,10 +16,13 @@ page-punto-venta {
 		width: 40%;
 		margin: 0px !important;
 		img{
-			width: auto;
+			width: 170px;
 			height: auto;
 			max-width: 100%;
 		}
+	}
+	.item-inner{
+		padding-left: 10px;
 	}
 	#map{
 		width: 100%;
@@ -124,5 +127,8 @@ page-punto-venta {
 @media screen and (max-width: 400px){
 	page-punto-venta .g1-item-sale{
 		padding: 25px 0;
+	}
+	page-punto-venta .g1-item-sale .g1-sale-title{
+		font-size: 12px;
 	}
 }
