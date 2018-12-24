@@ -18,10 +18,11 @@
 	}
 	.g0-btn-headclose{
 		position: absolute;
-		right: 7px;
-		top: 6px;
+		right: 10px;
+		top: 10px;
 		width: auto;
 		font-size: 24px;
+		padding: 0;
 	}
 	.scroll-content{
 		overflow-y:auto; 
@@ -42,6 +43,11 @@
 		box-sizing: border-box;
 		padding: 0px 30px;
 		// min-width: 277px;
+		strong{
+			display: block;
+			font-weight: normal;
+			
+		}
 		p{
 			margin: 0;
 			margin-bottom: 20px;
@@ -60,4 +66,14 @@
 	// .g1-content-modal{
 	// 	padding-top: 50px;
 	// }
+}
+@media screen and (max-width: 400px){
+	.modal-aviso-llamar .g1-content-modal{
+		padding: 0 24px;
+		padding-top: 10px;
+		font-size: 14px;
+	}
+	.modal-aviso-llamar .modal-wrapper{
+		width: 90vw;
+	}
 }
