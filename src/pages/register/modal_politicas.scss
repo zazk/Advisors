@@ -7,6 +7,13 @@
 		width: 80vw;
 		height: 90vh;
 	}
+	.g0-btn-headclose{
+		padding: 0;
+		position: absolute;
+		top: 15px;
+		right: 10px;
+	}
+
 }
 .g0-title-terminos{
 	font-size: 20px;
@@ -15,7 +22,7 @@
 	font-family: $t1;
 	@media screen and (max-width: 400px){
 		
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 .g0-btn-headclose{
@@ -56,5 +63,13 @@
 		font-size: 24px !important;
 		margin: 0;
 		
+	}
+}
+@media screen and (max-width: 400px){
+	.g0-title-terminos{
+		width: 83%;
+	}
+	.modal-terminos.show-page .modal-wrapper{
+		width: 90vw;
 	}
 }
