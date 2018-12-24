@@ -88,3 +88,18 @@ page-home {
 	}
   }
 }
+@media screen and (max-height:470px){
+	page-home .button-main{
+		width: 100px;
+		height: 85px;
+		border-radius: 10px;
+
+	}
+	page-home .button-main img{
+		width: 40px;
+		height: auto;
+	}
+	page-home .button-main label{
+		font-size: 10px;
+	}
+}

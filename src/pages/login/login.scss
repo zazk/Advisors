@@ -42,3 +42,16 @@ page-login {
 		top:60px;
 	}
 }
+@media screen and (max-width: 400px){
+	page-login {
+		.g0-input-item input{
+			height: 55px;
+		}
+		.g0-btn-ingresar{
+			margin-top: 30px !important;
+		}
+		.linksrecover {
+			margin-top: 35px;
+		}
+	}
+}
