@@ -11,119 +11,154 @@
 <ion-header class="h-header-innercontrols">
   <div class="h-controls" (click)="dismiss()">
     <ion-navbar>
-      <h3 class="h-controls-title"><span class="nico-arrow-back"></span>Actualiza tus datos</h3>
+      <h3 class="h-controls-title">
+        <span class="nico-arrow-back"></span>Actualiza tus datos
+      </h3>
     </ion-navbar>
   </div>
 </ion-header>
 <ion-content padding center>
   <div class="cnt-wrapper">
-
     <div class="g1-wraps-items ">
-    <ion-list>
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-1"></i>
-        <div class="g1-info">
-
-          <div class="g1-item-info">
-            <span>Documento de identidad</span>
-            <div class="g1-text">DNI - 48291022
-              <button class="g1-edit-action"><i class="nico-edit-ios"></i></button>
+      <ion-list>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-1"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Documento de identidad</span>
+              <div class="g1-text">
+                DNI - 48291022
+                <button class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
             </div>
           </div>
-
-
-        </div>
-      </ion-item>
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-2"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Nombre y Apellido</span>
-            <div class="g1-text g1-edit">Pablo Cornejo
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        </ion-item>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-2"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Nombre y Apellido</span>
+              <div class="g1-text g1-edit">
+                Pablo Cornejo
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </ion-item>
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-3"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Fecha de Nacimiento</span>
-            <div class="g1-text g1-edit">21/07/1967
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        </ion-item>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-3"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Fecha de Nacimiento</span>
+              <div class="g1-text g1-edit">
+                21/07/1967
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </ion-item>
+        </ion-item>
 
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-4"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Sexo</span>
-            <div class="g1-text g1-edit">Masculino
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-4"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Sexo</span>
+              <div class="g1-text g1-edit">
+                Masculino
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </ion-item>
+        </ion-item>
 
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-5"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Correo Electrónico</span>
-            <div class="g1-text g1-edit">hencinas@consejeros.com.pe 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-5"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Correo Electrónico</span>
+              <div class="g1-text g1-edit">
+                jibustamante@consejeros.com.pe
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </ion-item>
+        </ion-item>
 
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-6"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Teléfonos</span>
-            <div class="g1-text g1-edit">(01)-6283531 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-6"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Teléfonos</span>
+              <div class="g1-text g1-edit">
+                (01)-6283531
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
+            <div class="g1-item-info">
+              <!-- <span>Teléfonos</span> -->
+              <div class="g1-text g1-edit">
+                942108447
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-          <div class="g1-item-info">
-            <!-- <span>Teléfonos</span> -->
-            <div class="g1-text g1-edit">942108447 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
+        </ion-item>
+
+        <ion-item class="g1-item-contact">
+          <i class="nico-datos-7"></i>
+          <div class="g1-info">
+            <div class="g1-item-info">
+              <span>Dirección</span>
+              <div class="g1-text g1-edit">
+                Av. San Borja Sur 115, Dpt 115
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
+            <div class="g1-item-info">
+              <span>Departamento</span>
+              <div class="g1-text g1-edit">
+                Lima
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
+            <div class="g1-item-info">
+              <span>Provincia</span>
+              <div class="g1-text g1-edit">
+                Lima
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
+            <div class="g1-item-info">
+              <span>Distrito</span>
+              <div class="g1-text g1-edit">
+                San Borja
+                <button (click)="openModalForm()" class="g1-edit-action">
+                  <i class="nico-edit-ios"></i>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-      </ion-item>
-
-      <ion-item class="g1-item-contact">
-        <i class="nico-datos-7"></i>
-        <div class="g1-info">
-          <div class="g1-item-info">
-            <span>Dirección</span>
-            <div class="g1-text g1-edit">Av. San Borja Sur 115, Dpt 115 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
-          </div>
-          <div class="g1-item-info">
-            <span>Departamento</span>
-            <div class="g1-text g1-edit">Lima 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
-          </div>
-          <div class="g1-item-info">
-            <span>Provincia</span>
-            <div class="g1-text g1-edit">Lima 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
-          </div>
-          <div class="g1-item-info">
-            <span>Distrito</span>
-            <div class="g1-text g1-edit">San Borja 
-              <button (click)="openModalForm()" class="g1-edit-action"><i class="nico-edit-ios"></i></button></div>
-          </div>
-        </div>
-      </ion-item>
-
-
-
-
-
-
+        </ion-item>
 
         <!--
         <ion-item no-lines>
@@ -232,20 +267,20 @@
       </form> -->
   </div>
   <!-- pinkxel: Aquí inicia el código estandar para la cabecera de las páginas modales. -->
-  </ion-content>
-  <ion-footer class="f-footer">
-    <div class="footer-inner">
-      <button class="f-item">
-        <img src="assets/img/icobar-1.svg" width="30" height="30" alt="">
-        <label>INICIO</label>
-      </button>
-      <button class="f-item">
-        <img src="assets/img/icobar-2.svg" width="30" height="30" alt="">
-        <label>PERFIL</label>
-      </button>
-      <button menuToggle class="f-item">
-        <img src="assets/img/icobar-3.svg" width="30" height="30" alt="">
-        <label>MENÚ</label>
-      </button>
-    </div>
-  </ion-footer>
+</ion-content>
+<ion-footer class="f-footer">
+  <div class="footer-inner">
+    <button class="f-item">
+      <img src="assets/img/icobar-1.svg" width="30" height="30" alt="" />
+      <label>INICIO</label>
+    </button>
+    <button class="f-item">
+      <img src="assets/img/icobar-2.svg" width="30" height="30" alt="" />
+      <label>PERFIL</label>
+    </button>
+    <button menuToggle class="f-item">
+      <img src="assets/img/icobar-3.svg" width="30" height="30" alt="" />
+      <label>MENÚ</label>
+    </button>
+  </div>
+</ion-footer>
