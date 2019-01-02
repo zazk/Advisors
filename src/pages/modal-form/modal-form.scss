@@ -112,7 +112,7 @@
 	.g1-action-crud{
 		position: absolute;
 		right: 0px;
-		top: 0px;
+		top: -5px;
 		button{
 			&:first-child{
 				margin-right: 5px;
@@ -191,6 +191,7 @@
 		border-bottom: 1px solid $c1;
 		padding-bottom: 18px;
 		width:  100%;
+		position: relative;
 		// width: calc(100% - 33px);
 		.g1-item-info{
 			margin-bottom: 10px;
@@ -233,7 +234,7 @@
 		padding: 0 12px;
 	}	
 	.modal-editar .g1-item-contact.g1-text-action .g1-text{
-		padding-right: 40px;
+		padding-right: 50px;
 	}
 	.modal-editar .g1-text-info input{
 		font-size: 14px;
